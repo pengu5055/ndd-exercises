@@ -3,3 +3,6 @@ These are notes and exercises for the course "Advanced Particle Detectors and Da
 has compiled the exercises and notes for the course but I find the provided solutions to be lacking in detail.
 
 The course is part of the Master's program in Physics at the University of Ljubljana, Slovenia.
+
+I'd like to apologize in advance for the poor quality of my notebook scan. My main phone camera is damaged and I was forced to 
+use the wide-angle camera which has a lower resolution and introduces a lot of distortion. I hope it's still readable.
