@@ -34,6 +34,8 @@
 \newcommand\thickbar[1]{\accentset{\rule{.5em}{.03em}}{#1}}
 \renewcommand{\bar}{\thickbar}
 
+\numberwithin{equation}{section}
+
 % Start the document
 \begin{document}
 
@@ -78,7 +80,7 @@ The Bethe-Bloch equation describes the mean energy loss per distance traveled wh
 We generally use the Bethe-Bloch equation when we are dealing with \textbf{thick absorbers}, such as the ones in calorimeters.
 Do note that the Bethe-Bloch equation does not accurately describe the energy loss of \textbf{electrons} and \textbf{positrons} 
 due to their small mass and the fact that they suffer from much larger energy losses due to bremsstrahlung and pair production.
-For a particle with charge $Z$ and velocity $\beta = v/c$, the Bethe-Bloch equation is given as:
+For a particle with charge $z$ and velocity $\beta = v/c$, the Bethe-Bloch equation is given as:
 %
 \begin{equation}
     -\left\langle \frac{\dd E}{\dd x} \right\rangle = 2\pi N_a r_e^2 m_e c^2 \rho \frac{Z}{A}\frac{z^2}{\beta^2}\left[\ln\left(\frac{2m_ec^2\beta^2\gamma^2W_{\text{max}}}{I^2}\right) - 2\beta^2 - \delta - 2\frac{C}{Z}\right]\>,
@@ -87,18 +89,20 @@ For a particle with charge $Z$ and velocity $\beta = v/c$, the Bethe-Bloch equat
 %
 where $\delta$ is the \textbf{density effect correction} and $C$ is the \textbf{shell correction}. The rest is as follows:
 %
-\begin{gather}
+\begin{gather*}
     N_a = 6.022 \times 10^{23}\,\text{mol}^{-1}\>, \quad r_e = 2.818 \times 10^{-15}\,\text{m}\>, \quad m_e = 9.11 \times 10^{-31}\,\text{kg}\>, \quad c = 3 \times 10^8\,\text{m/s}\>, \nonumber \\
-    \rho = \text{density of the material}\>, \quad A = \text{atomic mass of the material}\>, \quad z = \text{charge of the particle}\>, \quad \gamma = \frac{1}{\sqrt{1-\beta^2}}\>, \nonumber \\
-    W_{\text{max}} = \text{maximum energy transfer in a single collision}\>, \quad I = \text{mean excitation energy}\>.
-\end{gather}
+    \rho = \text{density of the material}\>, \quad A = \text{atomic mass of the material}\>, \quad Z = \text{atomic number of the material}\>, \\
+    \quad \gamma = \frac{1}{\sqrt{1-\beta^2}}\>, \quad W_{\text{max}} = \text{maximum energy transfer in a single collision}\>, \quad I = \text{mean excitation energy}\>. \nonumber
+\end{gather*}
 %
 The constant factor in the equation can be written as:
 %
 \begin{equation}
-    2\pi N_a r_e^2 m_e c^2 = 0.1535\,\text{MeV cm}^2\text{mol}^{-1}\>.
+    \Xi = \bm{2\pi N_a r_e^2 m_e c^2 = 0.1535\,\textbf{MeV cm}^2\textbf{mol}^{-1}}\>,
+    \label{eq:bb-constant}
 \end{equation}
 %
+where I've chosen to mark this constant factor as $\Xi$ for easier reference in further calculations.
 We can find the mean excitation energy $I$ from the following experimentally determined formula:
 %
 \begin{equation}
@@ -106,14 +110,65 @@ We can find the mean excitation energy $I$ from the following experimentally det
         Z(12 + \frac{7}{Z}) & \text{for } Z < 13\>, \\
         Z(9.76 + 58.8Z^{-1.19}) & \text{for } Z \geq 13\>.
     \end{cases}
+    \label{eq:I}
 \end{equation}
 The maximum energy transfer in a single collision $W_{\text{max}}$ can be calculated as:
 %
 \begin{equation}
     W_{\text{max}} = \frac{2m_e c^2\beta^2\gamma^2}{1 + 2\gamma \left(\sfrac{m_e}{M}\right) + \left(\sfrac{m_e}{M}\right)^2}\approx 2m_ec^2\beta^2\gamma^2\>.
+    \label{eq:wmax}
 \end{equation}
 %
 For our purposes we will ignore the density effect correction $\delta$ and the shell correction $C$.
+
+\subsubsection{Energy Loss of Charged Kaons}
+Let us calculate the energy losses for charged kaons $K^+$ and $K^-$ with a rest mass of $0.493\,\text{MeV}$ and momentum of $2.5\,\text{GeV}$ in copper which has the
+following properties:
+%
+\begin{align*}
+    & \rho = 8.92\,\text{g/cm}^3\>, \\
+    & Z = 29\>, \\
+    & A = 63.5\,\text{g/mol}\>.
+\end{align*}
+%
+First let us calculate the velocity $\beta$ and the Lorentz factor $\gamma$. We know that
+%
+\begin{equation}
+    \beta = \frac{pc}{E} = \frac{pc}{\sqrt{(pc)^2 + (Mc^2)^2}}\>,
+\end{equation}
+%
+where $M$ is the mass of the particle. Thus:
+%
+\begin{equation}
+    \beta = \frac{2.5\>\dfrac{\rm{GeV}}{c}\>c}{\sqrt{\left(2.5\>\dfrac{\rm{GeV}}{c}\>c\right)^2 + {\left(0.493\>\dfrac{\rm{MeV}}{c^2}\>c^2\right)}^2}} \approx 0.981031\>.
+\end{equation}
+%
+\textbf{Remember to take at least 4 significant digits for the velocity $\beta$!} This is due to the logarithm in the Bethe-Bloch equation.
+The Lorentz factor $\gamma$ is then:
+%
+\begin{equation}
+    \gamma = \frac{1}{\sqrt{1-\beta^2}} \approx 5.159\>.
+\end{equation}
+%
+Next let us calculate the maximum energy transfer in a single collision $W_{\text{max}}$:
+%
+\begin{equation}
+    W_{\text{max}} = 2m_ec^2\beta^2\gamma^2 = 2\cdot 0.511\>\frac{\rm{MeV}}{c^2}\>c^2\cdot(0.981031)^2(5.159)^2 = 26.7\>\text{MeV}\>.
+\end{equation}
+%
+Last prerequisite is the mean excitation energy $I$ which we can calculate using the formula (\ref{eq:I}) for $Z \geq 13$:
+%
+\begin{equation}
+    I = 29(9.76 + 58.8\cdot 29^{-1.19})\>\rm{eV} = 313.9\>\rm{eV}\>.
+\end{equation}
+%
+Now all that is left is to plug in the values into the Bethe-Bloch equation (\ref{eq:bethe-bloch}):
+%
+\begin{flalign}
+    -\left\langle \frac{\dd E}{\dd x} \right\rangle &= \Xi\>\rho \frac{Z}{A}\frac{z^2}{\beta^2}\left[\ln\left(\frac{W_{\text{max}}^2}{I^2}\right) - 2\beta^2\right] \\
+    &= 0.1535\>\frac{\rm{MeV}\,\rm{cm}^2}{\rm{mol}}\cdot 8.92\>\frac{\rm{g}}{{\rm{cm}}^3}\cdot\frac{29}{63.5}\>\frac{\rm{mol}}{\rm{g}}\cdot\frac{1}{0.981031^2}\cdot\left[\ln\left(\frac{(26.7\cdot10^6\>\rm{eV})^2}{(313.9\>\rm{eV})^2}\right) - 2\cdot (0.981031)^2\right] \nonumber \\
+    &= 13.47\>\frac{\rm{MeV}}{\rm{cm}} \>. \nonumber
+\end{flalign}
 
 % Add references
 % \newpage
