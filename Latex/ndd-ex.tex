@@ -108,8 +108,8 @@ We can find the mean excitation energy $I$ from the following experimentally det
 %
 \begin{equation}
     I = \begin{cases}
-        Z(12 + \frac{7}{Z}) & \text{for } Z < 13\>, \\
-        Z(9.76 + 58.8Z^{-1.19}) & \text{for } Z \geq 13\>.
+        Z(12 + \frac{7}{Z})\>\rm{eV} & \text{for } Z < 13\>, \\
+        Z(9.76 + 58.8Z^{-1.19})\>\rm{eV} & \text{for } Z \geq 13\>.
     \end{cases}
     \label{eq:I}
 \end{equation}
@@ -136,6 +136,7 @@ First let us calculate the velocity $\beta$ and the Lorentz factor $\gamma$. We 
 %
 \begin{equation}
     \beta = \frac{pc}{E} = \frac{pc}{\sqrt{(pc)^2 + (Mc^2)^2}}\>,
+    \label{eq:beta}
 \end{equation}
 %
 where $M$ is the mass of the particle. Thus:
@@ -226,6 +227,81 @@ Thus the energy resolution of the detector is:
     R = \frac{\sqrt{44.12\>\rm{MeV}^2}}{67.35\>\rm{MeV}} = 9.9\%\>.
     \label{eq:1sub2-result}
 \end{equation}
+%
+\subsubsection{What if the Detector is Made of a Molecule?}
+Let's assume now that our detector is made of lead(II) fluoride $\text{PbF}_2$ in a cubic crystal form which has the following properties:
+%
+\begin{equation*}
+    \begin{aligned}
+        & \rho = 7.77\>\text{g/cm}^3\>, \\
+        & Z = 100\>, \\
+        & A = 245.2\>\text{g/mol}\>. \\
+        & A_{\rm{Pb}} = 207.2\>\text{u}\>, \\
+        & A_{\rm{F} }= 19\>\text{u}\>, \\
+    \end{aligned}
+    \qquad\qquad
+    \begin{aligned}
+        & Z_{\rm{Pb}} = 82\>, \\
+        & Z_{\rm{F} }= 9\>, \\
+        & \rho_{\rm{Pb}} = 11.34\>\text{g/cm}^3\>, \\
+        & \rho_{\rm{F}} = 0.001696\>\text{g/cm}^3\>.
+    \end{aligned}
+\end{equation*}
+%
+We are interested in the energy loss of protons with a momentum of $3\,\text{GeV}$ in such a detector. The difference between calculating the energy loss in a compound 
+material is that we have to calculate the energy loss for each element in the compound. This sum is weighted by the fraction of the element in the compound. As such:
+%
+\begin{equation}
+    \frac{1}{\rho} \left\langle \frac{\dd E}{\dd x} \right\rangle _{\text{compound}} = \frac{w_1}{\rho_1} \left\langle \frac{\dd E}{\dd x} \right\rangle _1 + \frac{w_2}{\rho_2} \left\langle \frac{\dd E}{\dd x} \right\rangle _2 + \ldots\>,
+\end{equation}
+%
+where we calculate $w_i$ as:
+%
+\begin{equation}
+    w_i = \frac{a_i\cdot A_i}{\sum a_i\cdot A_i}\>,
+\end{equation}
+%
+here $a_i$ is the number of atoms of the element in the compound and $A_i$ is the atomic mass of the element. Our professor stated that such 
+problems will not be present on the exam and that we should not worry about them. However it is still good to know how to calculate the energy loss in a compound.
+In our case we can expect to get effective values if the detector is made of a compound. If we calculate the weights for lead and fluorine in lead(II) fluoride we get:
+%
+\begin{align*}
+    w_{\rm{Pb}} = \frac{1\cdot 207.2\>\rm{u}}{1\cdot + 207.2\>\rm{u} + 2\cdot 19\>\rm{u}} = 0.866 \>, \\
+    w_{\rm{F}} = \frac{2\cdot 19\>\rm{u}}{1\cdot + 207.2\>\rm{u} + 2\cdot 19\>\rm{u}} = 0.134 \>,
+\end{align*}
+%
+where we used the atomic masses of lead and fluoride in atomic mass units. Next we need to calculate the velocity $\beta$ and the Lorentz factor $\gamma$ for protons. So using
+(\ref{eq:beta}) we get:
+%
+\begin{equation}
+    \beta = \frac{3\>\dfrac{\rm{GeV}}{c}\>c}{\sqrt{\left(3\>\dfrac{\rm{GeV}}{c}\>c\right)^2 + {\left(0.938\>\dfrac{\rm{GeV}}{c^2}\>c^2\right)}^2}} \approx 0.95443\>,
+\end{equation}
+%
+which gives us a Lorentz factor of:
+%
+\begin{equation}
+    \gamma = \frac{1}{\sqrt{1-(0.95443)^2}} \approx 3.351\>.
+\end{equation}
+%
+Next we need to calculate the maximum energy transfer in a single collision $W_{\text{max}}$ using 
+(\ref{eq:wmax}) as: 
+%
+\begin{equation}
+    W_{\text{max}} = 2\cdot 0.511\>\frac{\rm{MeV}}{c^2}\>c^2\cdot(0.95443)^2(3.351)^2 = 10.5\>\rm{MeV}\>,
+\end{equation}
+%
+and the mean excitation energy $I$ using (\ref{eq:I}) for each component:
+%
+\begin{align*}
+    I_{\rm{Pb}} &= 82\left(9.76 + 58.8\cdot 82^{-1.19}\right)\rm{eV} = 825.8\>\rm{eV}\>, \\
+    I_{\rm{Cu}} &= 9\left(12 + \frac{7}{9}\right)\rm{eV} = 115\>\rm{eV}\>.
+\end{align*}
+%
+Now we can calculate the energy loss for each component using the Bethe-Bloch equation (\ref{eq:bethe-bloch}) and sum them up:
+%
+\begin{flalign}
+    -\left\langle \frac{\dd E}{\dd x} \right\rangle _{\rm{Pb}}
+\end{flalign}
 % Add references
 % \newpage
 % \bibliographystyle{unsrt}

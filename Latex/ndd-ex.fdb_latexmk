@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1733062611 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1733062612
+["pdflatex"] 1733065578 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1733065579
   "/etc/texmf/web2c/texmf.cnf" 1721132218 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/pengu5055/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1721133484 1405652 6dbe6b4a0b8b03aa67147fe2fddcad95 ""
-  "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" 1733062611 9530 8ccd08f186ef4cd244b1ec33c24f47ea ""
+  "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" 1733065578 12994 f1e1172959c15c31ce0e64592481bb5c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -109,10 +109,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1721229899 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "logo_fmf.pdf" 1733054670 15612 f362f770ef36c22b3204cc12be10dccd ""
-  "ndd-ex.aux" 1733062612 2030 ef58df4ff365b18b6a4a5ee56e2d1fee "pdflatex"
-  "ndd-ex.out" 1733062612 1084 b6347863f47136ad649e92f746ea30a7 "pdflatex"
-  "ndd-ex.tex" 1733062611 9530 8ccd08f186ef4cd244b1ec33c24f47ea ""
-  "ndd-ex.toc" 1733062612 432 000856c5150b451dae2bb3efb395d9e3 "pdflatex"
+  "ndd-ex.aux" 1733065579 2265 0441e42022bd3eca9fb0bc0db3ffe4fd "pdflatex"
+  "ndd-ex.out" 1733065579 1390 b5f796577ddad579328c666a9807a05b "pdflatex"
+  "ndd-ex.tex" 1733065578 12994 f1e1172959c15c31ce0e64592481bb5c ""
+  "ndd-ex.toc" 1733065579 551 cccbb52826ad45daf3c504eb7e8b2555 "pdflatex"
   (generated)
   "ndd-ex.aux"
   "ndd-ex.log"
