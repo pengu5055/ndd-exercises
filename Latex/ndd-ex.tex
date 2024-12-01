@@ -253,6 +253,7 @@ material is that we have to calculate the energy loss for each element in the co
 %
 \begin{equation}
     \frac{1}{\rho} \left\langle \frac{\dd E}{\dd x} \right\rangle _{\text{compound}} = \frac{w_1}{\rho_1} \left\langle \frac{\dd E}{\dd x} \right\rangle _1 + \frac{w_2}{\rho_2} \left\langle \frac{\dd E}{\dd x} \right\rangle _2 + \ldots\>,
+    \label{eq:bb-compound}
 \end{equation}
 %
 where we calculate $w_i$ as:
@@ -266,8 +267,8 @@ problems will not be present on the exam and that we should not worry about them
 In our case we can expect to get effective values if the detector is made of a compound. If we calculate the weights for lead and fluorine in lead(II) fluoride we get:
 %
 \begin{align*}
-    w_{\rm{Pb}} = \frac{1\cdot 207.2\>\rm{u}}{1\cdot + 207.2\>\rm{u} + 2\cdot 19\>\rm{u}} = 0.866 \>, \\
-    w_{\rm{F}} = \frac{2\cdot 19\>\rm{u}}{1\cdot + 207.2\>\rm{u} + 2\cdot 19\>\rm{u}} = 0.134 \>,
+    w_{\rm{Pb}} = \frac{1\cdot 207.2\>\rm{u}}{1\cdot 207.2\>\rm{u} + 2\cdot 19\>\rm{u}} = 0.845 \>, \\
+    w_{\rm{F}} = \frac{2\cdot 19\>\rm{u}}{1\cdot 207.2\>\rm{u} + 2\cdot 19\>\rm{u}} = 0.154 \>,
 \end{align*}
 %
 where we used the atomic masses of lead and fluoride in atomic mass units. Next we need to calculate the velocity $\beta$ and the Lorentz factor $\gamma$ for protons. So using
@@ -300,8 +301,27 @@ and the mean excitation energy $I$ using (\ref{eq:I}) for each component:
 Now we can calculate the energy loss for each component using the Bethe-Bloch equation (\ref{eq:bethe-bloch}) and sum them up:
 %
 \begin{flalign}
-    -\left\langle \frac{\dd E}{\dd x} \right\rangle _{\rm{Pb}}
+    -\left\langle \frac{\dd E}{\dd x} \right\rangle _{\rm{Pb}} &= \Xi\>\rho_{\rm{Pb}} \frac{Z_{\rm{Pb}}}{A_{\rm{Pb}}}\frac{1}{0.95443^2}\left[\ln\left(\frac{(10.5\cdot10^6\>\rm{eV})^2}{(825.8\>\rm{eV})^2}\right) - 2\cdot (0.95443)^2\right] \nonumber \\
+    &= \Xi\>\rho_{\rm{Pb}} \frac{Z_{\rm{Pb}}}{A_{\rm{Pb}}} \cdot 18.7488 \nonumber \\
+    &= 0.1535\>\frac{\rm{MeV}\,\rm{cm}^2}{\rm{mol}}\cdot 11.34\>\frac{\rm{g}}{{\rm{cm}}^3}\cdot\frac{82}{207.2}\>\frac{\rm{mol}}{\rm{g}}\cdot 18.7488 \nonumber \\
+    &= 12.9\>\frac{\rm{MeV}}{\rm{cm}}\>, \\
+    -\left\langle \frac{\dd E}{\dd x} \right\rangle _{\rm{F}} &= \Xi\>\rho_{\rm{F}} \frac{Z_{\rm{F}}}{A_{\rm{F}}}\frac{1}{0.95443^2}\left[\ln\left(\frac{(10.5\cdot10^6\>\rm{eV})^2}{(115\>\rm{eV})^2}\right) - 2\cdot (0.95443)^2\right] \nonumber \\
+    &= \Xi\>\rho_{\rm{F}} \frac{Z_{\rm{F}}}{A_{\rm{F}}} \cdot 23.0773 \nonumber \\
+    &= 0.1535\>\frac{\rm{MeV}\,\rm{cm}^2}{\rm{mol}}\cdot 0.001696\>\frac{\rm{g}}{{\rm{cm}}^3}\cdot\frac{9}{19}\>\frac{\rm{mol}}{\rm{g}}\cdot 23.0773 \nonumber \\
+    &= 0.002846\>\frac{\rm{MeV}}{\rm{cm}}\>.
 \end{flalign}
+%
+Now all that is left is to compute the weighted sum as stated in (\ref{eq:bb-compound}):
+%
+\begin{flalign}
+    -\left\langle \frac{\dd E}{\dd x} \right\rangle _{\text{compound}} &= -\frac{\rho\cdot w_{\rm{Pb}}}{\rho_{\rm{Pb}}}\cdot\left\langle \frac{\dd E}{\dd x} \right\rangle _{\rm{Pb}} - \frac{\rho\cdot w_{\rm{F}}}{\rho_{\rm{F}}}\cdot\left\langle \frac{\dd E}{\dd x} \right\rangle _{\rm{F}} \nonumber \\
+    &= \frac{7.77\>\dfrac{\rm{g}}{\rm{cm}^3}\cdot 0.845}{11.34\>\dfrac{\rm{g}}{\rm{cm}^3}}\cdot 12.9\>\frac{\rm{MeV}}{\rm{cm}} + \frac{7.77\>\dfrac{\rm{g}}{\rm{cm}^3}\cdot 0.154}{0.001696\>\dfrac{\rm{g}}{\rm{cm}^3}}\cdot 0.002846\>\frac{\rm{MeV}}{\rm{cm}} \nonumber \\
+    &= 9.47 \>\frac{\rm{MeV}}{\rm{cm}}\>.
+    \label{eq:1sub3-result}
+\end{flalign}
+%
+
+
 % Add references
 % \newpage
 % \bibliographystyle{unsrt}
