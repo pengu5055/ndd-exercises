@@ -6,3 +6,4 @@
 \contentsline {subsection}{\numberline {1.2}Landau Distribution}{4}{subsection.1.2}%
 \contentsline {subsubsection}{\numberline {1.2.1}What is the Most Probable Energy Loss of a Charged Pion in Silicon?}{5}{subsubsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.3}Cherenkov Radiation}{5}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}How many Cherenkov Photons are Produced in Water by a Proton?}{6}{subsubsection.1.3.1}%

@@ -19,6 +19,9 @@
 % Load the natbib package for citation style
 \usepackage{natbib}
 
+% Set indent to 0
+\setlength\parindent{0pt}
+
 % Some macros for commonly used symbols in physics/quantum mechanics
 \newcommand{\bb}[1]{\bm#1}
 \newcommand{\dd}{\mathrm{d}}
@@ -462,8 +465,47 @@ calculated as:
     \Delta E = h\nu = \frac{hc}{\lambda} = \frac{1240\>\rm{eV}\,\rm{nm}}{\lambda}\>,
     \label{eq:cherenkov-energy}
 \end{equation}
+%
+where $\lambda$ is the wavelength of the emitted Cherenkov photon.
 
-% Add references
+\subsubsection{How many Cherenkov Photons are Produced in Water by a Proton?}
+Let's calculate the number of Cherenkov photons produced in $1\,\rm{cm}$ of water by a proton with a rest mass of $0.938\,\rm{GeV}$ and a
+momentum of $2\,\rm{GeV}$. The refractive index of water is $n = 1.33$. How many photons are detected with a photodetector which is sensitive to 
+light between $250\,\rm{nm}$ and $800\,\rm{nm}$ with an average efficiency of $10\%$? \\
+
+Using the formula (\ref{eq:beta}) we can calculate the velocity $\beta$ for the proton:
+%
+\begin{equation}
+    \beta = \frac{2\>\dfrac{\rm{GeV}}{c}\>c}{\sqrt{\left(2\>\dfrac{\rm{GeV}}{c}\>c\right)^2 + \left(0.938\>\dfrac{\rm{GeV}}{c^2}\>c^2\right)^2}} \approx 0.90537\>.
+\end{equation}
+%
+The Cherenkov angle $\theta$ can be calculated using the formula (\ref{eq:cherenkov-angle}):
+%
+\begin{equation}
+    \theta = \arccos{\frac{1}{0.90537\cdot 1.33}} = 33.85^\circ\>.
+\end{equation}
+%
+From this we can calculate the number of Cherenkov photons produced per unit length using the formula (\ref{eq:cherenkov-diff}):
+%
+\begin{equation}
+    \frac{\dd^2 N}{\dd E\,\dd x} = \frac{370}{\rm{eV}\>\rm{cm}}\sin^2{(33.85^\circ)} = 114.8\>\rm{eV}^{-1}\rm{cm}^{-1}\>.
+\end{equation}
+%
+Now we can calculate the total number of Cherenkov photons produced in $1\,\rm{cm}$ of water using the formula (\ref{eq:cherenkov-total}):
+%
+\begin{align}
+    N_{\rm{min}} &= \frac{114.8}{\rm{eV}\>\rm{cm}}\cdot 1\>\rm{cm}\cdot \frac{1240\>\rm{eV}\,\rm{nm}}{250\>\rm{nm}} = 569.4\>, \\
+    N_{\rm{max}} &= \frac{114.8}{\rm{eV}\>\rm{cm}}\cdot 1\>\rm{cm}\cdot \frac{1240\>\rm{eV}\,\rm{nm}}{800\>\rm{nm}} = 177.9\>.
+\end{align}
+%
+Using these two values we can very roughly estimate the number of detected Cherenkov photons in the range $250\,\rm{nm}$ to $800\,\rm{nm}$.
+Essentially we use a linear approximation of the integral of the number of Cherenkov photons produced per unit length over the range of wavelengths and 
+multiply it by the efficiency of the photodetector. Thus the number of detected Cherenkov photons is:
+%
+\begin{equation}
+    N_{\rm{det}} = 0.1\cdot (N_{\rm{max}} - N_{\rm{min}}) \approx 39\>.
+\end{equation}
+
 % \newpage
 % \bibliographystyle{unsrt}
 % \bibliography{main}
