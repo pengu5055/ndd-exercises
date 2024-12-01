@@ -13,6 +13,7 @@
 \usepackage{bm}
 \usepackage{float}
 \usepackage{xfrac}
+\usepackage{accents}
 \hypersetup{colorlinks=true}
 
 % Load the natbib package for citation style
@@ -165,11 +166,66 @@ Last prerequisite is the mean excitation energy $I$ which we can calculate using
 Now all that is left is to plug in the values into the Bethe-Bloch equation (\ref{eq:bethe-bloch}):
 %
 \begin{flalign}
-    -\left\langle \frac{\dd E}{\dd x} \right\rangle &= \Xi\>\rho \frac{Z}{A}\frac{z^2}{\beta^2}\left[\ln\left(\frac{W_{\text{max}}^2}{I^2}\right) - 2\beta^2\right] \\
+    -\left\langle \frac{\dd E}{\dd x} \right\rangle &= \Xi\>\rho \frac{Z}{A}\frac{z^2}{\beta^2}\left[\ln\left(\frac{W_{\text{max}}^2}{I^2}\right) - 2\beta^2\right] \nonumber \\
     &= 0.1535\>\frac{\rm{MeV}\,\rm{cm}^2}{\rm{mol}}\cdot 8.92\>\frac{\rm{g}}{{\rm{cm}}^3}\cdot\frac{29}{63.5}\>\frac{\rm{mol}}{\rm{g}}\cdot\frac{1}{0.981031^2}\cdot\left[\ln\left(\frac{(26.7\cdot10^6\>\rm{eV})^2}{(313.9\>\rm{eV})^2}\right) - 2\cdot (0.981031)^2\right] \nonumber \\
-    &= 13.47\>\frac{\rm{MeV}}{\rm{cm}} \>. \nonumber
+    &= 13.47\>\frac{\rm{MeV}}{\rm{cm}} \>.
+    \label{eq:1sub1-result}
 \end{flalign}
+%
+Thus the energy loss of charged kaons $K^+$ and $K^-$ with a momentum of $2.5\,\rm{GeV}$ in copper is $13.47\,\rm{MeV/cm}$.
 
+\subsubsection{What is the Energy Resolution of the Detector from the Previous Example?}
+Let's calculate the energy resolution of the detector from the previous example, assuming that the length of the 
+particle track through the detector is $d = 5\,\rm{cm}$ and that energy is measured based on all deposited energy without
+any additional losses. Using the result from the previous example (\ref{eq:1sub1-result}), we can calculate the average energy deposited 
+in the detector as:
+%
+\begin{equation}
+    \Delta E = \bar{\Delta} = -\left\langle \frac{\dd E}{\dd x} \right\rangle \cdot d = 13.47\>\frac{\rm{MeV}}{\rm{cm}}\cdot 5\>\rm{cm} = 67.35\>\rm{MeV}\>.
+\end{equation}
+%
+This is an approximation since we are assuming that $\beta$ is constant throughout the detector, which is not true. In reality we'd 
+have to integrate the energy loss over the path of the particle, however at $p\sim\rm{GeV}$ additional losses of $\sim\rm{MeV}$ are 
+negligible. Measurements of energy are dependant on the energy resolution $R$ which is defined as:
+%
+\begin{equation}
+    R = \frac{\sigma_E}{\bar{\Delta}}\>,
+    \label{eq:energy-res}
+\end{equation}
+%
+where $\sigma_E$ is the standard deviation of the energy measurement which we assume to have a Gaussian distribution like such:
+%
+\begin{equation}
+    p(\Delta) = \frac{1}{\sqrt{2\pi}\sigma_E}\exp\left(-\frac{{\Delta - \bar{\Delta}}^2}{2\sigma_E^2}\right)\>.
+\end{equation}
+%
+$\sigma_E$ is determined empirically. For \textbf{non-relativistic} particles it can be calculated as the variance of the 
+Bethe-Bloch equation as:
+%
+\begin{equation}
+    \sigma_0^2 = 4\pi N_a r_e^2 (m_e c^2)^2 \rho \frac{Z}{A}\,\Delta x\>.
+    \label{eq:sigE-nonrel}
+\end{equation}
+%
+For \textbf{relativistic} particles we can correct the variance from (\ref{eq:sigE-nonrel}) as such:
+%
+\begin{equation}
+    \sigma_E^2 = \sigma_0^2\>\frac{1-\frac{1}{2}\beta^2}{1-\beta^2}\>.
+\end{equation}
+%
+In our case this gives us:
+%
+\begin{flalign}
+    \sigma_E^2 &= 2\cdot 0.511\>\frac{\rm{MeV}}{c^2}\>c^2\cdot 0.1535\>\frac{\rm{MeV}\rm{cm}^2}{\rm{mol}}\cdot 8.92\>\frac{\rm{g}}{{\rm{cm}}^3}\cdot\frac{29}{63.5}\>\frac{\rm{mol}}{\rm{g}}\cdot 5\>\rm{cm}\cdot\frac{1-\frac{1}{2}(0.981031)^2}{1-(0.981031)^2} \nonumber \\
+    &= 44.12\>\rm{MeV}^2\>.
+\end{flalign}
+%
+Thus the energy resolution of the detector is:
+%
+\begin{equation}
+    R = \frac{\sqrt{44.12\>\rm{MeV}^2}}{67.35\>\rm{MeV}} = 9.9\%\>.
+    \label{eq:1sub2-result}
+\end{equation}
 % Add references
 % \newpage
 % \bibliographystyle{unsrt}
