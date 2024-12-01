@@ -12,6 +12,7 @@
 \usepackage{amssymb}
 \usepackage{bm}
 \usepackage{float}
+\usepackage{xfrac}
 \hypersetup{colorlinks=true}
 
 % Load the natbib package for citation style
@@ -71,8 +72,48 @@ Ljubljana, December 2024 \\
 % Proceed with the main body
 \pagenumbering{arabic}
 
-\section{Introduction}
-
+\section{Interactions of Particles with Photons}
+\subsection{Bethe-Bloch Equation}
+The Bethe-Bloch equation describes the mean energy loss per distance traveled while traversing through matter.
+We generally use the Bethe-Bloch equation when we are dealing with \textbf{thick absorbers}, such as the ones in calorimeters.
+Do note that the Bethe-Bloch equation does not accurately describe the energy loss of \textbf{electrons} and \textbf{positrons} 
+due to their small mass and the fact that they suffer from much larger energy losses due to bremsstrahlung and pair production.
+For a particle with charge $Z$ and velocity $\beta = v/c$, the Bethe-Bloch equation is given as:
+%
+\begin{equation}
+    -\left\langle \frac{\dd E}{\dd x} \right\rangle = 2\pi N_a r_e^2 m_e c^2 \rho \frac{Z}{A}\frac{z^2}{\beta^2}\left[\ln\left(\frac{2m_ec^2\beta^2\gamma^2W_{\text{max}}}{I^2}\right) - 2\beta^2 - \delta - 2\frac{C}{Z}\right]\>,
+    \label{eq:bethe-bloch}
+\end{equation}
+%
+where $\delta$ is the \textbf{density effect correction} and $C$ is the \textbf{shell correction}. The rest is as follows:
+%
+\begin{gather}
+    N_a = 6.022 \times 10^{23}\,\text{mol}^{-1}\>, \quad r_e = 2.818 \times 10^{-15}\,\text{m}\>, \quad m_e = 9.11 \times 10^{-31}\,\text{kg}\>, \quad c = 3 \times 10^8\,\text{m/s}\>, \nonumber \\
+    \rho = \text{density of the material}\>, \quad A = \text{atomic mass of the material}\>, \quad z = \text{charge of the particle}\>, \quad \gamma = \frac{1}{\sqrt{1-\beta^2}}\>, \nonumber \\
+    W_{\text{max}} = \text{maximum energy transfer in a single collision}\>, \quad I = \text{mean excitation energy}\>.
+\end{gather}
+%
+The constant factor in the equation can be written as:
+%
+\begin{equation}
+    2\pi N_a r_e^2 m_e c^2 = 0.1535\,\text{MeV cm}^2\text{mol}^{-1}\>.
+\end{equation}
+%
+We can find the mean excitation energy $I$ from the following experimentally determined formula:
+%
+\begin{equation}
+    I = \begin{cases}
+        Z(12 + \frac{7}{Z}) & \text{for } Z < 13\>, \\
+        Z(9.76 + 58.8Z^{-1.19}) & \text{for } Z \geq 13\>.
+    \end{cases}
+\end{equation}
+The maximum energy transfer in a single collision $W_{\text{max}}$ can be calculated as:
+%
+\begin{equation}
+    W_{\text{max}} = \frac{2m_e c^2\beta^2\gamma^2}{1 + 2\gamma \left(\sfrac{m_e}{M}\right) + \left(\sfrac{m_e}{M}\right)^2}\approx 2m_ec^2\beta^2\gamma^2\>.
+\end{equation}
+%
+For our purposes we will ignore the density effect correction $\delta$ and the shell correction $C$.
 
 % Add references
 % \newpage
