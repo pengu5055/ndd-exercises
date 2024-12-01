@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1733093847 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1733093847
+["pdflatex"] 1733094828 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1733094829
   "/etc/texmf/web2c/texmf.cnf" 1721132218 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/pengu5055/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1721133484 1405652 6dbe6b4a0b8b03aa67147fe2fddcad95 ""
-  "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" 1733093847 19055 755aa57f665b9a5b501b8f6e2acd702d ""
+  "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" 1733094828 20777 47d17872427edb2ff7789ba6891000aa ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -39,6 +39,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb" 1248133631 30068 eae4ba75635647d82fb0b7d7bccc4748 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb" 1248133631 39386 0bb525d495ceab21fe797301a586e0d7 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -109,10 +110,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1721229899 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "logo_fmf.pdf" 1733054670 15612 f362f770ef36c22b3204cc12be10dccd ""
-  "ndd-ex.aux" 1733093847 3108 7a2ac283a943d7e06695576ef05db656 "pdflatex"
-  "ndd-ex.out" 1733093847 1983 3e55d6eb60bcc6a8ec9400fb6cb5846f "pdflatex"
-  "ndd-ex.tex" 1733093847 19055 755aa57f665b9a5b501b8f6e2acd702d ""
-  "ndd-ex.toc" 1733093847 779 b8e81bf6191e070158b3a6a707e98a42 "pdflatex"
+  "ndd-ex.aux" 1733094829 3633 45a69183ebf3740c3edfd3dd3839b183 "pdflatex"
+  "ndd-ex.out" 1733094829 2138 5070d5ac9b46e926832e2c3f6caedc8f "pdflatex"
+  "ndd-ex.tex" 1733094828 20777 47d17872427edb2ff7789ba6891000aa ""
+  "ndd-ex.toc" 1733094829 864 53eebb9f821817b6e34518a752be9ebe "pdflatex"
   (generated)
   "ndd-ex.aux"
   "ndd-ex.log"

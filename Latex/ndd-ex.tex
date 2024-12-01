@@ -418,6 +418,51 @@ which is less than $0.01$ so we've used the right distribution. Alternatively if
 result from the Bethe-Bloch equation, we'd get $\bar{\Delta} = 126\,\rm{keV}$ and $\sigma = 402\,\rm{keV}$ which would give
 us $\kappa = 0.0105$ which still hints that we should use the Landau distribution.
 
+\subsection{Cherenkov Radiation}
+Charged particles moving through a medium with a velocity greater than the speed of light in that medium emit Cherenkov 
+radiation. The angle of the emitted radiation is given by the Cherenkov angle which is defined as:
+%
+\begin{equation}
+    \cos{\theta} = \frac{1}{\beta n}\>,
+    \label{eq:cherenkov-angle}
+\end{equation}
+%
+where $n$ is the refractive index of the medium. The threshold velocity for Cherenkov radiation is given as:
+%
+\begin{equation}
+    \beta_{\text{thr}} = \frac{1}{n}\>.
+    \label{eq:cherenkov-threshold}
+\end{equation}
+%
+We can calculate the number of produced Cherenkov photons per unit length $x$ with the following formula:
+%
+\begin{equation}
+    \frac{\dd^2 N}{\dd E\,\dd x} = \frac{\alpha z^2}{\hbar c}\sin^2{\theta}\>,
+\end{equation}
+%
+which we can approximate for $z=1$ as:
+%
+\begin{equation}
+    \frac{\dd^2 N}{\dd E\,\dd x} = \frac{370}{\rm{eV}\>\rm{cm}}\sin^2{\theta}\>.
+    \label{eq:cherenkov-diff}
+\end{equation}
+%
+if we assume that $\beta\approx\text{const.}$ and that the refractive index is not a function of the wavelength $n\neq n(\lambda)$.
+Thus if we'd like to calculate the total number of Cherenkov photons produced in our detector we can use the following formula:
+%
+\begin{equation}
+    N_{\rm{Cherenkov}} = \frac{370}{\rm{eV}\,\rm{cm}}\,\Delta x\,\Delta E\left(1 - \frac{1}{\beta^2 n^2}\right)\>,
+    \label{eq:cherenkov-total}
+\end{equation}
+%
+where $\Delta x$ is the thickness of the detector and $\Delta E$ is the energy of an emitted Cherenkov photon which is simply
+calculated as:
+%
+\begin{equation}
+    \Delta E = h\nu = \frac{hc}{\lambda} = \frac{1240\>\rm{eV}\,\rm{nm}}{\lambda}\>,
+    \label{eq:cherenkov-energy}
+\end{equation}
+
 % Add references
 % \newpage
 % \bibliographystyle{unsrt}
