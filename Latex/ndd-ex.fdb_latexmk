@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1733067046 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1733067047
+["pdflatex"] 1733068750 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1733068751
   "/etc/texmf/web2c/texmf.cnf" 1721132218 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/pengu5055/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1721133484 1405652 6dbe6b4a0b8b03aa67147fe2fddcad95 ""
-  "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" 1733067046 14804 55df76018a62de047bc2fe70281bd663 ""
+  "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" 1733068750 16093 df2f3151ddbab703bb8f352db3b504f0 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -109,10 +109,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1721229899 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "logo_fmf.pdf" 1733054670 15612 f362f770ef36c22b3204cc12be10dccd ""
-  "ndd-ex.aux" 1733067047 2464 45f572861417eb305734069a2993f5d5 "pdflatex"
-  "ndd-ex.out" 1733067047 1390 b5f796577ddad579328c666a9807a05b "pdflatex"
-  "ndd-ex.tex" 1733067046 14804 55df76018a62de047bc2fe70281bd663 ""
-  "ndd-ex.toc" 1733067047 551 cccbb52826ad45daf3c504eb7e8b2555 "pdflatex"
+  "ndd-ex.aux" 1733068751 2726 fe4d1658f47fabd6da12b51190010b00 "pdflatex"
+  "ndd-ex.out" 1733068751 1545 1531ca55016603097e7d7dc70836ceaa "pdflatex"
+  "ndd-ex.tex" 1733068750 16093 df2f3151ddbab703bb8f352db3b504f0 ""
+  "ndd-ex.toc" 1733068751 636 bad0522aa977a3df9b155842714e3e64 "pdflatex"
   (generated)
   "ndd-ex.aux"
   "ndd-ex.log"

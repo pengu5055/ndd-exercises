@@ -320,6 +320,37 @@ Now all that is left is to compute the weighted sum as stated in (\ref{eq:bb-com
     \label{eq:1sub3-result}
 \end{flalign}
 %
+\subsection{Landau Distribution}
+For detectors of moderate thickness, which we can consider as \textbf{thin absorbers}, we can use a highly-skewed 
+Landau-Vavilov distribution to describe the energy loss of particles. The most probable energy loss $\Delta_p$ is given as:
+%
+\begin{equation}
+    \bar{\Delta} = \Delta_p = \xi\left[\ln{\frac{2mc^2\beta^2\gamma^2}{I}} + \ln{\frac{\xi}{I} + j - \beta^2 - \delta(\beta\gamma)}\right]\>,
+    \label{eq:landau}
+\end{equation}
+%
+where $\delta(\beta\gamma)$ represents corrections due to the density effect, $j=0.200$ and $\xi$ is given as:
+%
+\begin{equation}
+    \xi = \frac{K}{2}\left\langle\frac{Z}{A}\right\rangle\frac{x}{\beta^2}\>\rm{MeV}\>,
+    \label{eq:xi}
+\end{equation}
+%
+for $x$ in $\rm{g/cm}^2$ and $K = 0.3\,\rm{MeV}\,\rm{cm}^2\rm{/g}$. \textbf{Warning:} $x$ here is normalized to $\rm{g/cm}^2$.
+To know which distribution to use, we can use the following rule of thumb:
+%
+\begin{equation}
+    \kappa = \frac{\bar{\Delta}}{W_{\rm{max}}} \begin{cases}
+        > 10 & \text{use Bethe-Bloch}\>, \\
+        < 0.01 & \text{use Landau}\>.
+    \end{cases}
+\end{equation}
+%
+To determine the energy resolution of such a detector we can use the following formula:
+%
+\begin{equation}
+    R_{\rm{FWHM}} = \frac{4\xi}{\Delta_p}\>.
+\end{equation}
 
 
 % Add references
