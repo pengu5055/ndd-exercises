@@ -123,7 +123,7 @@ The maximum energy transfer in a single collision $W_{\text{max}}$ can be calcul
 For our purposes we will ignore the density effect correction $\delta$ and the shell correction $C$.
 
 \subsubsection{Energy Loss of Charged Kaons}
-Let us calculate the energy losses for charged kaons $K^+$ and $K^-$ with a rest mass of $0.493\,\text{MeV}$ and momentum of $2.5\,\text{GeV}$ in copper which has the
+Let us calculate the energy losses for charged kaons $K^+$ and $K^-$ with a rest mass of $0.493\,\text{GeV}$ and momentum of $2.5\,\text{GeV}$ in copper which has the
 following properties:
 %
 \begin{align*}
@@ -142,7 +142,7 @@ First let us calculate the velocity $\beta$ and the Lorentz factor $\gamma$. We 
 where $M$ is the mass of the particle. Thus:
 %
 \begin{equation}
-    \beta = \frac{2.5\>\dfrac{\rm{GeV}}{c}\>c}{\sqrt{\left(2.5\>\dfrac{\rm{GeV}}{c}\>c\right)^2 + {\left(0.493\>\dfrac{\rm{MeV}}{c^2}\>c^2\right)}^2}} \approx 0.981031\>.
+    \beta = \frac{2.5\>\dfrac{\rm{GeV}}{c}\>c}{\sqrt{\left(2.5\>\dfrac{\rm{GeV}}{c}\>c\right)^2 + {\left(0.493\>\dfrac{\rm{GeV}}{c^2}\>c^2\right)}^2}} \approx 0.981031\>.
 \end{equation}
 %
 \textbf{Remember to take at least 4 significant digits for the velocity $\beta$!} This is due to the logarithm in the Bethe-Bloch equation.
@@ -336,8 +336,9 @@ where $\delta(\beta\gamma)$ represents corrections due to the density effect, $j
     \label{eq:xi}
 \end{equation}
 %
-for $x$ in $\rm{g/cm}^2$ and $K = 0.3\,\rm{MeV}\,\rm{cm}^2\rm{/g}$. \textbf{Warning:} $x$ here is normalized to $\rm{g/cm}^2$.
-To know which distribution to use, we can use the following rule of thumb:
+for $x$ in $\rm{g/cm}^2$ and $K = 0.3\,\rm{MeV}\,\rm{cm}^2\rm{/g}$. \textbf{Warning:} $x$ here is normalized with density $\rm{g/cm}^2$. This
+means that $x = \rho\cdot d$ where $d$ is the thickness of the detector. To know which distribution to use, we can use the 
+following rule of thumb:
 %
 \begin{equation}
     \kappa = \frac{\bar{\Delta}}{W_{\rm{max}}} \begin{cases}
@@ -350,8 +351,72 @@ To determine the energy resolution of such a detector we can use the following f
 %
 \begin{equation}
     R_{\rm{FWHM}} = \frac{4\xi}{\Delta_p}\>.
+    \label{eq:landau-res}
 \end{equation}
-
+%
+\subsubsection{What is the Most Probable Energy Loss of a Charged Pion in Silicon?}
+Let's calculate the most probable energy loss of a charged pion with a rest mass of $139.57\,\rm{MeV}$ and momentum of $0.5\,\rm{GeV}$ in a silicon based
+detector which has a $320\,\mu\rm{m}$ thick silicon layer. Silicon has the following properties:
+%
+\begin{align*}
+    & \rho = 2.32\>\rm{g/cm}^3\>, \\
+    & Z = 14\>, \\
+    & A = 28\>\rm{g/mol}\>.
+\end{align*}
+%
+As before we first calculate the velocity $\beta$ and the Lorentz factor $\gamma$ for pions. Using (\ref{eq:beta}) we get:
+%
+\begin{equation}
+    \beta = \frac{0.5\>\dfrac{\rm{GeV}}{c}\>c}{\sqrt{\left(0.5\>\dfrac{\rm{GeV}}{c}\>c\right)^2 + \left(0.13957\>\dfrac{\rm{GeV}}{c^2}\>c^2\right)^2}} \approx  0.96318\>,
+\end{equation}
+%
+which gives us a Lorentz factor of:
+%
+\begin{equation}
+    \gamma = \frac{1}{\sqrt{1-(0.96318)^2}} \approx 3.72\>.
+\end{equation}
+%
+Likewise as before we want to calculate the mean excitation energy $I$ using (\ref{eq:I}) for $Z \ge 13$:
+%
+\begin{equation}
+    I = 14\left(9.76 + 58.8\cdot 14^{-1.19}\right)\>\rm{eV} = 172.3\>\rm{eV}\>.
+\end{equation}
+%
+We can also calculate our approximation for the maximum energy transfer in a single collision $W_{\text{max}}$ using (\ref{eq:wmax}), since we 
+can spot it in the Landau distribution (\ref{eq:landau}):
+%
+\begin{equation}
+    W_{\text{max}} = 2\cdot 0.511\>\frac{\rm{MeV}}{c^2}\>c^2\cdot(0.96318)^2(3.72)^2 = 13.12\>\rm{MeV}\>.
+\end{equation}
+Next we calculate $\xi$ using (\ref{eq:xi}):
+%
+\begin{equation}
+    \xi = \frac{0.3\>\dfrac{\rm{MeV}\,\rm{cm}^2}{\rm{g}}}{2}\>\frac{14}{28}\>\frac{320\cdot10^{-4}\>\rm{cm}\cdot 2.32\>\dfrac{\rm{g}}{\rm{cm}^3}}{(0.96318)^2} = 0.0060\>\rm{MeV}\>.
+\end{equation}
+%
+Now we can calculate the most probable energy loss using the Landau distribution (\ref{eq:landau}):
+%
+\begin{flalign}
+    \Delta_p &= 0.006\>\rm{MeV}\,\left[\ln{\frac{13.12\cdot10^6\>\rm{eV}}{172.3\>\rm{eV}}} + \ln{\frac{0.006\cdot10^6\>\rm{eV}}{172.3\>\rm{eV}}} + 0.2 - (0.96318)^2\right] \nonumber \\
+    &= 0.0844\>\rm{MeV}\>.
+\end{flalign}
+%
+From this we can now also calculate the energy resolution of the detector using the formula (\ref{eq:landau-res}):
+%
+\begin{equation}
+    R_{\rm{FWHM}} = \frac{4\cdot 0.006\>\rm{MeV}}{0.0844\>\rm{MeV}} = 28.5\%\>.
+    \label{eq:2sub1-result}
+\end{equation}
+%
+If we're paranoid if we've used the right distribution, we can calculate $\kappa$ as:
+%
+\begin{equation}
+    \kappa = \frac{0.0844\>\rm{MeV}}{13.12\>\rm{MeV}} = 0.0064\>,
+\end{equation}
+%
+which is less than $0.01$ so we've used the right distribution. Alternatively if we magically procure the 
+result from the Bethe-Bloch equation, we'd get $\bar{\Delta} = 126\,\rm{keV}$ and $\sigma = 402\,\rm{keV}$ which would give
+us $\kappa = 0.0105$ which still hints that we should use the Landau distribution.
 
 % Add references
 % \newpage
