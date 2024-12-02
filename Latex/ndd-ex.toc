@@ -1,11 +1,12 @@
 \contentsline {section}{\numberline {1}Interactions of Particles with Photons}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Bethe-Bloch Equation}{1}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Energy Loss of Charged Kaons}{1}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Energy Loss of Charged Kaons}{2}{subsubsection.1.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.2}What is the Energy Resolution of the Detector from the Previous Example?}{2}{subsubsection.1.1.2}%
 \contentsline {subsubsection}{\numberline {1.1.3}What if the Detector is Made of a Molecule?}{3}{subsubsection.1.1.3}%
 \contentsline {subsection}{\numberline {1.2}Landau Distribution}{4}{subsection.1.2}%
 \contentsline {subsubsection}{\numberline {1.2.1}What is the Most Probable Energy Loss of a Charged Pion in Silicon?}{5}{subsubsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.3}Cherenkov Radiation}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.3}Cherenkov Radiation}{6}{subsection.1.3}%
 \contentsline {subsubsection}{\numberline {1.3.1}How many Cherenkov Photons are Produced in Water by a Proton?}{6}{subsubsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.4}Neutrinos and Dark Matter}{7}{subsection.1.4}%
 \contentsline {subsubsection}{\numberline {1.4.1}What mass of pure atomic hydrogen is needed to detect 1000 solar neutrinos per year?}{7}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Detection of WIMP's in a germanium detector}{8}{subsubsection.1.4.2}%

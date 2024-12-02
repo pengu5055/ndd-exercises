@@ -563,6 +563,54 @@ If we want to detect $1000$ neutrinos per year we can calculate the mass of hydr
     &= \frac{1\>\dfrac{\rm{g}}{\rm{mol}}}{\left[6.02\cdot10^{23}\>\dfrac{1}{\rm{mol}}\right]\left(3.15\cdot 10^7\>\rm{s}\right)\left[6\cdot 10^{14}\>\dfrac{1}{\rm{m}^2\rm{s}}\right]\left(10^{-48}\>\rm{m}^2\right)} \cdot 1000 \nonumber \\
     &= 87.9\>\rm{kg}\>.
 \end{flalign}
+%
+\subsubsection{Detection of WIMP's in a germanium detector}
+WIMP's (Weakly Interacting Massive Particles) are hypothetical particles that are thought to make up dark matter. Let's say that we 
+are trying to detect them through elastic scattering with germanium nuclei. We take the mass of a WIMP to be $100\,\rm{GeV}$ and presume that 
+they are stationary in intergalactic space. Our solar system is moving through intergalactic space at a velocity of $2.2\cdot 10^5\,\rm{m/s}$.
+We first need to estimate the maximum energy transfer in one collision with a germanium nucleus from which we can then calculate the needed mass 
+of germanium in the detector to get one event per year. The estimated cross-section for WIMP-nucleus scattering is
+$\sigma_{\text{WIMP}} = 10^{-45}\,\rm{cm}^2$. The estimated flux of WIMP's is $\phi = 10^5\,\rm{cm}^{-2}\rm{s}^{-1}$. \\
+
+We can directly use equation (\ref{eq:nu-interactions}) to calculate the mass of germanium needed in the detector:
+%
+\begin{flalign}
+    m &= \frac{NA}{N_a t\phi\sigma} \nonumber \\
+    &= \frac{1\cdot 72.6\>\dfrac{\rm{g}}{\rm{mol}}}{\left[6.02\cdot10^{23}\>\dfrac{1}{\rm{mol}}\right](3.15\cdot 10^7\>\rm{s})\left[10^5\>\dfrac{1}{\rm{cm}^2\rm{s}}\right]\left(10^{-45}\>\rm{cm}^2\right)} \nonumber \\
+    &= 3.826 \cdot 10^7\>\rm{t} = 38\>\rm{kt}\>.
+\end{flalign}
+%
+where we used the atomic mass of germanium $A = 72.6\,\rm{g/mol}$ and $N = 1$. To calculate the maximum energy transfer 
+in one collision we'd need to calculate the kinematics of the problem along with taking into account conservation laws. This 
+would be best done in the center of mass frame and then transformed back to the lab frame. This is a bit too much for this
+exercise so we can try to estimate the maximum energy transfer semi-classically. The kinetic energy the germanium nucleon receives 
+is:
+%
+\begin{equation}
+    W_2 = \frac{4mM}{(m+M)^2}\>W_1\>,
+\end{equation}
+%
+where $M$ is the mass of the WIMP, $m$ is the mass of the germanium nucleus and $W_1$ is the kinetic energy of the WIMP before the collision.
+The germanium nucleus is made of $72$ nucleons and the mass of a nucleon is $\sim 1\,\rm{GeV}$. Thus the mass of the germanium nucleus is
+$m = 72\,\rm{GeV}$. We can calculate $\beta$ for the WIMP as:
+%
+\begin{equation}
+    \beta = \frac{v}{c} = \frac{2.2\cdot10^5\dfrac{\rm{m}}{\rm{s}}}{3\cdot10^8\dfrac{\rm{m}}{\rm{s}}} = 0.733\cdot10^{-3}\>.
+\end{equation}
+%
+From this we can calculate the initial kinetic energy of the WIMP as:
+%
+\begin{equation}
+    W_1 = \frac{1}{2}Mv^2 =  \frac{1}{2}Mc^2\beta^2 = 0.5\cdot 100\cdot 10^9\>\frac{\rm{eV}}{c^2}\>c^2\cdot(0.733\cdot10^{-3})^2 = 27.0\>\rm{keV}\>. 
+\end{equation}
+%
+Thus the maximum energy transfer in one collision is:
+%
+\begin{flalign}
+    W_2 &= \frac{4\cdot 72\cdot 100}{(72+100)^2}\>27.0\>\rm{keV} \nonumber \\
+    &= 0.9735 \cdot 27.0\>\rm{keV} \nonumber \\
+    &= 26.3\>\rm{keV}\>.
+\end{flalign}
 % \newpage
 % \bibliographystyle{unsrt}
 % \bibliography{main}
