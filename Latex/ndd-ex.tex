@@ -881,7 +881,33 @@ where we took the \textbf{primary number of created pairs}, not the number of pa
     R = \sqrt{(0.011)^2 + (0.018)^2} = 2.9\%\>.
 \end{equation}
 
-\subsubsection{Why the cylindrical geometry? What voltage would be needed to achieve the same electric field in a parallel plate condensator?}
+\subsubsection{Why the cylindrical geometry? What voltage would be needed to achieve the same electric field in a parallel plate capacitor?}
+Let's imagine that the structure of our detector is analogous to a Geiger-Muller tube, so a cylinder with a wire in the middle. This is only an approximation
+since actual ionization chambers are more complex and are often made of thousands of parallel wires inside a cylindrical gas chamber. The reason for the cylindrical
+geometry is exactly the properties of the electric field. Taking the center wire thickness to be $a=0.008\,\rm{cm}$ and the radius of the cylinder to be 
+$b=1\,\rm{cm}$, the electric field inside the cylinder is given as:
+%
+\begin{equation}
+    E(r) = \frac{U}{r\ln{\frac{b}{a}}}\>,
+\end{equation}
+%
+which at $U=2000\,\rm{V}$ yields an electric field at the center wire of the cylinder:
+%
+\begin{flalign}
+    E(r=b) &= \frac{2000\>\rm{V}}{1\>\rm{cm}\>\ln{\frac{1\>\rm{cm}}{0.008\>\rm{cm}}}} \nonumber \\
+    &= 5.2\cdot 10^6\>\rm{V/m}\>.
+\end{flalign}
+%
+In comparison, if we wanted to achieve the same electric field inside a planar capacitor with a distance of $d=1\,\rm{cm}$ we'd need a voltage of:
+%
+\begin{equation}
+    U = E\cdot d = 5.2\cdot 10^6\>\rm{V/m}\cdot 1\>\rm{cm} = 52\>\rm{kV}\>.
+\end{equation}
+%
+A power supply that can provide $52\,\rm{kV}$ is much more expensive and harder to maintain than a power supply that can provide $2\,\rm{kV}$, hence the 
+practical choice of a cylindrical geometry.
+
+
 
 % \newpage
 % \bibliographystyle{unsrt}
