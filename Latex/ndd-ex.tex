@@ -955,7 +955,51 @@ Sometimes we also se the use of the efficiency of the scintillator which is defi
     \label{eq:scint-eff}
 \end{equation}
 %
+\subsubsection{How many scintillation photons are produed in a $\rm{CsI(Tl)}$ scintillator?}
+Our electromagnetic calorimeter uses $30\,\rm{cm}$ long $\rm{CsI(Tl)}$ crystals. If a particle deposits $4\,\rm{GeV}$ of 
+energy in the crystal how many scintillation photons are produced? The light yield of $\rm{CsI(Tl)}$ is $60000\,\rm{photons/MeV}$.
+We get the number of produced photons using the formula (\ref{scint-N}):
+%
+\begin{equation}
+    N = 60000\>\frac{\rm{photons}}{\rm{MeV}}\cdot 4\cdot10^3\>\rm{MeV} = 240\cdot10^6\>\rm{photons}\>.
+\end{equation}
+%
+This theoretically gives us an energy resolution of:
+%
+\begin{equation}
+    R = \frac{1}{\sqrt{240\cdot10^6}} = 0.0065\%\>,
+\end{equation}
+%
+however the actual value is higher due to the quantum efficiency $\bar{\rm{QE}}$ of the photomultiplier tube and the actual efficiency of 
+collection of the scintillation photons $\varepsilon_{\text{coll}}$. We take an average value for the quantum efficiency
+as it is generally dependent on the wavelength of the light. If we take $\bar{\rm{QE}} = 0.2$ and $\varepsilon_{\text{coll}} = 0.7$ we get the 
+new corrected number of detected particles as:
+%
+\begin{equation}
+    N_{\text{det}} =N\cdot\bar{\rm{QE}}\cdot\varepsilon_\text{coll}=240\cdot10^6\cdot 0.2\cdot 0.7 = 33.6\cdot10^6\>.
+\end{equation}
+%
+\begin{equation}
+    R_{\text{eff}} = \frac{1}{\sqrt{240\cdot10^6\cdot 0.2\cdot 0.7}} = 0.017\%\>.
+\end{equation}
+%
+\paragraph{Use of Scintillators in Nuclear Medicine}
+\subsubsection{What is the Resolution of a SPECT Camera?}
+A SPECT camera is a Single Photon Emission Computed Tomography camera. It is used in nuclear medicine to detect gamma rays. 
+The camera uses a $\rm{NaI(Tl)}$ scintillator with a light yield of $40000\,\rm{photons/MeV}$. The incoming gamma rays have an energy of 
+$140.5\,\rm{keV}$. We can calculate the number of produced scintillation photons using the formula (\ref{scint-N}):
+%
+\begin{equation}
+    N = 40000\>\frac{\rm{photons}}{\rm{MeV}}\cdot 140.5\cdot10^{-3}\>\rm{MeV} = 5620\>\rm{photons}\>.
+\end{equation}
+%
+The energy resolution of the camera is then:
+%
+\begin{equation}
+    R = \frac{1}{\sqrt{5620}} = 1.33\%\>.
+\end{equation}
 
+\subsubsection{What is the Resolution of a PET Camera with a $\rm{BGO}$ scintillator?}
 
 
 % \newpage

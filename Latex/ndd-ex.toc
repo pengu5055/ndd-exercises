@@ -1,23 +1,27 @@
 \contentsline {section}{\numberline {1}Interactions of Particles with Photons}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Bethe-Bloch Equation}{1}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}Energy Loss of Charged Kaons}{2}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}What is the Energy Resolution of the Detector from the Previous Example?}{2}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.2}What is the Energy Resolution of the Detector from the Previous Example?}{3}{subsubsection.1.1.2}%
 \contentsline {subsubsection}{\numberline {1.1.3}What if the Detector is Made of a Molecule?}{3}{subsubsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.2}Landau Distribution}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}Landau Distribution}{5}{subsection.1.2}%
 \contentsline {subsubsection}{\numberline {1.2.1}What is the Most Probable Energy Loss of a Charged Pion in Silicon?}{5}{subsubsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.3}Cherenkov Radiation}{6}{subsection.1.3}%
 \contentsline {subsubsection}{\numberline {1.3.1}How many Cherenkov Photons are Produced in Water by a Proton?}{6}{subsubsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.4}Neutrinos and Dark Matter}{7}{subsection.1.4}%
-\contentsline {subsubsection}{\numberline {1.4.1}What mass of pure atomic hydrogen is needed to detect 1000 solar neutrinos per year?}{7}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.1}What mass of pure atomic hydrogen is needed to detect 1000 solar neutrinos per year?}{8}{subsubsection.1.4.1}%
 \contentsline {subsubsection}{\numberline {1.4.2}Detection of WIMP's in a germanium detector}{8}{subsubsection.1.4.2}%
-\contentsline {section}{\numberline {2}Detectors}{8}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Semiconductor Detectors}{8}{subsection.2.1}%
+\contentsline {section}{\numberline {2}Detectors}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Semiconductor Detectors}{9}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}What is the energy resolution of a silicon detector at $300\,\rm {K}$?}{9}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}What voltage is needed to get a $1\,\rm {mm}$ thick depletion region in the detector from the previous exercise?}{10}{subsubsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.2}Ionization Detectors}{10}{subsection.2.2}%
-\contentsline {paragraph}{Ionization Chambers}{10}{section*.2}%
+\contentsline {subsection}{\numberline {2.2}Ionization Detectors}{11}{subsection.2.2}%
+\contentsline {paragraph}{Ionization Chambers}{11}{section*.2}%
 \contentsline {paragraph}{Proportional Counters}{11}{section*.3}%
 \contentsline {subsubsection}{\numberline {2.2.1}What is the energy resolution of a gas ionization chamber?}{11}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}What is the energy resolution of a proportional counter?}{12}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Why the cylindrical geometry? What voltage would be needed to achieve the same electric field in a parallel plate capacitor?}{12}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3}Why the cylindrical geometry? What voltage would be needed to achieve the same electric field in a parallel plate capacitor?}{13}{subsubsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.3}Scintillation Detectors}{13}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}How many scintillation photons are produed in a $\rm {CsI(Tl)}$ scintillator?}{14}{subsubsection.2.3.1}%
+\contentsline {paragraph}{Use of Scintillators in Nuclear Medicine}{14}{section*.4}%
+\contentsline {subsubsection}{\numberline {2.3.2}What is the Resolution of a SPECT Camera?}{14}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}What is the Resolution of a PET Camera with a $\rm {BGO}$ scintillator?}{14}{subsubsection.2.3.3}%

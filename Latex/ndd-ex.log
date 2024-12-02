@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.16)  2 DEC 2024 20:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.16)  2 DEC 2024 21:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -394,7 +394,7 @@ LaTeX Info: Redefining \nameref on input line 44.
 \@outlinefile=\write3
 \openout3 = `ndd-ex.out'.
 
-<logo_fmf.pdf, id=88, 233.03412pt x 141.6228pt>
+<logo_fmf.pdf, id=100, 233.03412pt x 141.6228pt>
 File: logo_fmf.pdf Graphic file (type pdf)
 <use logo_fmf.pdf>
 Package pdftex.def Info: logo_fmf.pdf  used on input line 49.
@@ -423,7 +423,7 @@ Overfull \hbox (9.27426pt too wide) detected at line 100
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.124 \end{equation}
+l.118 \end{equation}
                      [1]
 Overfull \hbox (3.37514pt too wide) detected at line 177
 []
@@ -439,12 +439,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 472--475
 
  []
 
-[6]
+[6] [7]
 Underfull \hbox (badness 10000) in paragraph at lines 568--574
 
  []
 
-[7] [8]
+[8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 665.
@@ -480,27 +480,49 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 734.
 
-[10] [11] [12] [13] (./ndd-ex.aux)
+[10] [11] [12] [13]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 958.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 958.
+
+
+Overfull \hbox (1.33076pt too wide) in paragraph at lines 959--963
+\OT1/cmr/m/n/10 the crys-tal how many scin-til-la-tion pho-tons are pro-duced? The light yield of $[]$ is $60000 []$.
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1002.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1002.
+
+[14] (./ndd-ex.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25pt have occurred.
 
 Package rerunfilecheck Info: File `ndd-ex.out' has not changed.
-(rerunfilecheck)             Checksum: BCB84507A7F65CDC4C68D32AA0DB451A;6694.
+(rerunfilecheck)             Checksum: A34134FB7D2C38171A9A17A0144C8992;7850.
  ) 
 Here is how much of TeX's memory you used:
- 11290 strings out of 480247
- 180259 string characters out of 5896151
- 491428 words of memory out of 5000000
- 28929 multiletter control sequences out of 15000+600000
+ 11304 strings out of 480247
+ 180474 string characters out of 5896151
+ 492436 words of memory out of 5000000
+ 28932 multiletter control sequences out of 15000+600000
  480046 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,17n,70p,850b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ndd-ex.pdf (14 pages, 283090 bytes).
+Output written on ndd-ex.pdf (15 pages, 287352 bytes).
 PDF statistics:
- 447 PDF objects out of 1000 (max. 8388607)
- 385 compressed objects within 4 object streams
- 137 named destinations out of 1000 (max. 500000)
- 174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 479 PDF objects out of 1000 (max. 8388607)
+ 415 compressed objects within 5 object streams
+ 148 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
