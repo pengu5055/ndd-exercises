@@ -907,6 +907,55 @@ In comparison, if we wanted to achieve the same electric field inside a planar c
 A power supply that can provide $52\,\rm{kV}$ is much more expensive and harder to maintain than a power supply that can provide $2\,\rm{kV}$, hence the 
 practical choice of a cylindrical geometry.
 
+\subsection{Scintillation Detectors}
+In scintillation detectors the energy of a particle is converted into light. This happens when the particle interacts with the scintillator and
+excites the atoms in the scintillator. The excited atoms then de-excite through an intermediate state and emit light. The light is then collected by a photomultiplier tube (PMT)
+which converts the light into an electrical signal. The intermediate state is important since it allows for the scintillator to emit light out of the crystal. If it were not so the 
+emitted photons would have enough energy to one again excite the atoms in the scintillator. We have two types of scintillators: organic and inorganic. Organic scintillators are
+made of organic compounds and are usually liquid or plastic. Inorganic scintillators are made of inorganic compounds and are usually crystals. We can the energy needed for the creation of 
+one photon for different scintillators:
+%
+\begin{align*}
+    &\text{Organic}\quad \begin{cases}
+        & w_{\text{Anthracene}} = 60\>\rm{eV}\>, \\
+        & w_{\text{Plastic}} = 25\>\rm{eV}\>, \\
+    \end{cases}
+    \quad \\
+    &\text{Inorganic}\quad \begin{cases}
+        & w_{\text{NaI(Tl)}} = 100\>\rm{eV}\>, \\
+        & w_{\text{BGO}} = 300\>\rm{eV}\>. \\
+    \end{cases}
+\end{align*}
+%
+A more commonly used property of scintillators is their \textbf{light yield} which is the number of photons produced per unit energy, like so:
+%
+\begin{equation}
+    \rm{Ly} = \frac{N\>\text{photons}}{\Delta E\>\text{energy deposited by particle}}\>.
+    \label{eq:light-yield}
+\end{equation}
+%
+The light yield is usually given in $\rm{photons/MeV}$. The energy resolution of a scintillation detector is given as:
+%
+\begin{equation}
+    R = \frac{\sigma_N}{N} = \frac{\sqrt{N}}{N} = \frac{1}{\sqrt{N}}\>,
+    \label{eq:scint-res}
+\end{equation}
+%
+where $N$ is the number of scintillation photons, which is calculated simply by:
+%
+\begin{equation}
+    N = \rm{Ly}\cdot\Delta E\>.
+    \label{scint-N}
+\end{equation}
+%
+Sometimes we also se the use of the efficiency of the scintillator which is defined as:
+%
+\begin{equation}
+    \varepsilon = \frac{E_\gamma}{\Delta E} = \frac{N\cdot h\nu}{\Delta E}\>.
+    \label{eq:scint-eff}
+\end{equation}
+%
+
 
 
 % \newpage

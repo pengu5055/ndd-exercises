@@ -20,3 +20,4 @@
 \contentsline {subsubsection}{\numberline {2.2.1}What is the energy resolution of a gas ionization chamber?}{11}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}What is the energy resolution of a proportional counter?}{12}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.3}Why the cylindrical geometry? What voltage would be needed to achieve the same electric field in a parallel plate capacitor?}{12}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Scintillation Detectors}{13}{subsection.2.3}%
