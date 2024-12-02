@@ -13,3 +13,4 @@
 \contentsline {section}{\numberline {2}Detectors}{8}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Semiconductor Detectors}{8}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}What is the energy resolution of a silicon detector at $300\,\rm {K}$?}{9}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}What voltage is needed to get a $1\,\rm {mm}$ thick depletion region in the detector from the previous exercise?}{10}{subsubsection.2.1.2}%

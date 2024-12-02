@@ -731,6 +731,23 @@ For the purpose of education if we were to repeat the entire calculation while t
 %
 which would give us an energy resolution of $R_\text{Ge} = 0.072\%$ and $R_{\text{FWHM}_\text{Ge}} = 0.17\%$.
 
+\subsubsection{What voltage is needed to get a $1\,\rm{mm}$ thick depletion region in the detector from the previous exercise?}
+Let's say that the impurity concentration is $N_D = 6\cdot 10^{14}\,\rm{cm}^{-3}$ and the dielectric constant of silicon is $\varepsilon = 11.7$.
+The equation for the depletion region width is:
+%
+\begin{equation}
+    d = \sqrt{\frac{2\varepsilon\varepsilon_0 U}{e_0 N_D}}\>.
+    \label{eq:depletion-thickness}
+\end{equation}
+%
+We can use this equation to find the voltage $U$ needed to get a $1\,\rm{mm}$ thick depletion region:
+%
+\begin{flalign}
+    U &= \frac{d e_0 N_D}{2\varepsilon\varepsilon_0} \nonumber \\
+    &= \frac{\left(0.1\>\rm{cm}\right)^2\left[1.6\cdot10^{-19}\>\rm{As}\right]\left(6\cdot10^{14}\dfrac{1}{\rm{cm}^3}\right)}{2\cdot11.7\left(8.85\cdot10^{-12}\cdot 10^2 \>\dfrac{\rm{As}}{\rm{V}\,\rm{cm}}\right)} \nonumber \\
+    &= 45.4\>\rm{V}\>.
+\end{flalign}
+
 % \newpage
 % \bibliographystyle{unsrt}
 % \bibliography{main}
