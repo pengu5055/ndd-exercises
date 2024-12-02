@@ -751,9 +751,8 @@ We can use this equation to find the voltage $U$ needed to get a $1\,\rm{mm}$ th
 \subsection{Ionization Detectors}
 \paragraph{Ionization Chambers}
 Gas ionization chambers are detectors that are filled with a gas and have an electric field applied to them. When a charged particle
-passes through the gas it ionizes the gas atoms and the electrons and ions are collected at the electrodes of the detector. Since the created 
-electron-ion pairs are hard to detect we use the Townsend avalanche effect to amplify the signal, which gives us a cascade of 
-electron-ion pairs. Without multiplication of the signal the energy resolution is given as:
+passes through the gas it ionizes the gas atoms and the electrons and ions are collected at the electrodes of the detector. Without multiplication of the signal 
+the energy resolution is given as:
 %
 \begin{equation}
     R = \sqrt{\frac{F\cdot w}{\Delta E}}\>,
@@ -771,8 +770,13 @@ the number of created electron-ion pairs and that they are Poisson distributed:
 \end{align}
 
 The Fano factor is needed to correct the fact that subsequent electron-ion pairs are not entirely statistically 
-independent. $w$ is the energy needed to create an electron-ion pair in the
-gas. For argon $Ar$ it is $w_\text{Ar} = 26\,\rm{eV}$. The amount of charge we collect is:
+independent. $w$ is the energy needed to create an electron-ion pair in the gas.
+
+\paragraph{Proportional Counters}
+Proportional counters are gas ionization chambers with a multiplication factor.
+Since the created electron-ion pairs are hard to detect we use the Townsend avalanche effect to amplify 
+the signal, which gives us a cascade of electron-ion pairs. 
+For argon $Ar$ it is $w_\text{Ar} = 26\,\rm{eV}$. The amount of charge we collect is:
 %
 \begin{align}
     Q &= N\cdot e \qquad \text{without multiplication}\>, \\
@@ -851,6 +855,34 @@ is simply the sum of the number of pairs created in argon and isobutane. From th
     &= \frac{\sqrt{\left(13.84\right)^2+\left(11.03\right)^2}}{958 + 609} \nonumber \\
     &= 1.1\%\>.
 \end{flalign}
+%
+\subsubsection{What is the energy resolution of a proportional counter?}
+For educational purposes let's calculate how the energy resolution worsens with multiplication in a 
+proportional counter. Let's keep the rest of the data as in the previous exercise and assume that the multiplication
+factor is $M = 900$ and that the constant $b = 0.5$. To get the new energy resolution we can recycle our previous result and add 
+an additional term to the resolution that is due to multiplication. The combined resolution is:
+%
+\begin{equation}
+    R = \sqrt{R_N^2 + R_M^2}\>,
+\end{equation}
+%
+where $R_N$ is the resolution without multiplication and $R_M$ is the resolution decrease due to multiplication. The resolution
+decrease due to multiplication is given as:
+%
+\begin{flalign}
+    R_M &= \sqrt{\frac{b}{N}} \nonumber \\
+    &= \sqrt{\frac{0.5}{958 + 609}} \nonumber \\
+    &= 1.8\%\>,
+\end{flalign}
+%
+where we took the \textbf{primary number of created pairs}, not the number of pairs after multiplication. Thus the total resolution is:
+%
+\begin{equation}
+    R = \sqrt{(0.011)^2 + (0.018)^2} = 2.9\%\>.
+\end{equation}
+
+\subsubsection{Why the cylindrical geometry? What voltage would be needed to achieve the same electric field in a parallel plate condensator?}
+
 % \newpage
 % \bibliographystyle{unsrt}
 % \bibliography{main}

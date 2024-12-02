@@ -16,4 +16,7 @@
 \contentsline {subsubsection}{\numberline {2.1.2}What voltage is needed to get a $1\,\rm {mm}$ thick depletion region in the detector from the previous exercise?}{10}{subsubsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.2}Ionization Detectors}{10}{subsection.2.2}%
 \contentsline {paragraph}{Ionization Chambers}{10}{section*.2}%
+\contentsline {paragraph}{Proportional Counters}{11}{section*.3}%
 \contentsline {subsubsection}{\numberline {2.2.1}What is the energy resolution of a gas ionization chamber?}{11}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}What is the energy resolution of a proportional counter?}{12}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Why the cylindrical geometry? What voltage would be needed to achieve the same electric field in a parallel plate condensator?}{12}{subsubsection.2.2.3}%

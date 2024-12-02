@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1733151430 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1733151430
+["pdflatex"] 1733164656 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1733164657
   "/etc/texmf/web2c/texmf.cnf" 1721132218 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/pengu5055/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1721133484 1405652 6dbe6b4a0b8b03aa67147fe2fddcad95 ""
-  "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" 1733151429 39640 829827d4d7fe3d6d9be925e62a27d017 ""
+  "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" 1733164655 41020 1ace1d602738a6956277e5b41127678f ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -113,10 +113,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1721229899 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "logo_fmf.pdf" 1733054670 15612 f362f770ef36c22b3204cc12be10dccd ""
-  "ndd-ex.aux" 1733151430 6332 fc2408658c2d57dee9bcb4bd1f64fdc9 "pdflatex"
-  "ndd-ex.out" 1733151430 5401 0cc791da12e66b5d6d0a32b876e49e8c "pdflatex"
-  "ndd-ex.tex" 1733151429 39640 829827d4d7fe3d6d9be925e62a27d017 ""
-  "ndd-ex.toc" 1733151430 2146 35b8b618c561a828e20fde3b8889412e "pdflatex"
+  "ndd-ex.aux" 1733164656 6861 787d62f0e60883c321b6244ab2f35db8 "pdflatex"
+  "ndd-ex.out" 1733164656 6528 653425f3256b529dd8dd2acee6f790e0 "pdflatex"
+  "ndd-ex.tex" 1733164655 41020 1ace1d602738a6956277e5b41127678f ""
+  "ndd-ex.toc" 1733164656 2548 ef30a40470c3b4b74d2fa0109e4b2ee4 "pdflatex"
   (generated)
   "ndd-ex.aux"
   "ndd-ex.log"
