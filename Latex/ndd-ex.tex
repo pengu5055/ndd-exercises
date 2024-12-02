@@ -944,7 +944,7 @@ The light yield is usually given in $\rm{photons/MeV}$. The energy resolution of
 where $N$ is the number of scintillation photons, which is calculated simply by:
 %
 \begin{equation}
-    N = \rm{Ly}\cdot\Delta E\>.
+    N = \rm{Ly}\cdot\Delta E = \frac{\Delta E}{w}\>.
     \label{scint-N}
 \end{equation}
 %
@@ -1000,7 +1000,32 @@ The energy resolution of the camera is then:
 \end{equation}
 
 \subsubsection{What is the Resolution of a PET Camera with a $\rm{BGO}$ scintillator?}
+A PET camera is a Positron Emission Tomography camera. It is used in nuclear medicine to detect positron annihilation gamma rays. An interesting 
+practical use of anti-matter by the way. Let's say we don't have the light yield of $\rm{BGO}$ but we know that the energy needed to create one photon
+is $w=300\,\rm{eV}$. The incoming gamma rays have an energy of $511\,\rm{keV}$. We can calculate the number of produced scintillation photons 
+using the formula (\ref{scint-N}):
+%
+\begin{equation}
+    N = \frac{511\cdot10^{3}\>\rm{eV}}{300\>\rm{eV}} = 1703\>\rm{photons}\>,
+\end{equation}
+%
+from which we can simply use the formula (\ref{eq:scint-res}) to get the energy resolution:
+%
+\begin{equation}
+    R = \frac{1}{\sqrt{1703}} = 2.4\%\>.
+\end{equation}
 
+\subsection{Particle Identification Detectors}
+We can separate particles based on their interactions and their mass. We almost always have a strong magnetic field present
+inside the detector/ This is so we can determine the momentum of the particle by measuring the curvature of the particle's trajectory.
+The momentum in the transverse plane is given as:
+%
+\begin{equation}
+    p_T = q\cdot B\cdot R\>,
+    \label{eq:B-momentum}
+\end{equation}
+%
+where $q$ is the charge of the particle, $B$ is the magnetic field and $R$ is the radius of curvature. 
 
 % \newpage
 % \bibliographystyle{unsrt}

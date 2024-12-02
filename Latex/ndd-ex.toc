@@ -25,3 +25,4 @@
 \contentsline {paragraph}{Use of Scintillators in Nuclear Medicine}{14}{section*.4}%
 \contentsline {subsubsection}{\numberline {2.3.2}What is the Resolution of a SPECT Camera?}{14}{subsubsection.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.3.3}What is the Resolution of a PET Camera with a $\rm {BGO}$ scintillator?}{14}{subsubsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.4}Particle Identification Detectors}{15}{subsection.2.4}%
