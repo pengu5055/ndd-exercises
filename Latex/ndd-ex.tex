@@ -748,6 +748,38 @@ We can use this equation to find the voltage $U$ needed to get a $1\,\rm{mm}$ th
     &= 45.4\>\rm{V}\>.
 \end{flalign}
 
+\subsection{Ionization Detectors}
+\paragraph{Ionization Chambers}
+Gas ionization chambers are detectors that are filled with a gas and have an electric field applied to them. When a charged particle
+passes through the gas it ionizes the gas atoms and the electrons and ions are collected at the electrodes of the detector. Since the created 
+electron-ion pairs are hard to detect we use the Townsend avalanche effect to amplify the signal, which gives us a cascade of 
+electron-ion pairs. Without multiplication of the signal the energy resolution is given as:
+%
+\begin{equation}
+    N = \frac{\Delta E}{w} = \sqrt{\frac{F\cdot w}{\Delta E}}\>,
+    \label{eq:ionization-res}
+\end{equation}
+%
+where $F$ is the Fano factor which is around $F = 0.2$ for gas ionization chambers. The Fano factor is needed to correct the fact that 
+subsequent electron-ion pairs are not entirely statistically independent. $w$ is the energy needed to create an electron-ion pair in the
+gas. For argon $Ar$ it is $w_\text{Ar} = 26\,\rm{eV}$. The amount of charge we collect is:
+%
+\begin{align}
+    Q &= N\cdot e \qquad \text{without multiplication}\>, \\
+    Q_\text{mult} &= N\cdot e\cdot M \qquad \text{with multiplication}\>,
+    \label{eq:ionization-charge}
+\end{align}
+%
+where $M$ is the multiplication factor. The energy resolution of a gas ionization chamber with multiplication 
+is \textbf{lower} than without multiplication. The energy resolution with multiplication is given as:
+%
+\begin{equation}
+    R_\text{mult} = \sqrt{\frac{w\left(F+b\right)}{\Delta E}}\>,
+    \label{eq:ionization-res-mult}
+\end{equation}
+%
+where $b$ is a constant that depends on the detector, usually between $0.4$ and $0.7$.
+\subsubsection{What is the energy resolution of a gas ionization chamber?}
 % \newpage
 % \bibliographystyle{unsrt}
 % \bibliography{main}

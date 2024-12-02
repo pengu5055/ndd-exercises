@@ -14,3 +14,6 @@
 \contentsline {subsection}{\numberline {2.1}Semiconductor Detectors}{8}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}What is the energy resolution of a silicon detector at $300\,\rm {K}$?}{9}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}What voltage is needed to get a $1\,\rm {mm}$ thick depletion region in the detector from the previous exercise?}{10}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Ionization Detectors}{10}{subsection.2.2}%
+\contentsline {paragraph}{Ionization Chambers}{10}{section*.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}What is the energy resolution of a gas ionization chamber?}{11}{subsubsection.2.2.1}%
