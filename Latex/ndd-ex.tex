@@ -756,12 +756,22 @@ electron-ion pairs are hard to detect we use the Townsend avalanche effect to am
 electron-ion pairs. Without multiplication of the signal the energy resolution is given as:
 %
 \begin{equation}
-    N = \frac{\Delta E}{w} = \sqrt{\frac{F\cdot w}{\Delta E}}\>,
+    R = \sqrt{\frac{F\cdot w}{\Delta E}}\>,
     \label{eq:ionization-res}
 \end{equation}
 %
-where $F$ is the Fano factor which is around $F = 0.2$ for gas ionization chambers. The Fano factor is needed to correct the fact that 
-subsequent electron-ion pairs are not entirely statistically independent. $w$ is the energy needed to create an electron-ion pair in the
+where $F$ is the Fano factor which is around $F = 0.2$ for gas ionization chambers and where we already took into account 
+the number of created electron-ion pairs and that they are Poisson distributed:
+%
+\begin{align}
+    N &= \frac{\Delta E}{w}\>, \\
+    \label{eq:ion-N}
+    \sigma_N = \sqrt{F\cdot N}\>. \\
+    \label{eq:ion-sigma} 
+\end{align}
+
+The Fano factor is needed to correct the fact that subsequent electron-ion pairs are not entirely statistically 
+independent. $w$ is the energy needed to create an electron-ion pair in the
 gas. For argon $Ar$ it is $w_\text{Ar} = 26\,\rm{eV}$. The amount of charge we collect is:
 %
 \begin{align}
@@ -779,7 +789,68 @@ is \textbf{lower} than without multiplication. The energy resolution with multip
 \end{equation}
 %
 where $b$ is a constant that depends on the detector, usually between $0.4$ and $0.7$.
+
 \subsubsection{What is the energy resolution of a gas ionization chamber?}
+What is the energy resolution of an ionization chamber with a thickness of $d=10\,\rm{cm}$, for a MIP particle if the gas 
+used is the so-called \emph{magic gas} which has the properties:
+%
+\begin{align*}
+    & Q_\text{Ar} = 75\%\>, \\
+    & Q_{\rm{C}_4 \rm{H}_{10}} = 25\%\>, \\
+    &\rho_\text{Ar} = 1.66\>\rm{g/L}\>, \\
+    &\rho_{\rm{C}_4 \rm{H}_{10}} = 2.5\>\rm{g/L}\>, \\
+    & w_\text{Ar} = 26\,\rm{eV}\>, \\
+    & w_{\rm{C}_4 \rm{H}_{10}} = 23\,\rm{eV}\>, \\
+    & F_\text{Ar} = 0.2\>, \\
+    & F_{\rm{C}_4 \rm{H}_{10}} \approx 0.2\>, 
+\end{align*}
+%
+where $C_4H_{10}$ is isobutane and $Q$ represents percentage by volume in the gas mixture. Since we're dealing with a MIP (Minimum Ionizing Particle) we can assume that the energy 
+deposited is:
+%
+\begin{equation}
+    - \frac{\dd E}{\dd x} = 2 \frac{\rm{MeV}\>\rm{cm}^2}{\rm{g}}
+\end{equation}
+%
+We need to calculate the deposited energy by the individual gas components. So the energy deposited in the argon is:
+%
+\begin{flalign}
+    \Delta E_\text{Ar} &= Q_\text{Ar}\cdot \rho_\text{Ar}\cdot d \left(- \frac{\dd E}{\dd x}\right) \nonumber \\
+    &= 0.75\cdot 1.66\cdot10^{-3}\>\frac{\rm{g}}{\rm{cm}^3}\cdot 10\>\rm{cm}\cdot 2\>\frac{\rm{MeV}\>\rm{cm}^2}{\rm{g}} \nonumber \\
+    &= 0.0249\>\rm{MeV}\>.
+\end{flalign}
+%
+Likewise for isobutane we get:
+%
+\begin{flalign}
+    \Delta E_{\rm{C}_4 \rm{H}_{10}} &= Q_{\rm{C}_4 \rm{H}_{10}}\cdot \rho_{\rm{C}_4 \rm{H}_{10}}\cdot d \left(- \frac{\dd E}{\dd x}\right) \nonumber \\
+    &= 0.25\cdot 2.5\cdot10^{-3}\>\frac{\rm{g}}{\rm{cm}^3}\cdot 10\>\rm{cm}\cdot 2\>\frac{\rm{MeV}\>\rm{cm}^2}{\rm{g}} \nonumber \\
+    &= 0.014\>\rm{MeV}\>.
+\end{flalign}
+%
+Now we can calculate the number of created electron-ion pairs for argon and isobutane using the formula (\ref{eq:ion-N}):
+%
+\begin{align}
+    &N_\text{Ar} = \frac{0.0249\cdot10^6\>\rm{eV}}{26\>\rm{eV}} = 958\>, \\
+    &N_{\rm{C}_4 \rm{H}_{10}} = \frac{0.014\cdot10^6\>\rm{eV}}{23\>\rm{eV}} = 609\>,
+\end{align}
+%
+from which we can calculate the standard deviation using the formula (\ref{eq:ion-sigma}):
+%
+\begin{align}
+    &\sigma_{N_\text{Ar}} = \sqrt{0.2\cdot 958} = 13.84\>, \\
+    &\sigma_{N_{\rm{C}_4 \rm{H}_{10}}} = \sqrt{0.2\cdot 609} = 11.03\>.
+\end{align}
+%
+The trick here is how to combine the two deviations and number of created electron-ion pairs. We know from statistics that 
+we can sum the squares of the deviations and then take the square root of the sum to get the total deviation. The number of pairs 
+is simply the sum of the number of pairs created in argon and isobutane. From this we can calculate the energy resolution as:
+%
+\begin{flalign}
+    R &= \frac{\sqrt{{\sigma_{N_\text{Ar}}}^2+{\sigma_{N_{\rm{C}_4 \rm{H}_{10}}}}^2}}{N_\text{Ar} + N_{\rm{C}_4 \rm{H}_{10}}} \nonumber \\
+    &= \frac{\sqrt{\left(13.84\right)^2+\left(11.03\right)^2}}{958 + 609} \nonumber \\
+    &= 1.1\%\>.
+\end{flalign}
 % \newpage
 % \bibliographystyle{unsrt}
 % \bibliography{main}
