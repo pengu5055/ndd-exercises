@@ -506,6 +506,63 @@ multiply it by the efficiency of the photodetector. Thus the number of detected 
     N_{\rm{det}} = 0.1\cdot (N_{\rm{max}} - N_{\rm{min}}) \approx 39\>.
 \end{equation}
 
+\subsection{Neutrinos and Dark Matter}
+Neutrinos are elementary particles that interact only very weakly with matter. They are produced in nuclear reactions and in the decay of
+particles. Neutrinos are classified into three types: electron neutrinos $\nu_e$, muon neutrinos $\nu_\mu$ and tau neutrinos $\nu_\tau$.
+There are three possible interactions we can detect:
+%
+\begin{align*}
+    & \nu_x + e^- \rightarrow \nu_x + e^-\> \qquad \text{elastic scattering}\>, \\
+    & \nu_e + n \rightarrow p + e^-\> \qquad \text{charged current interaction}\>, \\
+    & \bar{\nu}_e + p \rightarrow n + e^+\> \qquad \text{inverse beta decay}\>.
+\end{align*}
+%
+All of these interactions produce electrons/positrons which emit Cherenkov radiation. For an incoming flux of neutrinos $F$ we can calculate the interaction 
+cross-section as:
+%
+\begin{equation}
+    \frac{\dd\sigma}{\dd\Omega} = F\>\frac{\dd N}{\dd\Omega}\>,\
+    \label{eq:cross-section}
+\end{equation}
+%
+where $\frac{\dd N}{\dd\Omega}$ is the number of Cherenkov photons produced per unit angle. We often measure cross-sections in barns where $1\,\rm{b} = 10^{-28}\,\rm{m}^2$.
+For neutrinos that only interact via the weak force the interaction cross-section is about:
+%
+\begin{equation}
+    \bm{\sigma_\nu} = \bm{10^{-20}}\,\textbf{b} = \bm{10^{-44}}\,\textbf{cm}\bm{^2} = \bm{10^{-48}}\,\textbf{m}\bm{^2}\>.
+\end{equation}
+%
+The number of interactions can be calculated as:
+%
+\begin{equation}
+    N = t\phi \sigma_\nu N_\text{sc}\>,
+    \label{eq:nu-interactions}
+\end{equation}
+%
+where $t$ is the time of exposure, $\phi$ is the flux of neutrinos, $\sigma_\nu$ is the interaction cross-section and $N_\text{sc}$ is the number of target particles (scattering 
+centers). Both $\sigma_\nu$ and $N_\text{sc}$ are in general dependant on the type of interaction. We can calculate the number of number of scattering centers as:
+%
+\begin{equation}
+    N_\text{sc} = \frac{m N_a}{A}\>,
+\end{equation}
+%
+if we assume that the number of scattering centers is the same as the number of nucleons in the target material. 
+
+\subsubsection{What mass of pure atomic hydrogen is needed to detect 1000 solar neutrinos per year?}
+Lets assume a neutrino flux of $\phi = 6\cdot 10^{14}\,\rm{m}^{-2}\rm{s}^{-1}$, an interaction cross-section of $\sigma_\nu = 10^{-48}\,\rm{m}^2$ and that the 
+number of scattering centers is the same as the number of nucleons in the hydrogen molecule. Thus the number of detected neutrinos per year is given as:
+%
+\begin{equation}
+    N = t\phi\sigma\>\frac{mN_a}{A}\>.
+\end{equation}
+%
+If we want to detect $1000$ neutrinos per year we can calculate the mass of hydrogen as:
+%
+\begin{flalign}
+    m &= \frac{A}{N_a t\phi\sigma} \cdot 1000 \nonumber \\
+    &= \frac{1\>\dfrac{\rm{g}}{\rm{mol}}}{\left[6.02\cdot10^{23}\>\dfrac{1}{\rm{mol}}\right]\left(3.15\cdot 10^7\>\rm{s}\right)\left[6\cdot 10^{14}\>\dfrac{1}{\rm{m}^2\rm{s}}\right]\left(10^{-48}\>\rm{m}^2\right)} \cdot 1000 \nonumber \\
+    &= 87.9\>\rm{kg}\>.
+\end{flalign}
 % \newpage
 % \bibliographystyle{unsrt}
 % \bibliography{main}
