@@ -10,3 +10,6 @@
 \contentsline {subsection}{\numberline {1.4}Neutrinos and Dark Matter}{7}{subsection.1.4}%
 \contentsline {subsubsection}{\numberline {1.4.1}What mass of pure atomic hydrogen is needed to detect 1000 solar neutrinos per year?}{7}{subsubsection.1.4.1}%
 \contentsline {subsubsection}{\numberline {1.4.2}Detection of WIMP's in a germanium detector}{8}{subsubsection.1.4.2}%
+\contentsline {section}{\numberline {2}Detectors}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Semiconductor Detectors}{8}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}What is the energy resolution of a silicon detector at $300\,\rm {K}$?}{9}{subsubsection.2.1.1}%

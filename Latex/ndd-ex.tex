@@ -328,7 +328,7 @@ For detectors of moderate thickness, which we can consider as \textbf{thin absor
 Landau-Vavilov distribution to describe the energy loss of particles. The most probable energy loss $\Delta_p$ is given as:
 %
 \begin{equation}
-    \bar{\Delta} = \Delta_p = \xi\left[\ln{\frac{2mc^2\beta^2\gamma^2}{I}} + \ln{\frac{\xi}{I} + j - \beta^2 - \delta(\beta\gamma)}\right]\>,
+    \bar{\Delta} = \Delta_p = \xi\left[\ln{\frac{2m_ec^2\beta^2\gamma^2}{I}} + \ln{\frac{\xi}{I} + j - \beta^2 - \delta(\beta\gamma)}\right]\>,
     \label{eq:landau}
 \end{equation}
 %
@@ -611,6 +611,126 @@ Thus the maximum energy transfer in one collision is:
     &= 0.9735 \cdot 27.0\>\rm{keV} \nonumber \\
     &= 26.3\>\rm{keV}\>.
 \end{flalign}
+%
+
+\section{Detectors}
+\subsection{Semiconductor Detectors}
+Semiconductor detectors are most commonly placed close to the interaction point of a collider or experiment since their 
+purpose is to measure the positions of various output particles without disturbing them. The most common semiconductor
+detectors are silicon and germanium detectors. They are made of a p-n junction which is reverse biased. When a charged particle
+passes through the detector it creates electron-hole pairs which are then separated by the electric field of the
+reverse biased p-n junction. The electrons and holes are then collected at the electrodes of the detector. The average number 
+of detected electron-hole pairs is given as:
+%
+\begin{equation}
+    \left\langle N \right\rangle = \frac{\Delta E}{w}\>,
+    \label{eq:semi-pairs}
+\end{equation}
+%
+where $\Delta E$ is the energy deposited in the detector and $w$ is the energy needed to create an electron-hole pair in the 
+semiconductor. Some common values for $w$ are:
+%
+\begin{align*}
+    & w_{\text{Si}}(300\,\rm{K}) = 3.6\,\rm{eV}\>, \\
+    & w_{\text{Si}}(77\,\rm{K}) = 3.7\,\rm{eV}\>, \\
+    & w_{\text{Ge}}(77\,\rm{K}) = 2.9\,\rm{eV}\>, \\
+\end{align*}
+%
+The energy resolution of a semiconductor detector is given as:
+%
+\begin{equation}
+    R = \frac{\sigma_N}{\left\langle N \right\rangle} = \frac{\sqrt{F\cdot\left\langle N \right\rangle}}{\left\langle N \right\rangle}\>,
+    \label{eq:semi-res-full}
+\end{equation}
+%
+where $F$ is the Fano factor which is a measure of the fluctuations in the number of detected electron-hole pairs. The Fano factor
+is usually around:
+%
+\begin{equation}
+    F = \begin{cases}
+        0.086\>-\>0.16 & \text{for silicon}\>, \\
+        0.06\>-\>0.13 & \text{for germanium}\>.
+    \end{cases}
+\end{equation}
+%
+Using the equation (\ref{eq:semi-pairs}) we can calculate the energy resolution directly as:
+%
+\begin{equation}
+    R = \sqrt{\frac{F\cdot w}{\Delta E}} = \frac{R_\text{FWHM}}{2.35}\>,
+    \label{eq:semi-res}
+\end{equation}
+%
+where $R_\text{FWHM}$ is the full width at half maximum of the energy resolution.
+
+\subsubsection{What is the energy resolution of a silicon detector at $300\,\rm{K}$?}
+Consider a detector with a $1\,\rm{mm}$ thick silicon layer at $300\,\rm{K}$. In the case of a perpendicularly crossing 
+kaon with a rest mass of $0.493\,\rm{GeV}$ and momentum of $4\,\rm{GeV}$ what is the energy resolution? Silicon has the following 
+properties:
+%
+\begin{align*}
+    & w_{\text{Si}}(300\,\rm{K}) = 3.6\,\rm{eV}\>, \\
+    & \rho = 2.32\>\rm{g/cm}^3\>, \\
+    & Z = 14\>, \\
+    & A = 28\>\rm{g/mol}\>.
+\end{align*}
+%
+We can calculate the energy loss of the kaon in the silicon detector using the Landau distribution (\ref{eq:landau}). Before that 
+we need to calculate the velocity $\beta$ and the Lorentz factor $\gamma$ for the kaon. Using (\ref{eq:beta}) we get:
+%
+\begin{equation}
+    \beta = \frac{4\>\dfrac{\rm{GeV}}{c}\>c}{\sqrt{\left(4\>\dfrac{\rm{GeV}}{c}\>c\right)^2 + \left(0.493\>\dfrac{\rm{GeV}}{c^2}\>c^2\right)^2}} \approx 0.99249\>,
+\end{equation}
+%
+which gives us a Lorentz factor of:
+%
+\begin{equation}
+    \gamma = \frac{1}{\sqrt{1-(0.99249)^2}} \approx 8.175\>.
+\end{equation}
+%
+Next we need to calculate the mean excitation energy $I$ using (\ref{eq:I}) for $Z \ge 13$:
+%
+\begin{equation}
+    I = 14\left(9.76 + 58.8 \cdot 14^{-1.19}\right)\>\rm{eV} = 172.1\>\rm{eV}\>,
+\end{equation}
+%
+and the maximum energy transfer in a single collision $W_{\text{max}}$ using (\ref{eq:wmax}):
+%
+\begin{equation}
+    W_{\text{max}} = 2\cdot 0.511\>\frac{\rm{MeV}}{c^2}\>c^2\cdot(0.99249)^2(8.175)^2 = 67.3\>\rm{MeV}\>.
+\end{equation}
+%
+We also need to calculate $\xi$ using (\ref{eq:xi}):
+%
+\begin{flalign}
+    \xi &= \frac{0.3\>\dfrac{\rm{MeV}\,\rm{cm}^2}{\rm{g}}}{2}\>\frac{14}{28}\>\frac{0.1\>\rm{cm}\cdot 2.32\>\dfrac{\rm{g}}{\rm{cm}^3}}{(0.99249)^2} \nonumber \\
+    &= 0.0178\>\rm{MeV}\>.
+\end{flalign}
+%
+Now all that is left to get the most probable energy loss is to use the Landau distribution (\ref{eq:landau}):
+%
+\begin{flalign}
+    \Delta_p &= 0.0178\>\rm{MeV}\,\left[\ln{\frac{67.3\cdot10^6\>\rm{eV}}{172.1\>\rm{eV}}} + \ln{\frac{0.0178\cdot10^6\>\rm{eV}}{172.1\>\rm{eV}}} + 0.2 - (0.99249)^2\right] \nonumber \\
+    &= 0.298\>\rm{MeV}\>.
+\end{flalign}
+%
+From this we can calculate the energy resolution of the detector using the formula (\ref{eq:semi-res}):
+%
+\begin{flalign}
+    R &= \sqrt{\frac{0.086\cdot 3.6\>\rm{eV}}{0.298\cdot 10^6\>\rm{eV}}}\nonumber \\
+    &= 0.11\%\>, \\
+    R_\text{FWHM} &= 2.35\cdot 0.11\% = 0.26\%\>.
+\end{flalign}
+%
+For the purpose of education if we were to repeat the entire calculation while taking values for germanium we'd get:
+%
+\begin{align*}
+    &I = 342\>\rm{eV}\>, \\
+    &\xi = 35.77\>\rm{keV}\>, \\
+    &\Delta_p = 573\>\rm{keV}\>, 
+\end{align*}
+%
+which would give us an energy resolution of $R_\text{Ge} = 0.072\%$ and $R_{\text{FWHM}_\text{Ge}} = 0.17\%$.
+
 % \newpage
 % \bibliographystyle{unsrt}
 % \bibliography{main}
