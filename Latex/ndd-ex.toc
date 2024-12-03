@@ -26,3 +26,7 @@
 \contentsline {subsubsection}{\numberline {2.3.2}What is the Resolution of a SPECT Camera?}{14}{subsubsection.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.3.3}What is the Resolution of a PET Camera with a $\rm {BGO}$ scintillator?}{14}{subsubsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.4}Particle Identification Detectors}{15}{subsection.2.4}%
+\contentsline {paragraph}{Time-of-Flight Detectors}{15}{section*.5}%
+\contentsline {subsubsection}{\numberline {2.4.1}Can we differentiate pions from kaons?}{16}{subsubsection.2.4.1}%
+\contentsline {paragraph}{Cherenkov Detectors/Threshold Counters}{16}{section*.6}%
+\contentsline {subsubsection}{\numberline {2.4.2}Can we differentiate pions from kaons using a Cherenkov detector?}{16}{subsubsection.2.4.2}%

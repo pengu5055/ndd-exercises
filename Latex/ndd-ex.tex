@@ -1025,7 +1025,123 @@ The momentum in the transverse plane is given as:
     \label{eq:B-momentum}
 \end{equation}
 %
-where $q$ is the charge of the particle, $B$ is the magnetic field and $R$ is the radius of curvature. 
+where $q$ is the charge of the particle, $B$ is the magnetic field and $R$ is the radius of curvature. To determine the particles mass we also need 
+to measure its velocity. We can then use the equation for relativistic momentum:
+%
+\begin{equation}
+    p = \gamma mv\>,
+    \label{eq:rel-momentum}
+\end{equation}
+%
+to find the mass of the particle. If we consider typical values of $B=1\,\rm{T}$ and $R=1\,\rm{m}$ we can calculate the momentum of 
+a proton to be:
+%
+\begin{flalign}
+    p_T &= e_0\cdot 1\>\rm{T}\cdot 1\>\rm{m}\cdot\frac{c}{c} \nonumber \\
+    &= e_0\cdot 1\>\frac{\rm{V}\,\rm{s}}{\rm{m}^2}\cdot 1\>\rm{m}\cdot \frac{3\cdot10^8\dfrac{\rm{m}}{\rm{s}}}{c} \nonumber \\
+    &= 300\>\rm{MeV/c}\>.
+\end{flalign}
+%
+We have a few types of detectors that can be used for particle identification:
+\begin{itemize}
+    \item Time-of-Flight detectors
+    \item Cherenkov detectors / Threshold counters
+    \item Transition Radiation detectors (layers of materials with different refractive indices)
+    \item Calorimeters ($\dd E/\dd x$ in a gas or a solid)
+\end{itemize}
+%
+We will only be looking at the first two. \\
+
+\paragraph{Time-of-Flight Detectors}
+Time-of-Flight detectors use the simple principle of measuring the time it takes for a particle to travel a certain distance. If we measure the time $t_1$ when the particle
+enters the detector and the time $t_2$ when the particle exits the detector we can calculate the velocity of the particle as:
+%
+\begin{equation}
+    \rm{TOF} = t_2 - t_1 = \frac{L}{v} = \frac{L}{\beta c}\>,
+    \label{eq:tof-simple}
+\end{equation}
+%
+where $L$ is the length of the detector. Taking into account equation (\ref{eq:beta}) we can derive that the time-of-flight is:
+%
+\begin{equation}
+    \rm{TOF} = \frac{L}{c}\left[1 + \left(\frac{mc^2}{pc}\right)^2\right]\>.
+    \label{eq:tof}
+\end{equation}
+%
+Since we often want to use the time-of-flight to differentiate between particles it also makes sense to calculate the time-of-flight difference between two particles:
+%
+\begin{equation}
+    \Delta t = \rm{TOF}_1 - \rm{TOF}_2 = \frac{L}{\beta_1 c} - \frac{L}{\beta_2 c}\>,
+\end{equation}
+%
+where we can again use the equation (\ref{eq:beta}) to get:
+%
+\begin{equation}
+    \Delta t = \frac{L}{c}\left[\sqrt{1 + \left(\frac{m_1 c^2}{p_1 c}\right)^2} - \sqrt{1 + \left(\frac{m_2 c^2}{p_2 c}\right)^2}\right]\>.
+    \label{eq:tof-diff}
+\end{equation}
+%
+It is common to assume that $p_1 = p_2 = p$ in such cases. 
+
+\subsubsection{Can we differentiate pions from kaons?}
+We are trying to differentiate pions with a rest mass of $0.1396\,\rm{GeV}$ and kaons with a rest mass of $0.4937\,\rm{GeV}$ using a time-of-flight detector, with 
+a distance of $L=2\,\rm{m}$. What is the time-of-flight difference between the two particles if they have a momentum of $p=2\,\rm{GeV/c}$? We can directly use 
+equation (\ref{eq:tof-diff}) to get:
+%
+\begin{flalign}
+    \Delta t &= \frac{2\>\rm{m}}{3\cdot10^8\>\dfrac{\rm{m}}{\rm{s}}}\left[\sqrt{1 + \left(\frac{0.1396\>\rm{GeV}}{2\>\rm{GeV}}\right)^2} - \sqrt{1 + \left(\frac{0.4937\>\rm{GeV}}{2\>\rm{GeV}}\right)^2}\right] \nonumber \\
+    &= 183\>\rm{ps}\>.
+\end{flalign}
+%
+What if the momentum of the particles is $p=4\,\rm{GeV/c}$? Replacing the momentum in the previous equation we get:
+%
+\begin{equation}
+    \Delta t_{4} = 46\>\rm{ps}\>. 
+\end{equation}
+%
+We see that the faster the particles are the harder it is to differentiate between them. We did not explicitly calculate the 
+temporal resolution of the detector here, but we can assume that $\Delta t_4$ is much harder to measure than $\Delta t$.
+
+\paragraph{Cherenkov Detectors/Threshold Counters}
+Threshold counters are detectors that measure the Cherenkov radiation emitted by particles. They use the threshold velocity 
+for the creation of Cherenkov photons as a way to differentiate between particles. We've already seen the formula for the Cherenkov
+angle (\ref{eq:cherenkov-angle}) and the threshold velocity (\ref{eq:cherenkov-threshold}).
+%
+\begin{align*}
+    &\beta < \beta_{\text{thr}} = \frac{1}{n}\qquad\quad \text{no Cherenkov radiation}\>, \\
+    &\beta > \beta_{\text{thr}} = \frac{1}{n}\qquad\quad \text{Cherenkov radiation}\>.   
+\end{align*}
+%
+
+\subsubsection{Can we differentiate pions from kaons using a Cherenkov detector?}
+Like before we are trying to differentiate pions with a rest mass of $0.1396\,\rm{GeV}$ and kaons with a rest mass 
+of $0.4937\,\rm{GeV}$ using a Cherenkov detector. We are using an aerogel radiator with a refractive index of $n=1.01$. If the momentum of 
+the incoming particles is $p=1.5\,\rm{GeV/c}$, can we separate the two particles? \\
+
+We first need to calculate the velocities of the particles. Using (\ref{eq:beta}) as we've done many times before we get:
+%
+\begin{align*}
+    \beta_\pi = \frac{1.5\>\dfrac{GeV}{c}\>c}{\sqrt{\left(1.5\>\dfrac{GeV}{c}\>c\right)^2 + \left(0.1396\>\dfrac{GeV}{c^2}c^2\right)^2}}  = 0.09957\>, \\
+    \beta_K = \frac{1.5\>\dfrac{GeV}{c}\>c}{\sqrt{\left(1.5\>\dfrac{GeV}{c}\>c\right)^2 + \left(0.4937\>\dfrac{GeV}{c^2}c^2\right)^2}} = 0.94987\>.
+\end{align*}
+%
+The threshold velocity for the creation of Cherenkov radiation is:
+%
+\begin{equation}
+    \beta_{\text{thr}} = \frac{1}{1.01} = 0.9901\>,
+\end{equation}
+%
+which means we will be able to differentiate between the two since kaons will not emit Cherenkov radiation while pions will. Lets repeat this 
+calculation for $p=4\,\rm{GeV/c}$:
+%
+\begin{align*}
+    \beta_\pi = 0.9994\>, \\
+    \beta_K = 0.9925\>.
+\end{align*}
+%
+Now both particles produce Cherenkov radiation which means we can no longer differentiate between them using this method.
+
+
 
 % \newpage
 % \bibliographystyle{unsrt}
