@@ -30,3 +30,5 @@
 \contentsline {subsubsection}{\numberline {2.4.1}Can we differentiate pions from kaons?}{16}{subsubsection.2.4.1}%
 \contentsline {paragraph}{Cherenkov Detectors/Threshold Counters}{16}{section*.6}%
 \contentsline {subsubsection}{\numberline {2.4.2}Can we differentiate pions from kaons using a Cherenkov detector?}{16}{subsubsection.2.4.2}%
+\contentsline {paragraph}{Ring Imaging Cherenkov Detectors (RICH)}{17}{section*.7}%
+\contentsline {subsubsection}{\numberline {2.4.3}Can we differentiate pions from kaons using a RICH detector?}{17}{subsubsection.2.4.3}%

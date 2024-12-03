@@ -1134,14 +1134,32 @@ The threshold velocity for the creation of Cherenkov radiation is:
 which means we will be able to differentiate between the two since kaons will not emit Cherenkov radiation while pions will. Lets repeat this 
 calculation for $p=4\,\rm{GeV/c}$:
 %
-\begin{align*}
-    \beta_\pi = 0.9994\>, \\
-    \beta_K = 0.9925\>.
-\end{align*}
+\begin{flalign}
+    &\beta_\pi = 0.9994\>,
+    \label{eq:cherenkov-4g-v-1} \\
+    &\beta_K = 0.9925\>.
+    \label{eq:cherenkov-4g-v-2}
+\end{flalign}
 %
 Now both particles produce Cherenkov radiation which means we can no longer differentiate between them using this method.
 
+\paragraph{Ring Imaging Cherenkov Detectors (RICH)}
+RICH detectors use a photodection system in combination with a Cherenkov radiator to detect a ring of Cherenkov photons emitted by 
+a particle. The radius of the ring is proportional to the Cherenkov angle (\ref{eq:cherenkov-angle}) which is proportional to the 
+particles velocity.
+\subsubsection{Can we differentiate pions from kaons using a RICH detector?}
+Again let's try to differentiate pions with a rest mass of $0.1396\,\rm{GeV}$ and kaons with a rest mass of $0.4937\,\rm{GeV}$ using a RICH detector 
+made of aerogel with a refractive index of $n=1.05$. What are the Cherenkov angles of the two particles if their momentum is $4\,\rm{GeV/c}$? \\
 
+We first need to calculate the velocities of the particles using (\ref{eq:beta}). We will reuse the values of the velocities from the previous exercise
+(\ref{eq:cherenkov-4g-v-1}, \ref{eq:cherenkov-4g-v-2}). From this we can directly use equation (\ref{eq:cherenkov-angle}) to get the Cherenkov angles for the particles:
+%
+\begin{align*}
+    \theta_\pi = \arccos{\frac{1}{1.05\cdot 0.9994}} = 17.64^\circ = 307.9\>\rm{mRad}\>, \\
+    \theta_K = \arccos{\frac{1}{1.05\cdot 0.9925}} = 16.34^\circ = 285.3\>\rm{mRad}\>.
+\end{align*}
+
+If we can resolve these two angles we can differentiate between the two particles but that depends on the experimental setup greatly.
 
 % \newpage
 % \bibliographystyle{unsrt}
