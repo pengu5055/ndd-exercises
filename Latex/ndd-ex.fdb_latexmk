@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1733320091 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1733320094
+["pdflatex"] 1733323187 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1733323190
   "/etc/texmf/web2c/texmf.cnf" 1721132218 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/pengu5055/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1721133484 1405652 6dbe6b4a0b8b03aa67147fe2fddcad95 ""
   "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" 1733320091 55579 279871e30adff1b3ccdd9bf8697c483c ""
@@ -186,11 +186,11 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1721229899 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "cover.tikz" 1733319756 1593 6715a278942b20601e968d296e204dbc ""
   "logo_fmf.pdf" 1733054670 15612 f362f770ef36c22b3204cc12be10dccd ""
-  "ndd-ex.aux" 1733320093 9828 82aee85d436b2bd558b4f33d91d7da01 "pdflatex"
-  "ndd-ex.out" 1733320093 9167 8c14e5a508b3355b94ee64966dce01d5 "pdflatex"
+  "ndd-ex.aux" 1733323190 9828 82aee85d436b2bd558b4f33d91d7da01 "pdflatex"
+  "ndd-ex.out" 1733323190 9167 8c14e5a508b3355b94ee64966dce01d5 "pdflatex"
   "ndd-ex.tex" 1733320091 55579 279871e30adff1b3ccdd9bf8697c483c ""
-  "ndd-ex.toc" 1733320093 3871 529ff3dfbb80d692ec4d8aca52653c35 "pdflatex"
-  "tracks.tikz" 1733319915 670 2114d21b4b977ee7f72ba9a75a078286 ""
+  "ndd-ex.toc" 1733323190 3871 529ff3dfbb80d692ec4d8aca52653c35 "pdflatex"
+  "tracks.tikz" 1733323187 767 a031e5cc6d55126ef0b8041bdba03388 ""
   (generated)
   "ndd-ex.aux"
   "ndd-ex.log"

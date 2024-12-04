@@ -1,4 +1,6 @@
 \begin{tikzpicture}[remember picture,overlay,scale=1,yshift=-2cm]
+\pgfdeclarelayer{bg}
+\pgfsetlayers{bg,main} 
 \coordinate (decaypoint) at (0, 0);
 \pgfmathsetseed{42069}
 
@@ -13,8 +15,10 @@
 }
 
 % Detector Layers
-\foreach \r in {0.5, 1.5, 2.5, 3.5, 4.5} {
-    \draw[thick, gray, densely dashed] (0,0) circle (\r);
-}
+\begin{pgfonlayer}{bg}
+    \foreach \r in {0.5, 1.5, 2.5, 3.5, 4.5} {
+        \draw[thick, gray, densely dashed] (0,0) circle (\r);
+    }
+\end{pgfonlayer}
 
 \end{tikzpicture}
