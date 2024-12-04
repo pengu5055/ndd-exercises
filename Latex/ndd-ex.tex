@@ -13,7 +13,9 @@
 \usepackage{bm}
 \usepackage{float}
 \usepackage{xfrac}
+\usepackage{tikz}
 \usepackage{accents}
+\usepackage{tcolorbox}
 \hypersetup{colorlinks=true}
 
 % Load the natbib package for citation style
@@ -40,32 +42,47 @@
 
 \numberwithin{equation}{section}
 
+% Define Color
+\definecolor{dots-cover-color}{RGB}{144,12,63}
+\definecolor{dots-cover-border-color}{RGB}{88,24,69}
+
 % Start the document
 \begin{document}
 
 % The title page
 \begin{titlepage}
 {\centering
-\includegraphics[width=6cm]{logo_fmf.pdf}
 
-\vspace{0.8cm}
+% Grid and Title Elements
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[overlay, remember picture,opacity=0.5]
+        \node [xshift=0cm,yshift=0cm] at (current page.center)
+        {
+            \input{"cover.tikz"}
+        };
+    \end{tikzpicture}
+\end{figure}
+
+\includegraphics[width=6cm]{logo_fmf.pdf}
+\vspace{0.5cm} \\
 {\small Department of Physics}
 
-\vspace{5cm}
-\vspace{0.5cm}
-{\huge\textbf{Advanced Particle Detectors and Data Analysis}} \\
-\vspace{0.5cm}
-{\large\textbf{Notes for Exercises}}
+% Additional graphics
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[overlay, remember picture,opacity=0.7]
+        \node [xshift=0cm,yshift=-3cm] at (current page.center)
+        {
+            \input{"tracks.tikz"}
+        };
+    \end{tikzpicture}
+\end{figure}
+
 
 \vfill
-\textbf{Author:} Marko Urbanč \\
-\textbf{Professor:} prof. dr. Peter Križan \\ 
-\textbf{Assistant:} doc. dr. Rok Dolenec \\
-
-\vspace{1cm}
-Ljubljana, December 2024 \\
 }
-\vspace{3cm}
+\vspace{0.5cm}
 \end{titlepage}
 
 % Add table of conents

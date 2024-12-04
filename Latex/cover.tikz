@@ -1,0 +1,48 @@
+\begin{tikzpicture}[remember picture,overlay]
+\def\dotColor{dots-cover-color}
+\def\dotBorderColor{dots-cover-border-color}
+\def\circleRadius{0.1cm}
+\def\circleSpacing{2}
+\def\angle{35}
+
+% Background Grid
+\foreach \x in {-10,-9.5,...,10}{
+    \foreach \y in {-10,-9.5,...,10}{
+        % Calculate the slanted positions
+        \pgfmathsetmacro{\slantX}{\x + \y * tan(\angle)}
+        \pgfmathsetmacro{\slantY}{\y}
+        \filldraw[fill=\dotColor!40, draw=\dotBorderColor!60] (\slantX*\circleSpacing, \slantY*\circleSpacing) circle (\circleRadius);
+    }
+}
+
+% Title With Box
+\begin{scope}[yshift=4cm]
+    \fill[\dotColor, opacity=0.2] (-8, -2) rectangle (8, 2); 
+    \draw[black, thick] (-8, -2) rectangle (8, 2);     
+
+    \node[align=center, text opacity=1, text width=\textwidth] at (0, 0) {
+        {\Huge\bfseries \spaceskip=0.3em Advanced Particle Detectors}
+        \\[0.25cm]
+        {\Huge\bfseries \spaceskip=0.3em and Data Analysis}
+        \\[0.75cm]
+        {\large\bfseries Notes for Exercises}
+    };
+\end{scope}
+
+% Author, Professor, and Date
+\begin{scope}[yshift=-12cm]
+    \fill[\dotColor, opacity=0.2] (-3.5, -1.5) rectangle (3.5, 1.5); 
+    \draw[black, thick] (-3.5, -1.5) rectangle (3.5, 1.5); 
+    \node[align=center, text opacity=0.8, text width=\textwidth] at (0, 0) {
+        {\textbf{Author: Marko Urbanč}}
+        \\
+        {\textbf{Professor: prof. dr. Peter Križan}}
+        \\
+        {\textbf{Assistant: doc. dr. Rok Dolenec}}
+        \\[0.25cm]
+        {\textbf{Ljubljana, December 2024}}
+    };
+\end{scope}
+
+
+\end{tikzpicture}
