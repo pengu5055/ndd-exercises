@@ -1,5 +1,6 @@
 \begin{tikzpicture}[remember picture,overlay,scale=1,yshift=-2cm]
 \coordinate (decaypoint) at (0, 0);
+\pgfmathsetseed{42069}
 
 % Tracks
 \foreach \i in {1,2,...,100} {

@@ -1,4 +1,5 @@
 \begin{tikzpicture}[remember picture,overlay]
+\def\boxColor{box-cover-color}
 \def\dotColor{dots-cover-color}
 \def\dotBorderColor{dots-cover-border-color}
 \def\circleRadius{0.1cm}
@@ -17,7 +18,7 @@
 
 % Title With Box
 \begin{scope}[yshift=4cm]
-    \fill[\dotColor, opacity=0.2] (-8, -2) rectangle (8, 2); 
+    \fill[\boxColor, opacity=0.2] (-8, -2) rectangle (8, 2); 
     \draw[black, thick] (-8, -2) rectangle (8, 2);     
 
     \node[align=center, text opacity=1, text width=\textwidth] at (0, 0) {
@@ -31,7 +32,7 @@
 
 % Author, Professor, and Date
 \begin{scope}[yshift=-12cm]
-    \fill[\dotColor, opacity=0.2] (-3.5, -1.5) rectangle (3.5, 1.5); 
+    \fill[\boxColor, opacity=0.2] (-3.5, -1.5) rectangle (3.5, 1.5); 
     \draw[black, thick] (-3.5, -1.5) rectangle (3.5, 1.5); 
     \node[align=center, text opacity=0.8, text width=\textwidth] at (0, 0) {
         {\textbf{Author: Marko Urbanč}}
