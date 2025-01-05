@@ -1168,6 +1168,7 @@ RICH detectors use a photodection system in combination with a Cherenkov radiato
 a particle. The radius of the ring is proportional to the Cherenkov angle (\ref{eq:cherenkov-angle}) which is proportional to the 
 particles velocity.
 \subsubsection{Can we differentiate pions from kaons using a RICH detector?}
+\label{sec:rich-pion-kaon}
 Again let's try to differentiate pions with a rest mass of $0.1396\,\rm{GeV}$ and kaons with a rest mass of $0.4937\,\rm{GeV}$ using a RICH detector 
 made of aerogel with a refractive index of $n=1.05$. What are the Cherenkov angles of the two particles if their momentum is $4\,\rm{GeV/c}$? \\
 
@@ -1194,6 +1195,7 @@ detectors. Since I took this course in Slovene originally I will also add the Sl
     in a spectrum. It is defined as:
     \begin{equation}
         D = \frac{|\bar{x}_2 - \bar{x}_1|}{\sigma}\>,
+        \label{eq:resolving-power}
     \end{equation}
     where $\sigma = \sigma_1 = \sigma_2$ or $\sigma = \max{(\sigma_1, \sigma_2)}$.
     \item \textbf{Efficiency} (\textit{Učinkovitost}) is a measure of how well we can detect a particle. It is the ratio of the number of detected particles to the number of
@@ -1280,7 +1282,52 @@ From this we can calculate the threshold value for the time-of-flight value:
     \rm{TOF}_{\text{thr}} = 6.68\>\rm{ns} + 1.645\cdot 60\>\rm{ps} = 6.68\>\rm{ns} + 98.7\>\rm{ps} = 6.78\>\rm{ns}\>.
 \end{equation}
 %
+We can also calculate the percentage of false events $F$ for this threshold value as:
+%
+\begin{flalign}
+    &x_0' = \rm{TOF}_K - \rm{TOF}_{\text{thr}} = 6.87\>\rm{ns} - 6.78\>\rm{ns} = 84\> \frac{\sigma}{60\rm{ps}}\rm{ps} = 1.4\cdot\sigma\>, \\
+    &F = 1 - f(x_0') = 1 - 92\% = 8\%\>. \nonumber
+\end{flalign}
+%
 
+\subsubsection{What is the Resolving Power of the Detector in \ref{sec:rich-pion-kaon}?}
+Lets assume that the measurement for a singular event has a resolution of:
+%
+\begin{equation}
+    \sigma_{\rm{track}} = \frac{\sigma_0}{\sqrt{N}}\>,
+\end{equation}
+%
+where the resolution for a single photon is $\sigma_0 = 14\,\rm{mRad}$ and $N=10$ is the number of detected photons, thus 
+$\sigma_{\rm{track}} = 4.427\,\rm{mRad}$. We can calculate the resolving power of the detector using Equation (\ref{eq:resolving-power}):
+%
+\begin{flalign}
+    D &= \frac{|\theta_\pi - \theta_K|}{\sigma_{\rm{track}}} \nonumber \\
+    &= \frac{307.9\>\rm{mRad} - 285.3\>\rm{mRad}}{4.427\,\rm{mRad}} \nonumber \\
+    &= 5.1\>.
+\end{flalign}
+
+Let's calculate the efficiency of the detection of kaons and the fraction of false events due to pions if we take the threshold 
+value for the Cherenkov angle to be directly in the middle of the two Cherenkov angles (or rather, the peaks of their Gaussian distributions). 
+The threshold value for the Cherenkov angle is then:
+%
+\begin{equation}
+    \theta_{\text{thr}} = \frac{|\theta_\pi - \theta_K|}{2} = \frac{307.9\>\rm{mRad} - 285.3\>\rm{mRad}}{2} = 11.3\>\rm{mRad}\>.
+\end{equation}
+%
+Transforming this into units of $\sigma$ we get:
+%
+\begin{equation}
+    x_0' = \frac{11.3\>\rm{mRad}}{4.427\>\rm{mRad}} = 2.55\>.
+\end{equation}
+%
+which corresponds to $99.4\%$ of the Gaussian distribution (from Table \ref{tab:gaussian-integral}). This is directly the efficiency
+of the detection of kaons. The fraction of false events due to pions is then:
+%
+\begin{equation}
+    F = 1 - 99.4\% = 0.6\%\>.
+\end{equation}
+%
+\subsection{Measurement of Momentum}
 
 % \newpage
 % \bibliographystyle{unsrt}

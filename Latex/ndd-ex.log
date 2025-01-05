@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.16)  5 JAN 2025 20:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.16)  5 JAN 2025 21:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -622,7 +622,7 @@ LaTeX Info: Redefining \nameref on input line 52.
 \openout4 = `ndd-ex.out'.
 
  (./cover.tikz)
-<logo_fmf.pdf, id=131, 233.03412pt x 141.6228pt>
+<logo_fmf.pdf, id=139, 233.03412pt x 141.6228pt>
 File: logo_fmf.pdf Graphic file (type pdf)
 <use logo_fmf.pdf>
 Package pdftex.def Info: logo_fmf.pdf  used on input line 69.
@@ -744,35 +744,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 1137--1140
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 1171--1173
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1174
 
  []
 
 [17] [18pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1290 \end{document}
-                     ] (./ndd-ex.aux)
+l.1307 \end{flalign}
+                    ] [19] (./ndd-ex.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25pt have occurred.
 
 Package rerunfilecheck Info: File `ndd-ex.out' has not changed.
-(rerunfilecheck)             Checksum: B99D6C8BD24D7329C1E22FFA4BC91AA6;9775.
+(rerunfilecheck)             Checksum: B9B5ADEC074F085C7DEE76A3E9FA9622;10314.
  ) 
 Here is how much of TeX's memory you used:
- 25328 strings out of 480247
- 485848 string characters out of 5896151
- 1617703 words of memory out of 5000000
- 42677 multiletter control sequences out of 15000+600000
+ 25341 strings out of 480247
+ 486041 string characters out of 5896151
+ 1617846 words of memory out of 5000000
+ 42681 multiletter control sequences out of 15000+600000
  480549 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,18n,89p,850b,1288s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ndd-ex.pdf (19 pages, 458658 bytes).
+Output written on ndd-ex.pdf (20 pages, 461662 bytes).
 PDF statistics:
- 595 PDF objects out of 1000 (max. 8388607)
- 522 compressed objects within 6 object streams
- 184 named destinations out of 1000 (max. 500000)
- 266 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 621 PDF objects out of 1000 (max. 8388607)
+ 547 compressed objects within 6 object streams
+ 193 named destinations out of 1000 (max. 500000)
+ 282 words of extra memory for PDF output out of 10000 (max. 10000000)
 

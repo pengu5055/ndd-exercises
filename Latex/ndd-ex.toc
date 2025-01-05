@@ -35,3 +35,5 @@
 \contentsline {section}{\numberline {3}Data Analysis}{17}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Resolving Power}{17}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}What is the Resolving Power of the Detector in \ref {sec:tof-pion-kaon}?}{18}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}What is the Resolving Power of the Detector in \ref {sec:rich-pion-kaon}?}{18}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Measurement of Momentum}{19}{subsection.3.2}%
