@@ -16,6 +16,7 @@
 \usepackage{tikz}
 \usepackage{accents}
 \usepackage{tcolorbox}
+\usepackage{colortbl}
 \hypersetup{colorlinks=true}
 
 % Load the natbib package for citation style
@@ -1178,6 +1179,59 @@ We first need to calculate the velocities of the particles using (\ref{eq:beta})
 \end{align*}
 
 If we can resolve these two angles we can differentiate between the two particles but that depends on the experimental setup greatly.
+
+\section{Data Analysis}
+The second part of the course is dedicated to data analysis. This would usually be done via computers with the help of a 
+software package like \texttt{ROOT}. In this course however we will stick to the basics and do everything by hand.
+
+\subsection{Resolving Power}
+It is important for us to differentiate a couple of terms that are often used in the context of data analysis of data from 
+detectors. Since I took this course in Slovene originally I will also add the Slovene terms.
+%
+\begin{itemize}
+    \item \textbf{Resolving Power} (\textit{Ločljivost}) is a measure of how well we can differentiate between two peaks
+    in a spectrum. 
+    \item \textbf{Efficiency} (\textit{Učinkovitost}) is a measure of how well we can detect a particle. It is the ratio of the number of detected particles to the number of
+    particles that passed through the detector.
+    \item \textbf{False Events} (\text{Lažni dogodki}) are events that are detected by the detector but are not actual
+    events. They can be due to noise or other factors. This is the same as a false positive in statistics.
+    \item \textbf{False Negative} (\textit{Lažni negativ}) is an event that is not detected by the detector but is an actual event.
+    \item \textbf{False Positive} (\textit{Lažni pozitiv}) is an event that is detected by the detector but is not an actual event.
+\end{itemize}
+%
+We can assume all our measurements are Gaussian distributed. Where the Gaussian distribution is given as:
+%
+\begin{equation}
+    f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp{\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)}\>,
+    \label{eq:gaussian}
+\end{equation}
+%
+where $\mu$ is the mean of the distribution and $\sigma$ is the standard deviation. For convenience of calculations we 
+have been provided a table of the values of the integral of the Gaussian distribution. $g(x_0)$ represents the symmetric
+integral of the Gaussian distribution from $-x_0$ to $x_0$, while $f(x_0)$ represents the integral of the Gaussian distribution
+from $-\infty$ to $x_0$.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|}
+    \hline
+    \rowcolor[HTML]{FFCCC9} 
+    \multicolumn{1}{|c|}{\cellcolor[HTML]{FFCCC9}$\bm{x_0}$} &
+    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}$\bm{g(x_0)}\>[\%]$} &
+    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}$\bm{f(x_0)}\>[\%]$} \\ \hline
+    $\sigma$           & 68.3    & 84.1     \\ \hline
+    $2\sigma$          & 95.5    & 97.7     \\ \hline
+    $3\sigma$          & 99.73   & 99.865   \\ \hline
+    $4\sigma$          & 99.994  & 99.997   \\ \hline
+    $5\sigma$          & 99.9994 & 99.99997 \\ \hline
+    $1.282\cdot\sigma$ & 80      & 90       \\ \hline
+    $1.645\cdot\sigma$ & 90      & 95       \\ \hline
+    $2.327\cdot\sigma$ & 98      & 99       \\ \hline
+\end{tabular}
+\caption{Table of the integral of the Gaussian distribution.}
+\label{tab:gaussian-integral}
+\end{table}
+
 
 % \newpage
 % \bibliographystyle{unsrt}
