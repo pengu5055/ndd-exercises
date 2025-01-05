@@ -34,3 +34,4 @@
 \contentsline {subsubsection}{\numberline {2.4.3}Can we differentiate pions from kaons using a RICH detector?}{17}{subsubsection.2.4.3}%
 \contentsline {section}{\numberline {3}Data Analysis}{17}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Resolving Power}{17}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}What is the Resolving Power of the Detector in \ref {sec:tof-pion-kaon}?}{18}{subsubsection.3.1.1}%

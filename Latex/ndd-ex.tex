@@ -1083,7 +1083,7 @@ enters the detector and the time $t_2$ when the particle exits the detector we c
 where $L$ is the length of the detector. Taking into account equation (\ref{eq:beta}) we can derive that the time-of-flight is:
 %
 \begin{equation}
-    \rm{TOF} = \frac{L}{c}\left[1 + \left(\frac{mc^2}{pc}\right)^2\right]\>.
+    \rm{TOF} = \frac{L}{c}\sqrt{1 + \left(\frac{mc^2}{pc}\right)^2}\>.
     \label{eq:tof}
 \end{equation}
 %
@@ -1103,6 +1103,7 @@ where we can again use the equation (\ref{eq:beta}) to get:
 It is common to assume that $p_1 = p_2 = p$ in such cases. 
 
 \subsubsection{Can we differentiate pions from kaons?}
+\label{sec:tof-pion-kaon}
 We are trying to differentiate pions with a rest mass of $0.1396\,\rm{GeV}$ and kaons with a rest mass of $0.4937\,\rm{GeV}$ using a time-of-flight detector, with 
 a distance of $L=2\,\rm{m}$. What is the time-of-flight difference between the two particles if they have a momentum of $p=2\,\rm{GeV/c}$? We can directly use 
 equation (\ref{eq:tof-diff}) to get:
@@ -1190,7 +1191,11 @@ detectors. Since I took this course in Slovene originally I will also add the Sl
 %
 \begin{itemize}
     \item \textbf{Resolving Power} (\textit{Ločljivost}) is a measure of how well we can differentiate between two peaks
-    in a spectrum. 
+    in a spectrum. It is defined as:
+    \begin{equation}
+        D = \frac{|\bar{x}_2 - \bar{x}_1|}{\sigma}\>,
+    \end{equation}
+    where $\sigma = \sigma_1 = \sigma_2$ or $\sigma = \max{(\sigma_1, \sigma_2)}$.
     \item \textbf{Efficiency} (\textit{Učinkovitost}) is a measure of how well we can detect a particle. It is the ratio of the number of detected particles to the number of
     particles that passed through the detector.
     \item \textbf{False Events} (\text{Lažni dogodki}) are events that are detected by the detector but are not actual
@@ -1231,6 +1236,50 @@ from $-\infty$ to $x_0$.
 \caption{Table of the integral of the Gaussian distribution.}
 \label{tab:gaussian-integral}
 \end{table}
+
+\subsubsection{What is the Resolving Power of the Detector in \ref{sec:tof-pion-kaon}?}
+From \ref{sec:tof-pion-kaon} we calculated the time-of-flight difference between pions and kaons to be $\Delta t = 183\,\rm{ps}$ 
+for $p=2\,\rm{GeV/c}$ and $\Delta t = 46\,\rm{ps}$ for $p=4\,\rm{GeV/c}$. We can calculate the resolving power of the detector
+using the formula for the resolving power:
+%
+\begin{equation}
+    D = \frac{|\Delta t|}{\sigma}\>,
+\end{equation}
+%
+where the temporal resolution of the detector is given as $\sigma = 60\,\rm{ps}$. The resolving power for $p=2\,\rm{GeV/c}$ is:
+%
+\begin{equation}
+    D = \frac{183\,\rm{ps}}{60\,\rm{ps}} = 3.05\>,
+\end{equation}
+%
+while for $p=4\,\rm{GeV/c}$ it is:
+%
+\begin{equation}
+    D = \frac{46\,\rm{ps}}{60\,\rm{ps}} = 0.77\>.
+\end{equation}
+%
+We can see that the resolving power of the detector is much better for $p=2\,\rm{GeV/c}$ than for $p=4\,\rm{GeV/c}$.
+\\
+Where do we have to set the threshold for the time-of-flight difference to be able to differentiate between pions 
+and kaons with an efficiency of $95\%$? $95\%$ corresponds to $1.645\cdot\sigma$. We can use the following:
+%
+\begin{equation}
+    \rm{TOF}_{\text{thr}} = \rm{TOF}_\pi + 1.645\cdot\sigma\>,
+\end{equation}
+%
+Using Equation (\ref{eq:tof}) we can calculate the time-of-flight for pions and kaons as:
+%
+\begin{align*}
+    \rm{TOF}_\pi &= \frac{2\>\rm{m}}{3\cdot10^8\>\dfrac{\rm{m}}{\rm{s}}}\sqrt{1 + \left(\frac{0.1396\>\rm{GeV}}{2\>\rm{GeV}}\right)^2} = 6.68\>\rm{ns}\>, \\
+    \rm{TOF}_K &= \frac{2\>\rm{m}}{3\cdot10^8\>\dfrac{\rm{m}}{\rm{s}}}\sqrt{1 + \left(\frac{0.4937\>\rm{GeV}}{2\>\rm{GeV}}\right)^2} = 6.87\>\rm{ns}\>.
+\end{align*}
+%
+From this we can calculate the threshold value for the time-of-flight value:
+%
+\begin{equation}
+    \rm{TOF}_{\text{thr}} = 6.68\>\rm{ns} + 1.645\cdot 60\>\rm{ps} = 6.68\>\rm{ns} + 98.7\>\rm{ps} = 6.78\>\rm{ns}\>.
+\end{equation}
+%
 
 
 % \newpage
