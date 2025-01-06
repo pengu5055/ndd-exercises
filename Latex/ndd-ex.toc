@@ -37,3 +37,4 @@
 \contentsline {subsubsection}{\numberline {3.1.1}What is the Resolving Power of the Detector in \ref {sec:tof-pion-kaon}?}{18}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}What is the Resolving Power of the Detector in \ref {sec:rich-pion-kaon}?}{19}{subsubsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.2}Measurement of Momentum}{19}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}For a given semiconductor detector, which $p_t$ can we measure with a $10\%$ uncertainty?}{20}{subsubsection.3.2.1}%

@@ -1198,7 +1198,7 @@ detectors. Since I took this course in Slovene originally I will also add the Sl
         D = \frac{|\bar{x}_2 - \bar{x}_1|}{\sigma}\>,
         \label{eq:resolving-power}
     \end{equation}
-    where $\sigma = \sigma_1 = \sigma_2$ or $\sigma = \max{(\sigma_1, \sigma_2)}$.
+    where $\sigma = \sigma_1 = \sigma_2$ or $\sigma = \max{(\sigma_1, \sigma_2)}$ and $\bar{x}_1$ and $\bar{x}_2$ are the means of the two peaks.
     \item \textbf{Efficiency} (\textit{Učinkovitost}) is a measure of how well we can detect a particle. It is the ratio of the number of detected particles to the number of
     particles that passed through the detector.
     \item \textbf{False Events} (\text{Lažni dogodki}) are events that are detected by the detector but are not actual
@@ -1403,14 +1403,14 @@ means the distance of flight, while $L$ in the context of multiple scattering me
 gas detector we can say that $d = L$. Thus the correction due to multiple scattering in a \textbf{semiconductor detector} is:
 %
 \begin{equation}
-    \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{MSC} = \frac{13.6\,\rm{MeV}}{eBL}\sqrt{\frac{d}{X_0}}\>,
+    \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{MSC} = \frac{13.6\,\rm{MeV}}{c_0eBL}\sqrt{\frac{d}{X_0}}\>,
     \label{eq:msc-semi}
 \end{equation} 
 %
 where $X_0$ is the radiation length of the material. In the event of a \textbf{gas detector} the correction is:
 %
 \begin{equation}
-    \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{MSC} = \frac{13.6\,\rm{MeV}}{eB\sqrt{X_0 L}}\>.
+    \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{MSC} = \frac{13.6\,\rm{MeV}}{c_0eB\sqrt{X_0 L}}\>.
     \label{eq:msc-gas}
 \end{equation}
 %
@@ -1420,7 +1420,45 @@ Kind reminder, that we sum up the errors as:
     \left(\frac{\sigma_{p_t}}{p_t}\right)^2 = \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{Track}^2 + \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{MSC}^2\>.
     \label{eq:sum-errors}
 \end{equation}
+%
+\subsubsection{For a given semiconductor detector, which $p_t$ can we measure with a $10\%$ uncertainty?}
+Lets imagine a semiconductor detector which uses silicon detectors with a thickness of $d=300\,\mu\rm{m}$, which 
+allow a resolution of $\sigma_x = 10\,\mu\rm{m}$. The detector is made of $4$ such layers with a $L = 7.3\,\rm{cm}$ gap in between each
+silicon layer. The radiation length of silicon is $X_0 = 9.37\,\rm{cm}$, while the magnetic field is $B=2\,\rm{T}$. \\
 
+It is important for us to consider that we have $4$ layers of silicon detectors of thickness $d$ which give
+us only $3$ gaps of size $L$. This also gives us $N=4$ measurements of position. Let us find the momentum $p_0$ for which the total uncertainty is at most $10\%$. We can first calculate 
+the uncertainty due to multiple scattering using Equation (\ref{eq:msc-semi}), since the right-hand side of the equation is independent 
+of momentum:
+%
+\begin{flalign}
+    \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{MSC} &= \frac{13.6\,\rm{MeV}}{eB3L}\sqrt{\frac{4d}{X_0}} \nonumber \\
+    &= \frac{13.6\cdot 10^6\,\rm{eV}}{3\cdot10^8\,\dfrac{\rm{m}}{\rm{s}}\cdot\rm{e} \cdot 2\,\rm{T}\cdot 3\cdot 7.3\cdot 10^{-2}\,\rm{m}}\sqrt{\frac{4\cdot 300\cdot 10^{-6}\,\rm{m}}{9.37\cdot 10^{-2}\,\rm{m}}}\nonumber \\
+    &= 0.0117 \approx 1.2\%\>,
+\end{flalign}
+%
+where we've taken into account that $\rm{T} = \rm{Vs}/\rm{m}^2$ and added a $c$ to the denominator to get the units right (so we can use $eV$). From here 
+we can use Equation (\ref{eq:sum-errors}) to calculate the uncertainty due to tracking:
+%
+\begin{flalign}
+    \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{Track}^2 &= \left(\frac{\sigma_{p_t}}{p_t}\right)^2 - \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{MSC}^2 = 0.1^2 - 0.012^2 \nonumber \\
+    \Rightarrow \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{Track} &= 9.9\%\>.
+\end{flalign}
+%
+From this we can now determine the momentum $p_0$ for which the total uncertainty is at most $10\%$:
+%
+\begin{flalign}
+    p_0 &= \left(\dfrac{\sigma_{p_t}}{p_t}\right)_\mathrm{Track}\frac{eB\cdot (3L)^2}{\sigma_x}\frac{1}{\sqrt{\dfrac{720}{N+4}}}\cdot c_0 \nonumber \\
+    &= 0.099\cdot \frac{\rm{e}\cdot2\,\rm{T}\cdot\left(3\cdot7.3\cdot10^{-2}\,\rm{m}\right)^2}{10\cdot10^{-6}\,\rm{m}}\frac{1}{\sqrt{\dfrac{720}{4+4}}}\cdot 3\cdot10^8\,\dfrac{\rm{m}}{\rm{s}} \nonumber \\
+    &= 30\,\rm{GeV/c}\>.
+\end{flalign}
+%
+If we wanted to find the value of the momentum where both the uncertainty due to tracking and multiple scattering are equal we would have to set the two equal to each other and solve for $p_t$:
+%
+\begin{flalign}
+    \frac{\sigma_x p_t}{c_0eBL^2}\sqrt{\frac{720}{N+4}} &= 0.0117 \nonumber \\
+    \Rightarrow p_t &= 3.6\,\rm{GeV/c}\>.
+\end{flalign}
 % \newpage
 % \bibliographystyle{unsrt}
 % \bibliography{main}
