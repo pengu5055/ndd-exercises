@@ -17,6 +17,7 @@
 \usepackage{accents}
 \usepackage{tcolorbox}
 \usepackage{colortbl}
+\usepackage{subcaption}
 \hypersetup{colorlinks=true}
 
 % Load the natbib package for citation style
@@ -1216,28 +1217,65 @@ We can assume all our measurements are Gaussian distributed. Where the Gaussian 
 where $\mu$ is the mean of the distribution and $\sigma$ is the standard deviation. For convenience of calculations we 
 have been provided a table of the values of the integral of the Gaussian distribution. $g(x_0)$ represents the symmetric
 integral of the Gaussian distribution from $-x_0$ to $x_0$, while $f(x_0)$ represents the integral of the Gaussian distribution
-from $-\infty$ to $x_0$.
+from $-\infty$ to $x_0$. In the context of data analysis $g(x)$ gives us the false positive rate while $f(x)$ gives us the
+efficiency of the detector. The table is given in Table \ref{tab:gaussian-integral}.
 
 \begin{table}[H]
     \centering
-    \begin{tabular}{|l|l|l|}
-    \hline
-    \rowcolor[HTML]{FFCCC9} 
-    \multicolumn{1}{|c|}{\cellcolor[HTML]{FFCCC9}$\bm{x_0}$} &
-    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}$\bm{g(x_0)}\>[\%]$} &
-    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}$\bm{f(x_0)}\>[\%]$} \\ \hline
-    $\sigma$           & 68.3    & 84.1     \\ \hline
-    $2\sigma$          & 95.5    & 97.7     \\ \hline
-    $3\sigma$          & 99.73   & 99.865   \\ \hline
-    $4\sigma$          & 99.994  & 99.997   \\ \hline
-    $5\sigma$          & 99.9994 & 99.99997 \\ \hline
-    $1.282\cdot\sigma$ & 80      & 90       \\ \hline
-    $1.645\cdot\sigma$ & 90      & 95       \\ \hline
-    $2.327\cdot\sigma$ & 98      & 99       \\ \hline
-\end{tabular}
-\caption{Table of the integral of the Gaussian distribution.}
-\label{tab:gaussian-integral}
-\end{table}
+
+\end{table}    
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \begin{tabular}{|l|l|l|}
+            \hline
+            \rowcolor[HTML]{FFCCC9} 
+            \multicolumn{1}{|c|}{\cellcolor[HTML]{FFCCC9}$\bm{x_0}$} &
+            \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}$\bm{g(x_\mathrm{thr})}\>[\%]$} &
+            \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}$\bm{f(x_\mathrm{thr})}\>[\%]$} \\ \hline
+            $\sigma$           & 68.3    & 84.1     \\ \hline
+            $2\sigma$          & 95.5    & 97.7     \\ \hline
+            $3\sigma$          & 99.73   & 99.865   \\ \hline
+            $4\sigma$          & 99.994  & 99.997   \\ \hline
+            $5\sigma$          & 99.9994 & 99.99997 \\ \hline
+            $1.282\cdot\sigma$ & 80      & 90       \\ \hline
+            $1.645\cdot\sigma$ & 90      & 95       \\ \hline
+            $2.327\cdot\sigma$ & 98      & 99       \\ \hline
+        \end{tabular}
+        \captionof{table}{Table of the integral of the Gaussian distribution.}
+        \label{tab:example-table}
+    \end{minipage}
+    \begin{minipage}{0.59\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../threshold.pdf}
+        \caption{Visual representation of the Gaussian distributions and the threshold value.}
+        \label{fig:example-figure}
+    \end{minipage}\hfill
+\end{figure}
+Say we wanted to set the threshold value $x_\mathrm{thr}$ so that we can differentiate the first particle from the second with an efficiency of $99\%$. We read the width 
+of the Gaussian distribution from the table where $f(x_\mathrm{thr}) = 99\%$ and set the threshold value to:
+%
+\begin{equation}
+    x_\mathrm{thr} = x_1 + 2.327\cdot\sigma\>,
+\end{equation}
+%
+where $x_1$ is the mean of the distribution of the first particle. We can also calculate the percentage of false events $F$ for this threshold value as:
+%
+\begin{equation}
+    x_0' = x_2 - x_\mathrm{thr}\>,
+\end{equation}
+%
+where $x_2$ is the mean of the distribution of the second particle. The percentage of false events is then:
+%
+\begin{equation}
+    F = 1 - g(x_0')\>.
+\end{equation}
+%
+If we want to set a threshold for a given rate of false events $F$ we can use the same formula as before where we replace the width of the Gaussian distribution for 
+the threshold value $x_\mathrm{thr}$ with the value of $x_0'$ from the table where $g(x_0') = 1 - F$.
+
 
 \subsubsection{What is the Resolving Power of the Detector in \ref{sec:tof-pion-kaon}?}
 From \ref{sec:tof-pion-kaon} we calculated the time-of-flight difference between pions and kaons to be $\Delta t = 183\,\rm{ps}$ 
@@ -1328,6 +1366,7 @@ of the detection of kaons. The fraction of false events due to pions is then:
 \end{equation}
 %
 \subsection{Measurement of Momentum}
+
 
 % \newpage
 % \bibliographystyle{unsrt}

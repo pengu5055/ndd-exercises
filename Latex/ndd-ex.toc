@@ -15,25 +15,25 @@
 \contentsline {subsubsection}{\numberline {2.1.1}What is the energy resolution of a silicon detector at $300\,\rm {K}$?}{9}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}What voltage is needed to get a $1\,\rm {mm}$ thick depletion region in the detector from the previous exercise?}{10}{subsubsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.2}Ionization Detectors}{11}{subsection.2.2}%
-\contentsline {paragraph}{Ionization Chambers}{11}{section*.2}%
-\contentsline {paragraph}{Proportional Counters}{11}{section*.3}%
+\contentsline {paragraph}{Ionization Chambers}{11}{section*.4}%
+\contentsline {paragraph}{Proportional Counters}{11}{section*.5}%
 \contentsline {subsubsection}{\numberline {2.2.1}What is the energy resolution of a gas ionization chamber?}{11}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}What is the energy resolution of a proportional counter?}{12}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.3}Why the cylindrical geometry? What voltage would be needed to achieve the same electric field in a parallel plate capacitor?}{13}{subsubsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.3}Scintillation Detectors}{13}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}How many scintillation photons are produed in a $\rm {CsI(Tl)}$ scintillator?}{14}{subsubsection.2.3.1}%
-\contentsline {paragraph}{Use of Scintillators in Nuclear Medicine}{14}{section*.4}%
+\contentsline {paragraph}{Use of Scintillators in Nuclear Medicine}{14}{section*.6}%
 \contentsline {subsubsection}{\numberline {2.3.2}What is the Resolution of a SPECT Camera?}{14}{subsubsection.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.3.3}What is the Resolution of a PET Camera with a $\rm {BGO}$ scintillator?}{14}{subsubsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.4}Particle Identification Detectors}{15}{subsection.2.4}%
-\contentsline {paragraph}{Time-of-Flight Detectors}{15}{section*.5}%
+\contentsline {paragraph}{Time-of-Flight Detectors}{15}{section*.7}%
 \contentsline {subsubsection}{\numberline {2.4.1}Can we differentiate pions from kaons?}{16}{subsubsection.2.4.1}%
-\contentsline {paragraph}{Cherenkov Detectors/Threshold Counters}{16}{section*.6}%
+\contentsline {paragraph}{Cherenkov Detectors/Threshold Counters}{16}{section*.8}%
 \contentsline {subsubsection}{\numberline {2.4.2}Can we differentiate pions from kaons using a Cherenkov detector?}{16}{subsubsection.2.4.2}%
-\contentsline {paragraph}{Ring Imaging Cherenkov Detectors (RICH)}{17}{section*.7}%
+\contentsline {paragraph}{Ring Imaging Cherenkov Detectors (RICH)}{17}{section*.9}%
 \contentsline {subsubsection}{\numberline {2.4.3}Can we differentiate pions from kaons using a RICH detector?}{17}{subsubsection.2.4.3}%
 \contentsline {section}{\numberline {3}Data Analysis}{17}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Resolving Power}{17}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}What is the Resolving Power of the Detector in \ref {sec:tof-pion-kaon}?}{18}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}What is the Resolving Power of the Detector in \ref {sec:rich-pion-kaon}?}{18}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2}What is the Resolving Power of the Detector in \ref {sec:rich-pion-kaon}?}{19}{subsubsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.2}Measurement of Momentum}{19}{subsection.3.2}%

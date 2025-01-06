@@ -1,8 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1736108068 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1736108072
+["pdflatex"] 1736179661 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1736179664
+  "../threshold.pdf" 1736178340 36650 9461429405afb7df2a29c3ecfd15697f ""
   "/etc/texmf/web2c/texmf.cnf" 1721132218 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/pengu5055/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1721133484 1405652 6dbe6b4a0b8b03aa67147fe2fddcad95 ""
-  "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" 1736108063 62679 0caa4fc6418a87bfae80536fc8ff7daf ""
+  "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" 1736179661 64467 f1c41be5775d88f0bbd1eb5543ceee36 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -132,6 +133,9 @@
   "/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty" 1636758526 2462 754d6b31b2ab5a09bb72c348ace2ec75 ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1636758526 8448 96f18c76bf608a36ee6fbf021ac1dd32 ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty" 1622581934 2894 55431114fc0e491ecee275edafd6c881 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty" 1603745920 51746 e89c4da670ba533e6ab38e045ce6d1d9 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty" 1603745920 67929 d50ae850e1d9604065e8337a75a41029 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty" 1603745920 6133 46bea384e36e9b74bd53a238fc2d0654 ""
   "/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty" 1579991017 10793 d0af3aa11e27ae35ba4685b17597b122 ""
   "/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty" 1399239813 4378 f429f0da968c278653359293040a8f52 ""
   "/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
@@ -190,10 +194,10 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1721229899 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "cover.tikz" 1733319756 1593 6715a278942b20601e968d296e204dbc ""
   "logo_fmf.pdf" 1733054670 15612 f362f770ef36c22b3204cc12be10dccd ""
-  "ndd-ex.aux" 1736108072 11216 c66ef276a046250f16cb31505183e5aa "pdflatex"
-  "ndd-ex.out" 1736108072 10314 b9b5adec074f085c7dee76a3e9fa9622 "pdflatex"
-  "ndd-ex.tex" 1736108063 62679 0caa4fc6418a87bfae80536fc8ff7daf ""
-  "ndd-ex.toc" 1736108072 4412 fa76d9cf286a9f9ce4ee991f6063efa7 "pdflatex"
+  "ndd-ex.aux" 1736179664 11660 f2a4b9a320b831db8888d79f29a91108 "pdflatex"
+  "ndd-ex.out" 1736179664 10314 b9b5adec074f085c7dee76a3e9fa9622 "pdflatex"
+  "ndd-ex.tex" 1736179661 64467 f1c41be5775d88f0bbd1eb5543ceee36 ""
+  "ndd-ex.toc" 1736179664 4412 b1a0fd727df37fb263c66714be0ba767 "pdflatex"
   "tracks.tikz" 1733323187 767 a031e5cc6d55126ef0b8041bdba03388 ""
   (generated)
   "ndd-ex.aux"
