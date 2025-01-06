@@ -1383,8 +1383,43 @@ in a planar case where we have three measurements. We came to some intermediate 
     &\sigma_s^2 = \sigma_2^2 + \frac{\sigma_1^2}{4} + \frac{\sigma_3^2}{4} \Rightarrow \frac{6}{4} \sigma_x^2 \>.
 \end{flalign}
 %
-These without a sketch of the geometry are relatively useless. 
-
+These without a sketch of the geometry are relatively useless. To make things short, for three points, the uncertainty due to tracking is:
+%
+\begin{equation}
+    \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{Track} = \frac{8p_t}{eBL^2}\sigma_x \sqrt{\frac{3}{2}}\>,
+    \label{eq:track-3}
+\end{equation}
+%
+where $\sigma_x$ is the uncertainty of the measurement of the position of the particle. We see that the uncertainty is proportional to the momentum
+of the particle. More general for a set of $N$ measurements we have:
+%
+\begin{equation}
+    \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{Track} = \frac{p_t}{eBL^2}\sigma_x \sqrt{\frac{720}{N+4}}\>.
+    \label{eq:track-N}
+\end{equation}
+%
+We must often also correct this due to multiple scattering. It is important to differentiate that $L$ in the context of tracking
+means the distance of flight, while $L$ in the context of multiple scattering means the thickness of the material. In the event of a 
+gas detector we can say that $d = L$. Thus the correction due to multiple scattering in a \textbf{semiconductor detector} is:
+%
+\begin{equation}
+    \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{MSC} = \frac{13.6\,\rm{MeV}}{eBL}\sqrt{\frac{d}{X_0}}\>,
+    \label{eq:msc-semi}
+\end{equation} 
+%
+where $X_0$ is the radiation length of the material. In the event of a \textbf{gas detector} the correction is:
+%
+\begin{equation}
+    \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{MSC} = \frac{13.6\,\rm{MeV}}{eB\sqrt{X_0 L}}\>.
+    \label{eq:msc-gas}
+\end{equation}
+%
+Kind reminder, that we sum up the errors as:
+%
+\begin{equation}
+    \left(\frac{\sigma_{p_t}}{p_t}\right)^2 = \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{Track}^2 + \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{MSC}^2\>.
+    \label{eq:sum-errors}
+\end{equation}
 
 % \newpage
 % \bibliographystyle{unsrt}
