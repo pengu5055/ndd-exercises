@@ -1459,6 +1459,37 @@ If we wanted to find the value of the momentum where both the uncertainty due to
     \frac{\sigma_x p_t}{c_0eBL^2}\sqrt{\frac{720}{N+4}} &= 0.0117 \nonumber \\
     \Rightarrow p_t &= 3.6\,\rm{GeV/c}\>.
 \end{flalign}
+%
+
+\subsubsection{For the Central Drift Chamber used in the Belle experiment, what is the uncertainty of the momentum measurement for a $0.5\,\rm{GeV/c}$ particle?}
+The Central Drift Chamber used in the Belle experiment is a gas detector which has 50 layers of anode wires in a space of $L=70\,\rm{cm}$. The gas used is 
+a mixture of $50\%$ helium and $50\%$ butane by volume, which has a radiation length of $X_0 = 640\,\rm{m}$. The magnetic field is $B=1.5\,\rm{T}$. The spatial 
+resolution of the detector is $\sigma_x = 130\,\mu\rm{m}$. \\
+
+Since we are dealing with a gas detector we can use Equation (\ref{eq:msc-gas}) to calculate the uncertainty due to multiple scattering, where we've
+already assumed that $d=L$:
+%
+\begin{flalign}
+    \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{MSC} &= \frac{13.6\,\rm{MeV}}{c_0eB\sqrt{X_0 L}} \nonumber \\
+    &= \frac{13.6\cdot 10^6\,\rm{eV}}{3\cdot10^8\,\dfrac{\rm{m}}{\rm{s}}\cdot\rm{e}\cdot 1.5\,\rm{T}\cdot\sqrt{640\,\rm{m}\cdot 70\cdot 10^{-2}\,\rm{m}}}\nonumber \\
+    &= 0.00143 \approx 0.14\%\>.
+\end{flalign}
+%
+From here we can use Equation (\ref{eq:track-N}) to calculate the uncertainty due to tracking:
+%
+\begin{flalign}
+    \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{Track} &= \frac{p_t}{eBL^2}\sigma_x \sqrt{\frac{720}{N+4}} \nonumber \\
+    &= \frac{0.5\cdot10^9\,\rm{eV}}{3\cdot10^8\,\dfrac{\rm{m}}{\rm{s}}\cdot\rm{e}\cdot 1.5\,\rm{T}\cdot\left(70\cdot 10^{-2}\,\rm{m}\right)^2}\cdot 130\cdot 10^{-6}\,\rm{m}\sqrt{\frac{720}{50+4}} \nonumber \\
+    &= 0.00107 \approx 0.11\%\>.
+\end{flalign}
+%
+From this we can calculate the total uncertainty of the momentum measurement using Equation (\ref{eq:sum-errors}):
+%
+\begin{flalign}
+    \left(\frac{\sigma_{p_t}}{p_t}\right)^2 &= \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{Track}^2 + \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{MSC}^2 = (0.00107)^2 + (0.00143)^2 = 0.000003189\nonumber \\
+    \Rightarrow \left(\frac{\sigma_{p_t}}{p_t}\right) &= 0.18\%\>.
+\end{flalign}
+
 % \newpage
 % \bibliographystyle{unsrt}
 % \bibliography{main}
