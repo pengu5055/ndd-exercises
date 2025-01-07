@@ -18,6 +18,7 @@
 \usepackage{tcolorbox}
 \usepackage{colortbl}
 \usepackage{subcaption}
+\usepackage{nicematrix}
 \hypersetup{colorlinks=true}
 
 % Load the natbib package for citation style
@@ -1220,11 +1221,6 @@ integral of the Gaussian distribution from $-x_0$ to $x_0$, while $f(x_0)$ repre
 from $-\infty$ to $x_0$. In the context of data analysis $g(x)$ gives us the false positive rate while $f(x)$ gives us the
 efficiency of the detector. The table is given in Table \ref{tab:gaussian-integral}.
 
-\begin{table}[H]
-    \centering
-
-\end{table}    
-
 \begin{figure}[H]
     \centering
     \begin{minipage}{0.4\textwidth}
@@ -1245,7 +1241,7 @@ efficiency of the detector. The table is given in Table \ref{tab:gaussian-integr
             $2.327\cdot\sigma$ & 98      & 99       \\ \hline
         \end{tabular}
         \captionof{table}{Table of the integral of the Gaussian distribution.}
-        \label{tab:example-table}
+        \label{tab:gaussian-integral}
     \end{minipage}
     \begin{minipage}{0.59\textwidth}
         \centering
@@ -1511,7 +1507,61 @@ In practice we fit these parameters to our measurements using various optimizati
     \item \textbf{Kalman Filter} (\textit{Kalmanov filter}) which is a \textbf{progressive method} where we update our estimate of the parameters as we get new data points.
 \end{itemize}
 %
-Let's now imagine that we want to fit a linear model to a set of measurements.
+Let's now imagine that we want to fit a linear model to a set of measurements. The scenario is presented in Figure \ref{fig:linear-fit}.
+%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{../linearfit.pdf}
+    \caption{Fitting a linear model to a set of measurements.}
+    \label{fig:linear-fit}
+\end{figure}
+%
+We can write the model iteratively as:
+%
+\begin{equation}
+    y_{n+1} = y_n + k_n\cdot\Delta x\>,
+\end{equation}
+%
+where $k_n$ is the slope of the line after $n$ measurements. We will denote the uncertainty of the measurement with $\sigma$ and the uncertainty 
+of the estimated parameter $k_n$ with $\sigma(k)$. Presented below are tables of how to calculate $k_n\Delta x$ and $\sigma(k)\Delta x$ for both of 
+the methods. The professor claims this is all that is needed for the exam, however one could also derive these from the general formulas for the
+least squares method and the Kalman filter.
+
+\begin{table}[H]
+    \centering
+        \large{\textbf{Kalman Filter}} \\[2ex]
+        \begin{NiceTabular}{|l|l|l|}
+            \hline
+            \rowcolor[HTML]{EEB1F9}
+            \multicolumn{1}{|c|}{\cellcolor[HTML]{EEB1F9}$\bm{n}$} &
+            \multicolumn{1}{c|}{\cellcolor[HTML]{EEB1F9}\rule{0pt}{3ex}$\>\bm{k_n\Delta x}\>$} &
+            \multicolumn{1}{c|}{\cellcolor[HTML]{EEB1F9}$\bm{\sigma(k)\Delta x}$ if $\bm{\sigma_i = \sigma}$} \\ \hline
+            \hspace{0.5em}2\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$y_2 - y_1$}\vspace{1ex} & \multicolumn{1}{c|}{$\sqrt{2}\sigma$} \\ \hline
+            \hspace{0.5em}3\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$\dfrac{1}{5}\left(y_3 - y_2 - 2y_1\right)$} \vspace{1ex} & \multicolumn{1}{c|}{$\sqrt{\dfrac{14}{25}}\,\sigma = 0.748\cdot\sigma$} \\ \hline
+            \hspace{0.5em}4\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$\dfrac{1}{70}\left(30y_4 - y_3 - 18y_2 - 11y_1\right)$} \vspace{1ex} & \multicolumn{1}{c|}{$\dfrac{1}{\sqrt{5}}\,\sigma = 0.524\cdot\sigma$} \\ \hline
+        \end{NiceTabular}
+        \captionof{table}{Table for Kalman Filter.}
+        \label{tab:kalman-table}
+\end{table}
+
+\begin{table}[H]
+    \centering
+        \large{\textbf{Least Squares Method}} \\[2ex]
+        \begin{NiceTabular}{|l|l|l|}
+            \hline
+            \rowcolor[HTML]{FFADC3}
+            \multicolumn{1}{|c|}{\cellcolor[HTML]{FFADC3}$\bm{n}$} &
+            \multicolumn{1}{c|}{\cellcolor[HTML]{FFADC3}\rule{0pt}{3ex}$\>\bm{k_n\Delta x}\>$} &
+            \multicolumn{1}{c|}{\cellcolor[HTML]{FFADC3}$\bm{\sigma(k)\Delta x}$ if $\bm{\sigma_i = \sigma}$} \\ \hline
+            \hspace{0.5em}2\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$y_2 - y_1$}\vspace{1ex} & \multicolumn{1}{c|}{$\sqrt{2}\sigma$} \\ \hline
+            \hspace{0.5em}3\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$\dfrac{1}{2}\left(y_3 - y_1\right)$} \vspace{1ex} & \multicolumn{1}{c|}{$\dfrac{1}{\sqrt{2}}\,\sigma = 0.707\cdot\sigma$} \\ \hline
+            \hspace{0.5em}4\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$\dfrac{1}{10}\left(3y_4 + y_3 - y_2 - 3y_1\right)$} \vspace{1ex} & \multicolumn{1}{c|}{$\dfrac{1}{\sqrt{5}}\,\sigma = 0.447\cdot\sigma$} \\ \hline
+        \end{NiceTabular}
+        \captionof{table}{Table for Least Squares Method.}
+        \label{tab:least-squares-table}
+\end{table}
+
+
 
 % \newpage
 % \bibliographystyle{unsrt}

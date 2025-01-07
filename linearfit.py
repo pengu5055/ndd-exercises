@@ -34,7 +34,11 @@ ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f"$x_{int(x)}$"))
 ax.get_yaxis().set_visible(False)
 ax.spines[["left", "right", "top", "bottom"]].set_visible(False)
 ax.legend(frameon=False, loc="upper left")
+ax.annotate("$y = kx + y_0$", (7.5, 5), fontsize=12, color="black")
 
 plt.tight_layout()
 plt.savefig("linearfit.pdf", dpi=500)
 plt.show()
+
+print(mpl.colors.to_rgb(colors[0]))
+print(mpl.colors.to_hex(colors[2]))

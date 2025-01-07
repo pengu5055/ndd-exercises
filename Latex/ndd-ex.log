@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.16)  7 JAN 2025 13:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.16)  7 JAN 2025 16:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -544,35 +544,95 @@ Package caption Info: wrapfig package is loaded.
 )
 \c@subfigure=\count318
 \c@subtable=\count319
+) (/usr/share/texlive/texmf-dist/tex/latex/nicematrix/nicematrix.sty
+Package: nicematrix 2022/01/23 v6.5 Enhanced arrays with the help of PGF/TikZ
+\g__nicematrix_env_int=\count320
+\g__nicematrix_NiceMatrixBlock_int=\count321
+\l__nicematrix_columns_width_dim=\dimen287
+\l__nicematrix_col_width_dim=\dimen288
+\g__nicematrix_row_total_int=\count322
+\g__nicematrix_col_total_int=\count323
+\l__nicematrix_key_nb_rows_int=\count324
+\g__nicematrix_blocks_wd_dim=\dimen289
+\g__nicematrix_blocks_ht_dim=\dimen290
+\g__nicematrix_blocks_dp_dim=\dimen291
+\l__nicematrix_width_dim=\dimen292
+\l__nicematrix_tabular_width_dim=\dimen293
+\l__nicematrix_old_iRow_int=\count325
+\l__nicematrix_old_jCol_int=\count326
+\g__nicematrix_total_X_weight_int=\count327
+\l__nicematrix_X_columns_dim=\dimen294
+\l__nicematrix_x_initial_dim=\dimen295
+\l__nicematrix_y_initial_dim=\dimen296
+\l__nicematrix_x_final_dim=\dimen297
+\l__nicematrix_y_final_dim=\dimen298
+\l_tmpc_dim=\dimen299
+\l_tmpd_dim=\dimen300
+\g__nicematrix_width_last_col_dim=\dimen301
+\g__nicematrix_width_first_col_dim=\dimen302
+\l__nicematrix_row_min_int=\count328
+\l__nicematrix_row_max_int=\count329
+\l__nicematrix_col_min_int=\count330
+\l__nicematrix_col_max_int=\count331
+\g__nicematrix_static_num_of_col_int=\count332
+\l__nicematrix_rounded_corners_dim=\dimen303
+\l__nicematrix_line_width_dim=\dimen304
+\g__nicematrix_block_box_int=\count333
+\l__nicematrix_submatrix_extra_height_dim=\dimen305
+\l__nicematrix_submatrix_left_xshift_dim=\dimen306
+\l__nicematrix_submatrix_right_xshift_dim=\dimen307
+\l__nicematrix_first_row_int=\count334
+\l__nicematrix_first_col_int=\count335
+\l__nicematrix_last_row_int=\count336
+\l__nicematrix_last_col_int=\count337
+\c@tabularnote=\count338
+\l__nicematrix_number_of_notes_int=\count339
+\l__nicematrix_cell_space_top_limit_dim=\dimen308
+\l__nicematrix_cell_space_bottom_limit_dim=\dimen309
+\l__nicematrix_inter_dots_dim=\dimen310
+\l__nicematrix_xdots_shorten_dim=\dimen311
+\l__nicematrix_radius_dim=\dimen312
+\l__nicematrix_notes_above_space_dim=\dimen313
+\l__nicematrix_left_margin_dim=\dimen314
+\l__nicematrix_right_margin_dim=\dimen315
+\l__nicematrix_extra_left_margin_dim=\dimen316
+\l__nicematrix_extra_right_margin_dim=\dimen317
+\c__nicematrix_max_l_dim=\dimen318
+\l__nicematrix_position_int=\count340
+\l__nicematrix_start_int=\count341
+\l__nicematrix_end_int=\count342
+\l__nicematrix_multiplicity_int=\count343
+\l_tmpc_int=\count344
+\l__nicematrix_brace_yshift_dim=\dimen319
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 21.
+Package hyperref Info: Option `colorlinks' set `true' on input line 22.
  (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip57
 \bibsep=\skip58
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count320
+\c@NAT@ctr=\count345
 ) (./ndd-ex.aux)
 \openout1 = `ndd-ex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -610,16 +670,16 @@ LaTeX Font Info:    ... okay on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count321
-\scratchdimen=\dimen287
+\scratchcounter=\count346
+\scratchdimen=\dimen320
 \scratchbox=\box79
-\nofMPsegments=\count322
-\nofMParguments=\count323
+\nofMPsegments=\count347
+\nofMParguments=\count348
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count324
-\MPscratchDim=\dimen288
-\MPnumerator=\count325
-\makeMPintoPDFobject=\count326
+\MPscratchCnt=\count349
+\MPscratchDim=\dimen321
+\MPnumerator=\count350
+\makeMPintoPDFobject=\count351
 \everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -627,7 +687,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 53.
+Package hyperref Info: Link coloring ON on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -635,11 +695,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count327
+\c@section@level=\count352
 )
-LaTeX Info: Redefining \ref on input line 53.
-LaTeX Info: Redefining \pageref on input line 53.
-LaTeX Info: Redefining \nameref on input line 53.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
  (./ndd-ex.out) (./ndd-ex.out)
 \@outlinefile=\write4
 \openout4 = `ndd-ex.out'.
@@ -650,7 +710,7 @@ Package caption Info: End \AtBeginDocument code.
 <logo_fmf.pdf, id=151, 233.03412pt x 141.6228pt>
 File: logo_fmf.pdf Graphic file (type pdf)
 <use logo_fmf.pdf>
-Package pdftex.def Info: logo_fmf.pdf  used on input line 70.
+Package pdftex.def Info: logo_fmf.pdf  used on input line 71.
 (pdftex.def)             Requested size: 170.71652pt x 103.75114pt.
  (./tracks.tikz
 \pgf@layerbox@bg=\box80
@@ -658,7 +718,7 @@ Package pdftex.def Info: logo_fmf.pdf  used on input line 70.
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./logo_fmf.pdf>]
-Package hyperref Info: Option `pageanchor' set `true' on input line 92.
+Package hyperref Info: Option `pageanchor' set `true' on input line 93.
  (./ndd-ex.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -672,197 +732,218 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout5 = `ndd-ex.toc'.
 
 
-Overfull \hbox (9.27426pt too wide) detected at line 120
+Overfull \hbox (9.27426pt too wide) detected at line 121
 []
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.120 \end{gather*}
+l.121 \end{gather*}
                     [1]
-Overfull \hbox (3.37514pt too wide) detected at line 197
+Overfull \hbox (3.37514pt too wide) detected at line 198
 []
  []
 
 
-Overfull \hbox (5.32596pt too wide) in paragraph at lines 197--200
+Overfull \hbox (5.32596pt too wide) in paragraph at lines 198--201
 \OT1/cmr/m/n/10 Thus the en-ergy loss of charged kaons $\OML/cmm/m/it/10 K[]$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 K[]$ \OT1/cmr/m/n/10 with a mo-men-tum of $2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5 []$ in cop-per is $13\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 47 []$. 
  []
 
 [2] [3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 492--495
+Underfull \hbox (badness 10000) in paragraph at lines 493--496
 
  []
 
 [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 588--594
+Underfull \hbox (badness 10000) in paragraph at lines 589--595
 
  []
 
 [8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 685.
+(hyperref)                removing `math shift' on input line 686.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 685.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 686.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.66702pt
-(hyperref)                removed on input line 685.
+(hyperref)                removed on input line 686.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 685.
+(hyperref)                removing `math shift' on input line 686.
 
 [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 754.
+(hyperref)                removing `math shift' on input line 755.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 754.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 755.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.66702pt
-(hyperref)                removed on input line 754.
+(hyperref)                removed on input line 755.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 754.
+(hyperref)                removing `math shift' on input line 755.
 
 [10] [11] [12] [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 978.
+(hyperref)                removing `math shift' on input line 979.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 978.
+(hyperref)                removing `math shift' on input line 979.
 
 
-Overfull \hbox (1.33076pt too wide) in paragraph at lines 979--983
+Overfull \hbox (1.33076pt too wide) in paragraph at lines 980--984
 \OT1/cmr/m/n/10 the crys-tal how many scin-til-la-tion pho-tons are pro-duced? The light yield of $[]$ is $60000 []$.
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1022.
+(hyperref)                removing `math shift' on input line 1023.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1022.
+(hyperref)                removing `math shift' on input line 1023.
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1075
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 1138--1141
+Underfull \hbox (badness 10000) in paragraph at lines 1139--1142
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 1173--1175
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1176
 
  []
 
-
-LaTeX Warning: Reference `tab:gaussian-integral' on page 17 undefined on input line 1221.
-
-<../threshold.pdf, id=476, 462.52798pt x 346.89601pt>
+<../threshold.pdf, id=477, 462.52798pt x 346.89601pt>
 File: ../threshold.pdf Graphic file (type pdf)
 <use ../threshold.pdf>
-Package pdftex.def Info: ../threshold.pdf  used on input line 1252.
+Package pdftex.def Info: ../threshold.pdf  used on input line 1248.
 (pdftex.def)             Requested size: 268.59235pt x 201.45389pt.
-[17] [18 <../threshold.pdf>]
-
-LaTeX Warning: Reference `tab:gaussian-integral' on page 19 undefined on input line 1361.
-
-[19]
+[17] [18 <../threshold.pdf>] [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1424.
+(hyperref)                removing `math shift' on input line 1420.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1424.
+(hyperref)                removing `subscript' on input line 1420.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1424.
+(hyperref)                removing `math shift' on input line 1420.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1424.
+(hyperref)                removing `math shift' on input line 1420.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1424.
+(hyperref)                removing `math shift' on input line 1420.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1425--1428
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1424
 
  []
 
 [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1464.
+(hyperref)                removing `math shift' on input line 1460.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 1464.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 1460.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.66702pt
-(hyperref)                removed on input line 1464.
+(hyperref)                removed on input line 1460.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1464.
+(hyperref)                removing `math shift' on input line 1460.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1465--1468
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1501--1507
+Underfull \hbox (badness 10000) in paragraph at lines 1461--1464
 
  []
 
-[21] [22] (./ndd-ex.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 1497--1503
+
+ []
+
+[21]
+<../linearfit.pdf, id=603, 462.52798pt x 346.89601pt>
+File: ../linearfit.pdf Graphic file (type pdf)
+<use ../linearfit.pdf>
+Package pdftex.def Info: ../linearfit.pdf  used on input line 1514.
+(pdftex.def)             Requested size: 295.90588pt x 221.93858pt.
+\g__nicematrix_max_cell_width_dim=\dimen322
+\c@iRow=\count353
+\c@jCol=\count354
+\l__nicematrix_cell_box=\box82
+\l__nicematrix_the_array_box=\box83
+\l__nicematrix_left_delim_dim=\dimen323
+\l__nicematrix_right_delim_dim=\dimen324
+\g__nicematrix_dp_row_zero_dim=\dimen325
+\g__nicematrix_ht_row_zero_dim=\dimen326
+\g__nicematrix_ht_row_one_dim=\dimen327
+\g__nicematrix_dp_ante_last_row_dim=\dimen328
+\g__nicematrix_ht_last_row_dim=\dimen329
+\g__nicematrix_dp_last_row_dim=\dimen330
+\g__nicematrix_ddots_int=\count355
+\g__nicematrix_iddots_int=\count356
+\g__nicematrix_delta_x_one_dim=\dimen331
+\g__nicematrix_delta_y_one_dim=\dimen332
+\g__nicematrix_delta_x_two_dim=\dimen333
+\g__nicematrix_delta_y_two_dim=\dimen334
+\l__nicematrix_initial_i_int=\count357
+\l__nicematrix_initial_j_int=\count358
+\l__nicematrix_final_i_int=\count359
+\l__nicematrix_final_j_int=\count360
+\l__nicematrix_local_start_int=\count361
+\l__nicematrix_local_end_int=\count362
+ [22 <../linearfit.pdf>] [23] (./ndd-ex.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `ndd-ex.out' has not changed.
 (rerunfilecheck)             Checksum: 49EDBBE1E01309B2B538D3419DCD553F;11796.
  ) 
 Here is how much of TeX's memory you used:
- 26679 strings out of 480247
- 512465 string characters out of 5896151
- 1633554 words of memory out of 5000000
- 43977 multiletter control sequences out of 15000+600000
- 480549 words of font info for 73 fonts, out of 8000000 for 9000
+ 29104 strings out of 480247
+ 587776 string characters out of 5896151
+ 1687427 words of memory out of 5000000
+ 46379 multiletter control sequences out of 15000+600000
+ 487358 words of font info for 98 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,18n,89p,916b,1313s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ndd-ex.pdf (23 pages, 512686 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on ndd-ex.pdf (24 pages, 572805 bytes).
 PDF statistics:
- 741 PDF objects out of 1000 (max. 8388607)
- 618 compressed objects within 7 object streams
- 224 named destinations out of 1000 (max. 500000)
- 311 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 837 PDF objects out of 1000 (max. 8388607)
+ 656 compressed objects within 7 object streams
+ 228 named destinations out of 1000 (max. 500000)
+ 316 words of extra memory for PDF output out of 10000 (max. 10000000)
 
