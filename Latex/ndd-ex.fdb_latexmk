@@ -1,10 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1736265861 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1736265864
+["pdflatex"] 1736266528 "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" "ndd-ex.pdf" "ndd-ex" 1736266532
   "../linearfit.pdf" 1736257881 26161 b9086a157db1693d23b6363494083fca ""
   "../threshold.pdf" 1736178340 36650 9461429405afb7df2a29c3ecfd15697f ""
   "/etc/texmf/web2c/texmf.cnf" 1721132218 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/pengu5055/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1721133484 1405652 6dbe6b4a0b8b03aa67147fe2fddcad95 ""
-  "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" 1736265861 78238 add8a20fb4fc611a33893d39d28aacee ""
+  "/home/pengu5055/Documents/FMF1mag/ndd-exercises/Latex/ndd-ex.tex" 1736266528 79616 aaca8779aa7c6706f773074de7dd74a8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -216,10 +216,10 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1721229899 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "cover.tikz" 1733319756 1593 6715a278942b20601e968d296e204dbc ""
   "logo_fmf.pdf" 1733054670 15612 f362f770ef36c22b3204cc12be10dccd ""
-  "ndd-ex.aux" 1736265864 16934 0cd9dac24bed4cb457be1f7d5c62101f "pdflatex"
-  "ndd-ex.out" 1736265864 12857 73cebb861dd44493dea416e53e445ebf "pdflatex"
-  "ndd-ex.tex" 1736265861 78238 add8a20fb4fc611a33893d39d28aacee ""
-  "ndd-ex.toc" 1736265864 5143 8af2b1016c1c6a7fabf3699c3c29bd98 "pdflatex"
+  "ndd-ex.aux" 1736266531 16924 21c14f4f059a4c2286c64d610cc7a8cf "pdflatex"
+  "ndd-ex.out" 1736266531 12801 5c86473a0f468dcf17bdf980189fc3ef "pdflatex"
+  "ndd-ex.tex" 1736266528 79616 aaca8779aa7c6706f773074de7dd74a8 ""
+  "ndd-ex.toc" 1736266531 5133 3b78db55205b936c19e23df3b954f0dd "pdflatex"
   "tracks.tikz" 1733323187 767 a031e5cc6d55126ef0b8041bdba03388 ""
   (generated)
   "ndd-ex.aux"

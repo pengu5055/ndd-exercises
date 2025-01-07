@@ -40,4 +40,4 @@
 \contentsline {subsubsection}{\numberline {3.2.1}For a given semiconductor detector, which $p_t$ can we measure with a $10\%$ uncertainty?}{20}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}For the Central Drift Chamber used in the Belle experiment, what is the uncertainty of the momentum measurement for a $0.5\,\rm {GeV/c}$ particle?}{21}{subsubsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.3}Particle Tracking}{22}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}For given measurements what is the slope of the line and its uncertainty using the Kalman Filter and the Least Squares Method?}{23}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1}For given measurements what is the relative error of the slope using the Kalman Filter and the Least Squares Method?}{23}{subsubsection.3.3.1}%

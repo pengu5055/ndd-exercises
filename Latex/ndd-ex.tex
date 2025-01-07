@@ -1563,7 +1563,7 @@ the methods.
 The professor claims this is all that is needed for the exam, however one could also derive these from the general formulas for the
 least squares method and the Kalman filter.
 
-\subsubsection{For given measurements what is the slope of the line and its uncertainty using the Kalman Filter and the Least Squares Method?}
+\subsubsection{For given measurements what is the relative error of the slope using the Kalman Filter and the Least Squares Method?}
 We measured the position of a particle in three different planes which are seperated by a $10\,\rm{cm}$ gap. The measurements are:
 %
 \begin{flalign*}
@@ -1578,7 +1578,7 @@ the errors of the estimated slope for both methods. We can start by calculating 
 \begin{flalign}
     k_3 &= \frac{1}{5\Delta x}\left(3y_3 - y_2 - 2y_1\right) \nonumber \\
     &= \frac{1}{5\cdot 100\,\rm{mm}}\left(3\cdot 4.15 - 3.35 - 2\cdot 2.35\right)\,\rm{mm} \nonumber \\
-    &= 8.8\cdot 10^{-3} \\
+    &= 8.8\cdot 10^{-3}\>. \\
 \end{flalign}
 %
 We can calculate the error by taking the square of each term with its respective error. This means:
@@ -1587,6 +1587,42 @@ We can calculate the error by taking the square of each term with its respective
     k_n\Delta X  = \frac{1}{\alpha}\left(\beta_n y_n +\dots+\beta_1 y_1\right) \quad\Rightarrow\quad \left(\sigma(k_n)\Delta x\right)^2 = \left(\frac{\beta_n}{\alpha}\sigma_n\right)^2+\dots+\left(\frac{\beta_1}{\alpha}\sigma_1\right)^2\>.
 \end{equation}
 %
+So in our case we have:
+%
+\begin{flalign}
+    \left(\sigma(k_3)\Delta x\right)^2 &= \left(\frac{3}{5}\sigma_3\right)^2 + \left(\frac{-1}{5}\sigma_2\right)^2 + \left(\frac{-2}{5\cdot}\sigma_1\right)^2 \nonumber \\
+    &\Rightarrow \sigma(k_3) = 6.4\cdot10^{-4}\>.
+\end{flalign}
+%
+From this we can find the relative of the slope for the Kalman Filter:
+%
+\begin{equation}
+    \frac{\sigma(k_3)}{k_3} = \frac{6.4\cdot10^{-4}}{8.8\cdot10^{-3}} = 7.27\%\>.
+\end{equation}
+%
+Analogue to this we can calculate the slope and its error for the Least Squares Method:
+%
+\begin{flalign}
+    k_3 &= \frac{1}{2\Delta x}\left(y_3 - y_1\right) \nonumber \\
+    &= \frac{1}{2\cdot 100\,\rm{mm}}\left(4.15 - 2.35\right)\,\rm{mm} \nonumber \\
+    &= 9\cdot 10^{-3}\>. \\
+\end{flalign}
+%
+Likewise for the error of the slope:
+%
+\begin{flalign}
+    \left(\sigma(k_3)\Delta x\right)^2 &= \left(\frac{1}{2}\sigma_3\right)^2 + \left(\frac{-1}{2}\sigma_1\right)^2 \nonumber \\
+    &\Rightarrow \sigma(k_3) = 5.59\cdot10^{-4}\>.
+\end{flalign}
+%
+From which we can get the relative error:
+%
+\begin{equation}
+    \frac{\sigma(k_3)}{k_3} = \frac{5.59\cdot10^{-4}}{9\cdot10^{-3}} = 6.21\%\>.
+\end{equation}
+%
+From this we can see that different optimization methods yield different results. 
+The Kalman Filter gives us a relative error of $7.27\%$ while the Least Squares Method gives us a relative error of $6.21\%$.
 
 % \newpage
 % \bibliographystyle{unsrt}
