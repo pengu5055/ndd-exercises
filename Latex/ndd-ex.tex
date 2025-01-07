@@ -1489,6 +1489,29 @@ From this we can calculate the total uncertainty of the momentum measurement usi
     \left(\frac{\sigma_{p_t}}{p_t}\right)^2 &= \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{Track}^2 + \left(\frac{\sigma_{p_t}}{p_t}\right)_\mathrm{MSC}^2 = (0.00107)^2 + (0.00143)^2 = 0.000003189\nonumber \\
     \Rightarrow \left(\frac{\sigma_{p_t}}{p_t}\right) &= 0.18\%\>.
 \end{flalign}
+%
+\subsection{Particle Tracking}
+At this point during exercises we sketched how a particle would travel through $3$ dimensional space and which parameters of the track we'd 
+have to determine to reconstruct the track. The general parametrization is given as:
+%
+\begin{flalign}
+    x &= x_0 + R\left(\sin\phi - \sin\phi_0\right)\>, \\
+    y &= y_0 - R\left(\cos\phi - \cos\phi_0\right)\>, \\
+    z &= z_0 - R\cot\theta\left(\phi - \phi_0\right)\>,
+\end{flalign}
+%
+where $R$ is the radius of curvature, $\theta$ is the azimuthal angle, $\theta_0$ is the azimuthal angle at the point of closest approach to the origin,
+$\psi$ is the polar angle, $\psi_0$ is the polar angle at the point of closest approach to the origin, and $x_0$, $y_0$, $z_0$ are the coordinates of the point of closest approach to the origin.
+From this we see that we have to determine $5$ parameters (the sixth can be determined from the others $x_0  = y_0/\tan\psi_0$). I was planning on adding an image of this but it is 
+somewhat irrelevant since all practical exercises we did are in $1$ dimension. \\
+
+In practice we fit these parameters to our measurements using various optimization methods. We had a look at two different methods:
+\begin{itemize}
+    \item \textbf{Least Squares Method} (\textit{Metoda najmanjših kvadratov}) where we minimize the sum of the squares of the residuals. This is a \textbf{global method} since we use all the data points at once.
+    \item \textbf{Kalman Filter} (\textit{Kalmanov filter}) which is a \textbf{progressive method} where we update our estimate of the parameters as we get new data points.
+\end{itemize}
+%
+Let's now imagine that we want to fit a linear model to a set of measurements.
 
 % \newpage
 % \bibliographystyle{unsrt}
