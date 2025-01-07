@@ -1524,19 +1524,18 @@ We can write the model iteratively as:
 %
 where $k_n$ is the slope of the line after $n$ measurements. We will denote the uncertainty of the measurement with $\sigma$ and the uncertainty 
 of the estimated parameter $k_n$ with $\sigma(k)$. Presented below are tables of how to calculate $k_n\Delta x$ and $\sigma(k)\Delta x$ for both of 
-the methods. The professor claims this is all that is needed for the exam, however one could also derive these from the general formulas for the
-least squares method and the Kalman filter.
+the methods. 
 
 \begin{table}[H]
     \centering
-        \large{\textbf{Kalman Filter}} \\[2ex]
+        \large{\textbf{Kalman Filter}} \\[1ex]
         \begin{NiceTabular}{|l|l|l|}
             \hline
             \rowcolor[HTML]{EEB1F9}
             \multicolumn{1}{|c|}{\cellcolor[HTML]{EEB1F9}$\bm{n}$} &
             \multicolumn{1}{c|}{\cellcolor[HTML]{EEB1F9}\rule{0pt}{3ex}$\>\bm{k_n\Delta x}\>$} &
             \multicolumn{1}{c|}{\cellcolor[HTML]{EEB1F9}$\bm{\sigma(k)\Delta x}$ if $\bm{\sigma_i = \sigma}$} \\ \hline
-            \hspace{0.5em}2\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$y_2 - y_1$}\vspace{1ex} & \multicolumn{1}{c|}{$\sqrt{2}\sigma$} \\ \hline
+            \hspace{0.5em}2\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$y_2 - y_1$}\vspace{1ex} & \multicolumn{1}{c|}{$\sqrt{2}\,\sigma$} \\ \hline
             \hspace{0.5em}3\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$\dfrac{1}{5}\left(y_3 - y_2 - 2y_1\right)$} \vspace{1ex} & \multicolumn{1}{c|}{$\sqrt{\dfrac{14}{25}}\,\sigma = 0.748\cdot\sigma$} \\ \hline
             \hspace{0.5em}4\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$\dfrac{1}{70}\left(30y_4 - y_3 - 18y_2 - 11y_1\right)$} \vspace{1ex} & \multicolumn{1}{c|}{$\dfrac{1}{\sqrt{5}}\,\sigma = 0.524\cdot\sigma$} \\ \hline
         \end{NiceTabular}
@@ -1546,14 +1545,14 @@ least squares method and the Kalman filter.
 
 \begin{table}[H]
     \centering
-        \large{\textbf{Least Squares Method}} \\[2ex]
+        \large{\textbf{Least Squares Method}} \\[1ex]
         \begin{NiceTabular}{|l|l|l|}
             \hline
             \rowcolor[HTML]{FFADC3}
             \multicolumn{1}{|c|}{\cellcolor[HTML]{FFADC3}$\bm{n}$} &
             \multicolumn{1}{c|}{\cellcolor[HTML]{FFADC3}\rule{0pt}{3ex}$\>\bm{k_n\Delta x}\>$} &
             \multicolumn{1}{c|}{\cellcolor[HTML]{FFADC3}$\bm{\sigma(k)\Delta x}$ if $\bm{\sigma_i = \sigma}$} \\ \hline
-            \hspace{0.5em}2\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$y_2 - y_1$}\vspace{1ex} & \multicolumn{1}{c|}{$\sqrt{2}\sigma$} \\ \hline
+            \hspace{0.5em}2\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$y_2 - y_1$}\vspace{1ex} & \multicolumn{1}{c|}{$\sqrt{2}\,\sigma$} \\ \hline
             \hspace{0.5em}3\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$\dfrac{1}{2}\left(y_3 - y_1\right)$} \vspace{1ex} & \multicolumn{1}{c|}{$\dfrac{1}{\sqrt{2}}\,\sigma = 0.707\cdot\sigma$} \\ \hline
             \hspace{0.5em}4\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$\dfrac{1}{10}\left(3y_4 + y_3 - y_2 - 3y_1\right)$} \vspace{1ex} & \multicolumn{1}{c|}{$\dfrac{1}{\sqrt{5}}\,\sigma = 0.447\cdot\sigma$} \\ \hline
         \end{NiceTabular}
@@ -1561,7 +1560,8 @@ least squares method and the Kalman filter.
         \label{tab:least-squares-table}
 \end{table}
 
-
+The professor claims this is all that is needed for the exam, however one could also derive these from the general formulas for the
+least squares method and the Kalman filter.
 
 % \newpage
 % \bibliographystyle{unsrt}
