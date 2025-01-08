@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.16)  7 JAN 2025 17:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.16)  8 JAN 2025 21:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -707,7 +707,7 @@ LaTeX Info: Redefining \nameref on input line 54.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./cover.tikz)
-<logo_fmf.pdf, id=155, 233.03412pt x 141.6228pt>
+<logo_fmf.pdf, id=163, 233.03412pt x 141.6228pt>
 File: logo_fmf.pdf Graphic file (type pdf)
 <use logo_fmf.pdf>
 Package pdftex.def Info: logo_fmf.pdf  used on input line 71.
@@ -734,170 +734,172 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.113 \end{equation}
-                     [1]
-Overfull \hbox (9.27426pt too wide) detected at line 121
-[]
- []
-
-
-Overfull \hbox (3.37514pt too wide) detected at line 198
+l.108 \newpage
+               [1]
+Overfull \hbox (9.27426pt too wide) detected at line 128
 []
  []
 
 [2]
-Overfull \hbox (5.32596pt too wide) in paragraph at lines 198--201
+Overfull \hbox (3.37514pt too wide) detected at line 205
+[]
+ []
+
+
+Overfull \hbox (5.32596pt too wide) in paragraph at lines 205--208
 \OT1/cmr/m/n/10 Thus the en-ergy loss of charged kaons $\OML/cmm/m/it/10 K[]$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 K[]$ \OT1/cmr/m/n/10 with a mo-men-tum of $2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5 []$ in cop-per is $13\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 47 []$. 
  []
 
-[3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 493--496
+[3] [4] [5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 500--503
 
  []
 
-[6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 589--595
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 596--602
 
  []
 
-[8]
+[8] [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 686.
+(hyperref)                removing `math shift' on input line 693.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 686.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 693.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.66702pt
-(hyperref)                removed on input line 686.
+(hyperref)                removed on input line 693.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 686.
+(hyperref)                removing `math shift' on input line 693.
 
-[9]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 755.
-
+[10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 755.
+(hyperref)                removing `math shift' on input line 762.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 762.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.66702pt
-(hyperref)                removed on input line 755.
+(hyperref)                removed on input line 762.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 755.
+(hyperref)                removing `math shift' on input line 762.
 
-[10] [11] [12] [13]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 979.
-
+[11] [12] [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 979.
+(hyperref)                removing `math shift' on input line 986.
 
 
-Overfull \hbox (1.33076pt too wide) in paragraph at lines 980--984
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 986.
+
+
+Overfull \hbox (1.33076pt too wide) in paragraph at lines 987--991
 \OT1/cmr/m/n/10 the crys-tal how many scin-til-la-tion pho-tons are pro-duced? The light yield of $[]$ is $60000 []$.
  []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1023.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1023.
-
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1075
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1030.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1030.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1081--1082
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 1139--1142
+Underfull \hbox (badness 10000) in paragraph at lines 1146--1149
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 1174--1176
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1183
 
  []
 
 [17]
-<../threshold.pdf, id=491, 462.52798pt x 346.89601pt>
+<../threshold.pdf, id=499, 462.52798pt x 346.89601pt>
 File: ../threshold.pdf Graphic file (type pdf)
 <use ../threshold.pdf>
-Package pdftex.def Info: ../threshold.pdf  used on input line 1248.
+Package pdftex.def Info: ../threshold.pdf  used on input line 1255.
 (pdftex.def)             Requested size: 268.59235pt x 201.45389pt.
  [18 <../threshold.pdf>] [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1420.
+(hyperref)                removing `math shift' on input line 1427.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1420.
+(hyperref)                removing `subscript' on input line 1427.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1420.
+(hyperref)                removing `math shift' on input line 1427.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1420.
+(hyperref)                removing `math shift' on input line 1427.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1420.
+(hyperref)                removing `math shift' on input line 1427.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1421--1424
+Underfull \hbox (badness 10000) in paragraph at lines 1428--1431
 
  []
 
 [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1460.
+(hyperref)                removing `math shift' on input line 1467.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 1460.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 1467.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.66702pt
-(hyperref)                removed on input line 1460.
+(hyperref)                removed on input line 1467.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1460.
+(hyperref)                removing `math shift' on input line 1467.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1464
+Underfull \hbox (badness 10000) in paragraph at lines 1468--1471
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 1497--1503
+Underfull \hbox (badness 10000) in paragraph at lines 1504--1510
 
  []
 
-<../linearfit.pdf, id=607, 462.52798pt x 346.89601pt>
+<../linearfit.pdf, id=614, 462.52798pt x 346.89601pt>
 File: ../linearfit.pdf Graphic file (type pdf)
 <use ../linearfit.pdf>
-Package pdftex.def Info: ../linearfit.pdf  used on input line 1514.
-(pdftex.def)             Requested size: 295.90588pt x 221.93858pt.
+Package pdftex.def Info: ../linearfit.pdf  used on input line 1521.
+(pdftex.def)             Requested size: 250.38564pt x 187.79214pt.
+[22 <../linearfit.pdf>]
 \g__nicematrix_max_cell_width_dim=\dimen322
 \c@iRow=\count353
 \c@jCol=\count354
@@ -923,27 +925,45 @@ Package pdftex.def Info: ../linearfit.pdf  used on input line 1514.
 \l__nicematrix_final_j_int=\count360
 \l__nicematrix_local_start_int=\count361
 \l__nicematrix_local_end_int=\count362
-[22 <../linearfit.pdf>] [23] [24] (./ndd-ex.aux)
+ [23]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1635.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 1635.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1635.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1650
+
+ []
+
+[24] [25] [26] (./ndd-ex.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25pt have occurred.
 
 Package rerunfilecheck Info: File `ndd-ex.out' has not changed.
-(rerunfilecheck)             Checksum: 5C86473A0F468DCF17BDF980189FC3EF;12801.
+(rerunfilecheck)             Checksum: D05FE517A4352CB2C980A51DC1256F1D;13273.
  ) 
 Here is how much of TeX's memory you used:
- 29116 strings out of 480247
- 587940 string characters out of 5896151
- 1687430 words of memory out of 5000000
- 46380 multiletter control sequences out of 15000+600000
+ 29130 strings out of 480247
+ 588128 string characters out of 5896151
+ 1687435 words of memory out of 5000000
+ 46382 multiletter control sequences out of 15000+600000
  487358 words of font info for 98 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,18n,89p,916b,1313s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ndd-ex.pdf (25 pages, 576885 bytes).
+Output written on ndd-ex.pdf (27 pages, 588740 bytes).
 PDF statistics:
- 860 PDF objects out of 1000 (max. 8388607)
- 678 compressed objects within 7 object streams
- 239 named destinations out of 1000 (max. 500000)
- 324 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 897 PDF objects out of 1000 (max. 8388607)
+ 712 compressed objects within 8 object streams
+ 251 named destinations out of 1000 (max. 500000)
+ 340 words of extra memory for PDF output out of 10000 (max. 10000000)
 

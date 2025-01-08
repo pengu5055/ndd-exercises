@@ -98,7 +98,14 @@
 
 % Proceed with the main body
 \pagenumbering{arabic}
+\vfill
+\textbf{Aknowledgements:}
 
+{\small\noindent 
+    I'd like to thank my colleagues Tinka D., Gaja Š. and Marko M. for their help in sourcing notes for the exercises I missed.
+    With out them I would not have been able to complete this document. 
+}
+\newpage
 \section{Interactions of Particles with Photons}
 \subsection{Bethe-Bloch Equation}
 The Bethe-Bloch equation describes the mean energy loss per distance traveled while traversing through matter.
@@ -356,7 +363,7 @@ Landau-Vavilov distribution to describe the energy loss of particles. The most p
 where $\delta(\beta\gamma)$ represents corrections due to the density effect, $j=0.200$ and $\xi$ is given as:
 %
 \begin{equation}
-    \xi = \frac{K}{2}\left\langle\frac{Z}{A}\right\rangle\frac{x}{\beta^2}\>\rm{MeV}\>,
+    \xi = \frac{K}{2}\left\langle\frac{Z}{A}\right\rangle\frac{x}{\beta^2}\>,
     \label{eq:xi}
 \end{equation}
 %
@@ -784,9 +791,9 @@ where $F$ is the Fano factor which is around $F = 0.2$ for gas ionization chambe
 the number of created electron-ion pairs and that they are Poisson distributed:
 %
 \begin{align}
-    N &= \frac{\Delta E}{w}\>, \\
-    \label{eq:ion-N}
-    \sigma_N &= \sqrt{F\cdot N}\>. \\
+    N &= \frac{\Delta E}{w}\>,
+    \label{eq:ion-N} \\
+    \sigma_N &= \sqrt{F\cdot N}\>.
     \label{eq:ion-sigma} 
 \end{align}
 
@@ -1511,7 +1518,7 @@ Let's now imagine that we want to fit a linear model to a set of measurements. T
 %
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.65\textwidth]{../linearfit.pdf}
+    \includegraphics[width=0.55\textwidth]{../linearfit.pdf}
     \caption{Fitting a linear model to a set of measurements.}
     \label{fig:linear-fit}
 \end{figure}
@@ -1537,7 +1544,7 @@ the methods.
             \multicolumn{1}{c|}{\cellcolor[HTML]{EEB1F9}$\bm{\sigma(k)\Delta x}$ if $\bm{\sigma_i = \sigma}$} \\ \hline
             \hspace{0.5em}2\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$y_2 - y_1$}\vspace{1ex} & \multicolumn{1}{c|}{$\sqrt{2}\,\sigma$} \\ \hline
             \hspace{0.5em}3\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$\dfrac{1}{5}\left(y_3 - y_2 - 2y_1\right)$} \vspace{1ex} & \multicolumn{1}{c|}{$\sqrt{\dfrac{14}{25}}\,\sigma = 0.748\cdot\sigma$} \\ \hline
-            \hspace{0.5em}4\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$\dfrac{1}{70}\left(30y_4 - y_3 - 18y_2 - 11y_1\right)$} \vspace{1ex} & \multicolumn{1}{c|}{$\dfrac{1}{\sqrt{5}}\,\sigma = 0.524\cdot\sigma$} \\ \hline
+            \hspace{0.5em}4\hspace{0.5em} & \multicolumn{1}{c}{\rule{0pt}{4ex}$\dfrac{1}{70}\left(30y_4 - y_3 - 18y_2 - 11y_1\right)$} \vspace{1ex} & \multicolumn{1}{c|}{$0.524\cdot\sigma$} \\ \hline
         \end{NiceTabular}
         \captionof{table}{Table for Kalman Filter.}
         \label{tab:kalman-table}
@@ -1584,7 +1591,7 @@ the errors of the estimated slope for both methods. We can start by calculating 
 We can calculate the error by taking the square of each term with its respective error. This means:
 %
 \begin{equation}
-    k_n\Delta X  = \frac{1}{\alpha}\left(\beta_n y_n +\dots+\beta_1 y_1\right) \quad\Rightarrow\quad \left(\sigma(k_n)\Delta x\right)^2 = \left(\frac{\beta_n}{\alpha}\sigma_n\right)^2+\dots+\left(\frac{\beta_1}{\alpha}\sigma_1\right)^2\>.
+    k_n\Delta x  = \frac{1}{\alpha}\left(\beta_n y_n +\dots+\beta_1 y_1\right) \quad\Rightarrow\quad \left(\sigma(k_n)\Delta x\right)^2 = \left(\frac{\beta_n}{\alpha}\sigma_n\right)^2+\dots+\left(\frac{\beta_1}{\alpha}\sigma_1\right)^2\>.
 \end{equation}
 %
 So in our case we have:
@@ -1623,6 +1630,90 @@ From which we can get the relative error:
 %
 From this we can see that different optimization methods yield different results. 
 The Kalman Filter gives us a relative error of $7.27\%$ while the Least Squares Method gives us a relative error of $6.21\%$.
+
+\subsection{Bonus Exercises}
+\subsubsection{Matching uncertainties in a Central Drift Chamber$^*$}
+Consider that we are measuring the deposited energy and transverse momentum of protons using a Central Drift Chamber. The chamber 
+is filled with Helium under normal conditions where it has the following properties:
+%
+\begin{flalign*}
+    \rho &= 0.17\,\rm{g/L} = 0.00017\,\rm{g}/\rm{cm}^3\>, \\
+    A &= 4\,\rm{g/mol}\>, \\
+    Z &= 2\>, \\
+    F &= 0.24\>, \\
+    w &= 41.3\,\rm{eV}\>.
+\end{flalign*}
+%
+The position detector system is made out of $25$ layers of anode wires. The dimension of this setup is $L=1\,\rm{m}$. The magnetic field inside is $B=2\,\rm{T}$.
+What is the uncertainty of the spatial measurements in a Central Drift Chamber such that the 
+uncertainty of the momentum measurement is the same as the uncertainty of the measured deposited energy if we are measuring a $5\,\rm{GeV/c}$ proton? \\
+
+We first have to calculate the energy loss of the proton in such a system. Despite the fact that we have a meter of gas, this still counts as 
+a thin absorber so we must use the Landau distribution from Equation (\ref{eq:landau}) to calculate the energy loss. We can check if this is alright later on.
+For this we first need to calculate the velocity of the particle using Equation (\ref{eq:beta}):
+%
+\begin{flalign}
+    \beta &= \frac{pc}{\sqrt{(pc)^2 + (Mc^2)^2}} \nonumber \\
+    &= \frac{5\,\dfrac{\rm{GeV}}{c}\>c}{\sqrt{\left(5\,\dfrac{\rm{GeV}}{c}\>c\right)^2 + \left(0.938\,\dfrac{\rm{GeV}}{c^2}\>c^2\right)^2}} \approx 0.98285\>,
+\end{flalign}
+%
+and the $\gamma$ factor:
+%
+\begin{flalign}
+    \gamma &= \frac{1}{\sqrt{1 - \beta^2}} \approx 5.4228\>.
+\end{flalign}
+%
+With this we can calculate $\xi$ which is given by Equation (\ref{eq:xi}):
+%
+\begin{flalign}
+    \xi &= \frac{K}{2}\left\la\frac{Z}{A}\right\ra\frac{L\rho}{\beta^2} \nonumber \\
+    &= \frac{0.3\,\dfrac{\rm{MeV}\rm{cm}^2}{\rm{g}}}{2}\cdot\frac{2}{4}\cdot\frac{100\,\rm{cm}\cdot0.00017\,\dfrac{\rm{g}}{\rm{cm}^3}}{\left(0.98285\right)^2} \nonumber \\
+    &= 0.0013 \,\rm{MeV}\>,
+\end{flalign}
+%
+and the mean excitation energy $I$ using Equation (\ref{eq:I}) for $Z<13$:
+%
+\begin{flalign}
+    I &= Z\left(12 + \frac{7}{Z}\right)\,\rm{eV} \nonumber \\
+    &= 2\left(12 + \frac{7}{2}\right)\,\rm{eV} = 31\,\rm{eV}\>.
+\end{flalign}
+%
+We can also calculate our approximation for the maximum energy transfer in a single collision $W_{\text{max}}$ using Equation (\ref{eq:wmax}):
+%
+\begin{flalign}
+    W_{\text{max}} &= 2m_ec^2\beta^2\gamma^2 \nonumber \\
+    &= 2\cdot0.511\,\rm{MeV}\cdot(0.98285)^2\cdot(5.4228)^2 \approx 29\,\rm{MeV}\>.
+\end{flalign}
+%
+Now we can calculate the energy loss using the Landau distribution:
+%
+\begin{flalign}
+    \Delta_p &= \xi\left[\ln{\frac{2m_ec^2\beta^2\gamma^2}{I}} + \ln{\frac{\xi}{I} + j - \beta^2}\right] \nonumber \\
+    &= 0.0013\,\rm{MeV}\left[\ln{\frac{29\cdot10^6\,\rm{eV}}{31\,\rm{eV}}} + \ln\frac{0.0013\cdot10^6\,\rm{eV}}{31\,\rm{eV}} + 0.2 -(0.98285)^2\right] \nonumber \\
+    &= 0.0013\,\rm{MeV}\cdot 16.719 \nonumber \\
+    &= 0.022\,\rm{MeV}\>.
+\end{flalign}
+%
+From this we can calculate the number of produced electron-ion pairs $N$ using Equation (\ref{eq:ion-N}):
+%
+\begin{flalign}
+    N &= \frac{\Delta_p}{w} \nonumber \\
+    &= \frac{0.022\cdot10^6\,\rm{eV}}{41.3\,\rm{eV}} \approx 532\>.
+\end{flalign}
+%
+Thus we can then use Equation (\ref{eq:ionization-res}) to calculate the resolution for the deposited energy:
+%
+\begin{flalign}
+    R = \frac{\sqrt{F\cdot N}}{N} = \frac{\sqrt{0.24\cdot 532}}{532} \approx 2.1\%\>.
+\end{flalign}
+%
+Now we can use the equation for tracking resolution Equation (\ref{eq:track-N}) to calculate the required spatial measurement uncertainty:
+%
+\begin{flalign}
+    \sigma_x &= \frac{eBL^2\left(\dfrac{\sigma_{p_t}}{p_t}\right)_\mathrm{Track}}{p_t}\cdot\left[\frac{720}{N+4}\right]^{-\frac{1}{2}} \nonumber \\
+    &= \frac{3\cdot10^8\,\dfrac{\rm{m}}{\rm{s}}\cdot \rm{e}\cdot2\,\rm{T}\cdot(1\,\rm{m})^2\cdot 0.021}{5\cdot10^9\,\rm{eV}}\cdot\left[\frac{720}{25+4}\right]^{-\frac{1}{2}} \nonumber \\
+    &= 0.0048\,\rm{m} = 4.8\,\rm{mm}\>.
+\end{flalign}
 
 % \newpage
 % \bibliographystyle{unsrt}
